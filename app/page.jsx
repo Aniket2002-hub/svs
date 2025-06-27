@@ -22,9 +22,7 @@ import "./globals.css";
 // Video Paths
 const videos = [
   "/Assets/background-videos1.mov",
-  "/Assets/background-videos.mp4",
-  "/Assets/background-videos3.mov",
-  "/videos/vid4.mp4",
+  
 ];
 
 // Colored Info Blocks
@@ -176,7 +174,7 @@ const Page = () => {
         </div>
 
         {/* WhatsApp Icon */}
-        
+
         <div className="fixed left-4 bottom-4 z-30">
           <a
             href="https://wa.me/your-number"
