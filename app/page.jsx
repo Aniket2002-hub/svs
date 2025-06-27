@@ -239,29 +239,29 @@ const Page = () => {
       </section>
 
       {/* ================= Colored Blocks Section ================= */}
-      <section className="w-full grid grid-cols-1 md:grid-cols-3 gap-2 bg-white">
-        {blocks.map((block, index) => (
-          <div
-            key={index}
-            data-aos={block.animation}
-            className={`text-white p-25 flex flex-col justify-between ${block.color}`}
-          >
-            <h2 className="text-2xl font-bold mb-4">{block.title}</h2>
-            <p className="text-sm mb-6">{block.description}</p>
-            <div className="flex items-center space-x-3">
-              <a
-                href="#"
-                className="flex items-center border border-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition"
-              >
-                <span>{block.buttonText}</span>
-              </a>
-              {index === 0 && (
-                <FaWhatsapp className="text-white text-2xl animate-bounce" />
-              )}
-            </div>
-          </div>
-        ))}
-      </section>
+     <section className="w-full grid grid-cols-1 md:grid-cols-3 gap-2 bg-white">
+  {blocks.map((block, index) => (
+    <div
+      key={index}
+      data-aos={block.animation}
+      className={`text-white px-10 py-12 flex flex-col justify-between ${block.color}`}
+    >
+      <h2 className="text-2xl font-bold mb-4">{block.title}</h2>
+      <p className="text-base leading-relaxed mb-6 max-w-[90%]">
+        {block.description}
+      </p>
+      <div className="flex items-center">
+        <a
+          href="#"
+          className="flex items-center border border-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition"
+        >
+          <span>{block.buttonText}</span>
+        </a>
+      </div>
+    </div>
+  ))}
+</section>
+
 
       <section
         className="
