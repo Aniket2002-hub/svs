@@ -120,7 +120,7 @@ const page = () => {
           <h2
             data-aos="slide-right"
             data-aos-duration="1500"
-            className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-white"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-black"
           >
             Press Coverage
           </h2>

@@ -28,25 +28,25 @@ const videos = [
 // Colored Info Blocks
 const blocks = [
   {
-    title: "BELMOND RESIDENTIAL",
+    title: "SVS RESIDENTIAL",
     description:
-      "Belmond launched its first residential project in Sector 48, Sohna Road, marking its entry into the real estate industry. This initiative set a high standard for future projects, showcasing the company's commitment to quality and innovation in residential development.",
+      "SVS Residential has a strong foundation for building innovative and sustainable projects for a decade. From stylish apartments in Hyderabad to eco-friendly green spaces in Vizag, we have delivered multiple residential projects. With our vision of quality construction and customer trust, we are creating idyllic homes focused on comfort, community, and aesthetics.",
     color: "bg-[#00ADEF]",
     buttonText: "View More",
     animation: "fade-right",
   },
   {
-    title: "BELMOND COMMERCIAL",
+    title: "SVS COMMERCIAL",
     description:
-      "Commercial development drives economic growth, enhances business opportunities, and boosts property value. With strategic locations, modern amenities, and adaptability, today’s commercial spaces foster investment, jobs, and long-term success.",
+      "Designed with great vision, SVS Commercial stands on a foundation of reliability and quality construction, delivering vibrant working spaces that inspire productivity and innovation. From retail outlets to standalone commercial hubs, it reflects our creativity and precision that helps for a business environment and its growth.",
     color: "bg-[#3BC14A]",
     buttonText: "View More",
     animation: "fade-up",
   },
   {
-    title: "BELMOND EDUCATION",
+    title: "SVS PLOTS",
     description:
-      "School development drives community growth by providing modern, inclusive, and tech-enabled learning spaces. With a focus on sustainability and holistic student development, today's schools are built to adapt and prepare future generations for a changing world.",
+      "SVS Plotted development focuses on delivering thoughtfully designed layouts like “Belmond,” which includes a strategic location, nearby infrastructure, and value appreciation that empower growth. Our plotted community offers wide roads, vastu-compliant, sustainable infrastructure, and freedom to build your vision.",
     color: "bg-[#F7941E]",
     buttonText: "View More",
     animation: "fade-left",
@@ -208,18 +208,17 @@ const Page = () => {
         >
           <div className="max-w-xl">
             <p className="mb-1 text-sm font-semibold text-black">
-              Phase 1 Sold Out in Just 12 Days!
+              
             </p>
             <h4 className="text-lg font-semibold text-red-700">
-              Phase 2 Launched
+             
             </h4>
-            <h2 className="my-2 text-3xl font-bold text-white">Belmond</h2>
+            <h2 className="my-2 text-3xl font-bold text-white">SVS Belmond</h2>
 
             <p className="mb-6 text-md">
-              Residential Plots in Sector 95A Gurgaon
+              Exclusive Residential Plots, at Rajapulova Junction, Vizag
               <br />
-              Ranging from 147 sq. yds to 179 sq. yds (122.91 Sq.m. – 149.66
-              Sq.m.)
+             Size from 129.09 to 655.65 Sq. Yards (1161.81 sq. ft to 5900.85 sq. ft.)
             </p>
 
             {/* ─── Book Now button (white → green flip) ─────────── */}
@@ -285,9 +284,9 @@ const Page = () => {
     {/* ---------- STATIC TAGLINE ---------- */}
    <p
   className="
-    mt-6 uppercase font-medium tracking-[0.28em] text-[#3e9934]
+    mt-6 uppercase font-medium tracking-[0.38em] text-[#3e9934]
     text-[clamp(1rem,5vw,2.25rem)]
-    break-words text-center ml-6          /* ⬅ allows wrapping, centers lines */
+    break-words text-center ml-10          /* ⬅ allows wrapping, centers lines */
   "
 >
   INDIA’S FINEST GATED COMMUNITIES
@@ -350,7 +349,7 @@ const Page = () => {
               data-aos-duration="1200"
               className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4"
             >
-              Belmond: A Journey Through Time
+              SVS Constructions: Who We Are
             </h2>
             <div
               data-aos="fade-right"
@@ -362,17 +361,17 @@ const Page = () => {
               data-aos-duration="1400"
               className="text-gray-700 mb-6 text-sm sm:text-base leading-relaxed"
             >
-              Belmond is not just a name; it’s a legacy built on decades of hard
-              work, innovation, and trust. Our journey began in 1981 with the
-              establishment of Stone Crushers and Mining, a humble yet ambitious
-              venture that laid the foundation for what would become one of the
-              most trusted names in real estate and infrastructure.
+              
+              SVS Construction is a name synonymous with trust, quality, and innovation 
+              in real estate. We come from a legacy of decades in real estate development.
+               Our journey started in the year 2002 to redefine urban living with premium
+               infrastructure and design.
               <br />
               <br />
-              Over the years, we have diversified our portfolio, expanded our
-              horizons, and collaborated with some of the biggest names in the
-              industry to deliver landmark projects that stand as a testament to
-              our expertise and vision.
+              Our community is more focused on creativity and comfort, which meets with customers’
+              expectations. SVS continues to build premium residential and plotted development in top cities,
+              including Hyderabad and Vizag. 
+
             </p>
             <Link
               href="#"
@@ -419,10 +418,9 @@ const Page = () => {
             Our Journey
           </h2>
           <p data-aos="fade-left" className="text-md md:text-lg">
-            Roots Developers beholds a legacy that holds the key to unlocking
-            success in the professional and personal realm. This comes with the
-            delivery of iconic and essential infrastructure that leads to a
-            successful life.
+           From the beginning of building residential projects in Hyderabad a decade ago
+            to now delivering innovative and sustainable projects with modern features across
+             top locations.
           </p>
         </div>
 
@@ -481,7 +479,7 @@ const Page = () => {
               className="w-14 h-1 bg-gray-800 mb-4"
             ></div>
             <p data-aos="fade-left" className="text-gray-700 mb-6">
-              Belmond has always believed in the power of collaboration. Over
+              SVS Constructions has always believed in the power of collaboration. Over
               the years, we have partnered with some of the biggest names in the
               real estate industry to deliver landmark projects on our land.
               These collaborations have not only strengthened our reputation but
@@ -527,7 +525,7 @@ const Page = () => {
           data-aos="fade-left"
           className="text-3xl md:text-4xl font-bold mb-4"
         >
-          Building Tomorrow, Today
+          Crafting tomorrow’s landmarks, today.
         </h2>
         <div
           data-aos="fade-right"
@@ -537,12 +535,13 @@ const Page = () => {
           data-aos="fade-left"
           className="text-white text-md md:text-lg leading-relaxed"
         >
-          At Roots Developers, we believe in building not just structures but
-          communities. Our vision is to create sustainable, futuristic, and
-          community-centric spaces that cater to the needs of modern families
-          and businesses. Whether it’s a luxurious apartment, a serene
-          farmhouse, or a state-of-the-art commercial space, we are committed to
-          delivering excellence in every project we undertake.
+          At SVS Construction, we are not only building projects 
+          but are also committed to building quality construction 
+          and sustainability. Our vision starts from a strong customer
+          base to gives state-of-the-art infrastructure that aligns with 
+          customer requirements. 
+
+
         </p>
       </section>
     </div>

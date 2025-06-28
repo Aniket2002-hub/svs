@@ -14,7 +14,7 @@ const Page = () => {
           <h2
             data-aos="slide-right"
             data-aos-duration="1500"
-            className="text-xl sm:text-2xl md:text-4xl font-bold text-white drop-shadow"
+            className="text-xl sm:text-2xl md:text-4xl font-bold text-black drop-shadow"
           >
             Channel Partner Registration
           </h2>
@@ -38,11 +38,12 @@ const Page = () => {
             data-aos="fade-left"
             className="text-sm sm:text-base md:text-lg text-gray-700"
           >
-            At Roots Developers, we deeply value the strong relationships we
-            share with our Channel Partners and are dedicated to building
-            long-term, mutually beneficial collaborations. As a valued partner,
-            you’ll receive priority access to new project launches and special
-            offers, tailored marketing support, exclusive invitations to events,
+            At SVS Construction, we value our relationships and are committed to
+            fostering our partnership for the long term. We believe in working
+            in collaboration because work becomes more precious and elegant when
+            touched with different hands. As a valuable partner, you’ll receive
+            updates and access to our new project launches and special offers,
+            tailored marketing support, exclusive invitations to events,
             competitive commission structures, timely payouts, and a wide range
             of additional benefits.
           </p>
@@ -51,7 +52,10 @@ const Page = () => {
 
       {/* How it works */}
       <section className="text-center mt-12 px-4">
-        <h1 data-aos="fade-left" className="text-md md:text-xl font-bold text-gray-700">
+        <h1
+          data-aos="fade-left"
+          className="text-md md:text-xl font-bold text-gray-700"
+        >
           How It Works
         </h1>
         <div
@@ -80,10 +84,16 @@ const Page = () => {
       {/* Registration Form */}
       <section className="bg-[#f0efff] py-12 px-4 mt-12">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 data-aos="fade-left" className="text-lg md:text-xl font-semibold text-gray-800">
+          <h2
+            data-aos="fade-left"
+            className="text-lg md:text-xl font-semibold text-gray-800"
+          >
             Fill your details and share with us. We will connect with you soon.
           </h2>
-          <div data-aos="fade-right" className="w-16 border-b-2 border-gray-700 mx-auto my-2" />
+          <div
+            data-aos="fade-right"
+            className="w-16 border-b-2 border-gray-700 mx-auto my-2"
+          />
         </div>
 
         <div

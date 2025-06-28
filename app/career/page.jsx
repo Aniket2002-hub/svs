@@ -15,7 +15,7 @@ export default function CareerPage() {
           <h2
             data-aos="slide-right"
             data-aos-duration="1500"
-            className="text-2xl sm:text-3xl md:text-4xl font-bold text-white drop-shadow"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold text-black drop-shadow"
           >
             Career
           </h2>

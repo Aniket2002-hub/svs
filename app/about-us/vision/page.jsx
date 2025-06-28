@@ -41,7 +41,8 @@ const Page = () => {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-gray-700">Our Vision</h2>
           <div className="w-16 h-1 mx-auto bg-gray-800 mb-6" />
           <p className="text-gray-700 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto text-justify">
-            At Belmond, we believe in building not just structures but communities. Our vision is to create sustainable, futuristic, and community-centric spaces that cater to the needs of modern families and businesses. Whether it’s a luxurious apartment, a serene farmhouse, or a state-of-the-art commercial space, we are committed to delivering excellence in every project we undertake.
+            At SVS Construction, we are not only building projects but are also committed to building quality construction and sustainability. Our vision starts from a strong customer base to give state-of-the-art infrastructure that aligns with customer requirements. 
+
           </p>
         </div>
       </motion.section>
@@ -58,7 +59,9 @@ const Page = () => {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-gray-700">Our Mission</h2>
           <div className="w-16 h-1 mx-auto bg-gray-800 mb-6" />
           <p className="text-gray-700 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto text-justify">
-            To deliver high-quality, sustainable, and innovative real estate projects that enhance lifestyles while maintaining trust, transparency, and customer satisfaction at the core of every development.
+          To build premium spaces that enhance the quality of life and create a strong customer base with long-lasting values. We’re strongly committed to delivering innovative and quality construction with timely execution. 
+
+
           </p>
         </div>
       </motion.section>

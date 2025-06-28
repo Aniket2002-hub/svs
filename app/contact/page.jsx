@@ -42,20 +42,31 @@ const page = () => {
           {/* Contact Info Blocks */}
           <div className="mb-[20px]">
             <h2 className="text-[18px] font-semibold text-[#114707] font-spartan">
-              Campus Address
+             Corporate Office
             </h2>
             <p className="text-[15px] text-black font-poppins">
-              D.P.G. Degree College 70A, Delhi-Jaipur Expy,
+             # C&D, SVS Girish Residency, Nizampet Road, Kukatpally, 
               <br />
-              Block A, Sector 34
-              <br />
-              Gurugram, Haryana 122001
+          
+              
+             Hyderabad-500 072.
             </p>
           </div>
 
           <div className="mb-[20px]">
             <h2 className="text-[18px] font-semibold text-[#114707] font-spartan">
-              Gurgaon Address
+             Vizag Office
+            </h2>
+            <p className="text-[15px] text-black font-poppins">
+              # 50 – 102 – 4. Beside HDFC, North Extension, Seethammadhara,
+              <br />
+              Visakhapatnam-530 013.
+            </p>
+          </div>
+
+           <div className="mb-[20px]">
+            <h2 className="text-[18px] font-semibold text-[#114707] font-spartan">
+              Gurgaon Office
             </h2>
             <p className="text-[15px] text-black font-poppins">
               Office Suite 8 & 9, 3rd Floor, Ninex City Mart,
@@ -68,21 +79,10 @@ const page = () => {
 
           <div className="mb-[20px]">
             <h2 className="text-[18px] font-semibold text-[#114707] font-spartan">
-              Ranchi Address
-            </h2>
-            <p className="text-[15px] text-black font-poppins">
-              Unit No. I-2, 2nd Floor, Ashish Plaza Phase-2,
-              <br />
-              Lalpur, Ranchi - 834001 Jharkhand
-            </p>
-          </div>
-
-          <div className="mb-[20px]">
-            <h2 className="text-[18px] font-semibold text-[#114707] font-spartan">
               Email
             </h2>
             <p className="text-[15px] text-black font-poppins">
-              info@ireedindia.com
+              svsconstructions.group@gmail.com
             </p>
           </div>
 
@@ -91,7 +91,7 @@ const page = () => {
               Phone
             </h2>
             <p className="text-[15px] text-black font-poppins">
-              +91 90906 04013
+              +91 8978801173
             </p>
           </div>
         </div>
