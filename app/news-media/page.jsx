@@ -66,7 +66,7 @@ const page = () => {
       id: 7,
       date: "2025-01-18",
       animation: "fade-right",
-      image: "/Assets/sitelayout-2.jpg",
+      image: "/Assets/steel plant.jpg",
       caption: "Min: ₹11K-cr package to revive Vizag steel plant",
       imageLink:
         "https://www.hindustantimes.com/india-news/min-11k-cr-package-to-revive-vizag-steel-plant-101737140708515.html",
