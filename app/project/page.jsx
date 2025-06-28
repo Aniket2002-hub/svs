@@ -212,7 +212,7 @@ const logos = [
     {/* === Right Text Section === */}
     <div className="text-gray-800 max-w-xl ml-0 lg:ml-4 text-center lg:text-left">
       <p className="text-sm text-[#686454] font-semibold tracking-wide uppercase mb-2">
-        Belmond at Rajapulova
+        Belmond at Rajapulova,Vizag
       </p>
       <h2 className="text-3xl md:text-4xl font-semibold mb-4">
         Your Destiny Awaits
@@ -240,8 +240,8 @@ const logos = [
           </div>
           <div>
             <p className="text-xs text-gray-500">CALL ANYTIME</p>
-            <p className="font-semibold text-gray-700">+91 897 880 1173</p>
           </div>
+          
         </div>
       </div>
     </div>

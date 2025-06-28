@@ -70,7 +70,7 @@ export default function Navbar() {
           <li className="relative group">
             <span className="cursor-pointer">Media Center</span>
             <ul className="absolute top-full left-0 mt-2 w-52 bg-[#3e9934] text-white rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-50">
-              <li><Link href="/media-center/our-creation" className="block px-4 py-2 hover:bg-[#092704]">Our Creation</Link></li>
+              <li><Link href="/media-center/our-creation" className="block px-4 py-2 hover:bg-[#092704]">Our Creatives</Link></li>
               <li><Link href="/media-center/our-videos" className="block px-4 py-2 hover:bg-[#092704]">Our Videos</Link></li>
             </ul>
           </li>

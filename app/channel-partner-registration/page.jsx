@@ -122,7 +122,7 @@ const Page = () => {
           </form>
 
           <div className="mt-6 flex justify-center">
-            <button className="inline-flex items-center justify-center rounded-full border-2 border-[#092704] bg-white px-6 py-2 text-sm sm:text-base font-semibold text-black transition duration-300 hover:bg-[#092704] hover:text-white">
+            <button className="inline-flex items-center justify-center rounded-full border-2 border-[#092704] bg-white px-6 py-2 text-sm sm:text-base font-semibold text-black transition duration-300 hover:bg-[#092704] hover:text-white cursor-pointer">
               Submit
             </button>
           </div>

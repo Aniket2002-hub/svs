@@ -99,7 +99,7 @@ export default function CareerPage() {
             type="submit"
             data-aos="flip-left"
             data-aos-duration="3000"
-            className="col-span-1 sm:col-span-2 mt-2 bg-white border-2 border-[#092704] text-[#092704] font-semibold px-6 py-2 rounded hover:bg-[#092704] hover:text-white transition-colors duration-300"
+            className="col-span-1 sm:col-span-2 mt-2 bg-white border-2 border-[#092704] text-[#092704] font-semibold px-6 py-2 rounded hover:bg-[#092704] hover:text-white transition-colors duration-300 cursor-pointer"
           >
             Submit
           </button>

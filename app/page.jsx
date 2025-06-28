@@ -171,9 +171,9 @@ const Page = () => {
           >
             <FaYoutube />
           </a>
-        </div>
+        </div> 
 
-        {/* WhatsApp Icon */}
+         {/* WhatsApp Icon */}
 
         <div className="fixed left-4 bottom-4 z-30">
           <a
@@ -264,50 +264,37 @@ const Page = () => {
 
 
       <section
-        className="
+  className="
     relative flex items-center justify-center w-full bg-white mt-10
-    min-h-[45vh] sm:min-h-[50vh] md:min-h-[55vh] lg:min-h-[60vh] xl:min-h-[65vh]
-    px-4 sm:px-6
+    px-4 sm:px-6 overflow-x-hidden
+    min-h-[50vh] md:min-h-[60vh] lg:min-h-[72vh]
   "
-      >
-        <div className="relative z-10 w-full max-w-7xl text-center">
-          {/* ---------- HEADLINE ---------- */}
-          <h1
-            className="
-        animate-fadeInOut font-extrabold text-[#3e9934] tracking-tight
-        leading-tight text-5xl sm:text-6xl md:text-7xl lg:text-[9rem] xl:text-[10rem] 2xl:text-[12rem]
-        break-words
+>
+  <div className="relative z-10 w-full max-w-7xl text-center">
+    {/* ---------- HEADLINE ---------- */}
+    <h1
+      className="
+        animate-fadeInOut font-extrabold text-[#3e9934] tracking-tight leading-none
+        whitespace-nowrap
+        text-[clamp(2.5rem,12vw,12rem)]     /* Bigger min & max */
       "
-          >
-            EXPERIENCE
-          </h1>
+    >
+      EXPERIENCE
+    </h1>
 
-          {/* ---------- MARQUEE TAGLINE ---------- */}
-          <div className="relative mt-4 mx-auto max-w-max overflow-hidden whitespace-nowrap">
-            {/* First Copy */}
-            <span
-              className="
-        animate-marquee text-[#3e9934] font-medium uppercase tracking-[0.28em]
-        inline-block pr-8 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl
-      "
-            >
-              INDIA’S&nbsp;FINEST&nbsp;GATED&nbsp;COMMUNITIES
-            </span>
+    {/* ---------- STATIC TAGLINE ---------- */}
+   <p
+  className="
+    mt-6 uppercase font-medium tracking-[0.28em] text-[#3e9934]
+    text-[clamp(1rem,5vw,2.25rem)]
+    break-words text-center ml-6          /* ⬅ allows wrapping, centers lines */
+  "
+>
+  INDIA’S FINEST GATED COMMUNITIES
+</p>
 
-            {/* Second Copy for seamless loop */}
-            <span
-              aria-hidden="true"
-              className="
-        animate-marquee text-[#3e9934] font-medium uppercase tracking-[0.28em]
-        inline-block pr-8 absolute left-full top-0
-        text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl
-      "
-            >
-              INDIA’S&nbsp;FINEST&nbsp;GATED&nbsp;COMMUNITIES
-            </span>
-          </div>
-        </div>
-      </section>
+  </div>
+</section>
 
       <section data-aos="fade-left" className="bg-white py-12 px-4 sm:px-8">
         <h2 className="text-3xl md:text-4xl font-semibold text-center mb-8 text-gray-800"></h2>

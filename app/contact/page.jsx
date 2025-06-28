@@ -12,20 +12,29 @@ const page = () => {
   return (
     <>
       {/* Hero Section */}
-      <div data-aos="fade-right"
+      <div
+        data-aos="fade-right"
         className="relative w-full h-[270px] md:h-[300px] lg:h-[400px] bg-cover bg-center flex items-center justify-center"
         style={{ backgroundImage: "url('/Assets/vizag image.jpeg')" }}
-        >
-          <div className="relative z-10 max-w-5xl mx-auto ">
-          <h2 data-aos="slide-right" data-aos-duration="1500" className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">Contact Us</h2>
-          </div>
+      >
+        <div className="relative z-10 max-w-5xl mx-auto ">
+          <h2
+            data-aos="slide-right"
+            data-aos-duration="1500"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6"
+          >
+            Contact Us
+          </h2>
         </div>
-
+      </div>
 
       {/* Contact Section */}
-      <div  className="flex flex-wrap justify-between gap-0 px-[132px] py-[95px] bg-white box-border max-[992px]:flex-col max-[992px]:px-[30px] max-[576px]:px-[15px]">
+      <div className="flex flex-wrap justify-between gap-0 px-[132px] py-[95px] bg-white box-border max-[992px]:flex-col max-[992px]:px-[30px] max-[576px]:px-[15px]">
         {/* Left Section */}
-        <div data-aos="slide-right" className="flex-1 min-w-[300px] max-[992px]:w-full">
+        <div
+          data-aos="slide-right"
+          className="flex-1 min-w-[300px] max-[992px]:w-full"
+        >
           <h1 className="text-[32px] text-[#114707] mb-[20px] font-spartan">
             We're Always Eager to <br /> Hear From You!
           </h1>
@@ -88,9 +97,14 @@ const page = () => {
         </div>
 
         {/* Right Section (Form) */}
-        <div data-aos="flip-left" className="flex-1 min-w-[300px] mt-0 max-[992px]:mt-[155px] max-[992px]:w-full">
+        <div
+          data-aos="flip-left"
+          className="flex-1 min-w-[300px] mt-0 max-[992px]:mt-[155px] max-[992px]:w-full"
+        >
           <div className="bg-[#f9f9f9] p-8 rounded-[10px] shadow-md hover:shadow-[#114707]">
-            <h2 className="mb-2 text-[#114707] font-spartan text-bold">Get in touch</h2>
+            <h2 className="mb-2 text-[#114707] font-spartan text-bold">
+              Get in touch
+            </h2>
             <p className="mb-5 font-poppins text-[#114707]">
               Fill out this form for booking a consultant advising session.
             </p>
@@ -123,7 +137,8 @@ const page = () => {
                 className="inline-flex w-fit items-center justify-center rounded
     border-2 border-[#092704] bg-white px-6 py-2 font-semibold text-[#092704]
     transition-colors duration-300
-    hover:bg-[#092704] hover:text-white w-full"
+    hover:bg-[#092704] hover:text-white w-full cursor-pointer"
+               
               >
                 Submit query →
               </button>
