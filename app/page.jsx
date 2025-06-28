@@ -111,16 +111,16 @@ const partners = [
 
 const Page = () => {
   return (
-    <div className="w-full">
+    <div className="overflow-hidden">
       {/* ================= Video Section ================= */}
-      <section className="relative w-full h-screen overflow-hidden">
+      <section className="relative w-full h-screen ">
         {/* Video Slider */}
         <Swiper
           modules={[Autoplay, EffectFade]}
           autoplay={{ delay: 5000, disableOnInteraction: false }}
           effect="fade"
           loop={true}
-          className="absolute inset-0 -z-10 w-full h-full"
+          className="absolute inset-0 -z-10 w-full h-full"  
         >
           {videos.map((video, index) => (
             <SwiperSlide key={index}>
