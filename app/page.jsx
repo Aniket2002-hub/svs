@@ -20,10 +20,7 @@ import "swiper/css/effect-fade";
 import "./globals.css";
 
 // Video Paths
-const videos = [
-  "/Assets/background-videos1.mov",
-  
-];
+const videos = ["/Assets/background-videos1.mov"];
 
 // Colored Info Blocks
 const blocks = [
@@ -99,8 +96,6 @@ const stats = [
   },
 ];
 
-
-
 const partners = [
   { name: "Vipul", logo: "/images/vipul.png" },
   { name: "Bestech", logo: "/images/bestech.png" },
@@ -171,9 +166,9 @@ const Page = () => {
           >
             <FaYoutube />
           </a>
-        </div> 
+        </div>
 
-         {/* WhatsApp Icon */}
+        {/* WhatsApp Icon */}
 
         <div className="fixed left-4 bottom-4 z-30">
           <a
@@ -207,18 +202,15 @@ const Page = () => {
           className="flex flex-col justify-center rounded-md bg-[#f8b334] p-8 text-white shadow-md md:p-12"
         >
           <div className="max-w-xl">
-            <p className="mb-1 text-sm font-semibold text-black">
-              
-            </p>
-            <h4 className="text-lg font-semibold text-red-700">
-             
-            </h4>
+            <p className="mb-1 text-sm font-semibold text-black"></p>
+            <h4 className="text-lg font-semibold text-red-700"></h4>
             <h2 className="my-2 text-3xl font-bold text-white">SVS Belmond</h2>
 
             <p className="mb-6 text-md">
               Exclusive Residential Plots, at Rajapulova Junction, Vizag
               <br />
-             Size from 129.09 to 655.65 Sq. Yards (1161.81 sq. ft to 5900.85 sq. ft.)
+              Size from 129.09 to 655.65 Sq. Yards (1161.81 sq. ft to 5900.85
+              sq. ft.)
             </p>
 
             {/* ─── Book Now button (white → green flip) ─────────── */}
@@ -238,62 +230,60 @@ const Page = () => {
       </section>
 
       {/* ================= Colored Blocks Section ================= */}
-     <section className="w-full grid grid-cols-1 md:grid-cols-3 gap-2 bg-white">
-  {blocks.map((block, index) => (
-    <div
-      key={index}
-      data-aos={block.animation}
-      className={`text-white px-10 py-12 flex flex-col justify-between ${block.color}`}
-    >
-      <h2 className="text-2xl font-bold mb-4">{block.title}</h2>
-      <p className="text-base leading-relaxed mb-6 max-w-[90%]">
-        {block.description}
-      </p>
-      <div className="flex items-center">
-        <a
-          href="#"
-          className="flex items-center border border-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition"
-        >
-          <span>{block.buttonText}</span>
-        </a>
-      </div>
-    </div>
-  ))}
-</section>
-
+      <section className="w-full grid grid-cols-1 md:grid-cols-3 gap-2 bg-white">
+        {blocks.map((block, index) => (
+          <div
+            key={index}
+            data-aos={block.animation}
+            className={`text-white px-10 py-12 flex flex-col justify-between ${block.color}`}
+          >
+            <h2 className="text-2xl font-bold mb-4">{block.title}</h2>
+            <p className="text-base leading-relaxed mb-6 max-w-[90%]">
+              {block.description}
+            </p>
+            <div className="flex items-center">
+              <a
+                href="#"
+                className="flex items-center border border-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition"
+              >
+                <span>{block.buttonText}</span>
+              </a>
+            </div>
+          </div>
+        ))}
+      </section>
 
       <section
-  className="
+        className="
     relative flex items-center justify-center w-full bg-white mt-10
     px-4 sm:px-6 overflow-x-hidden
-    min-h-[50vh] md:min-h-[60vh] lg:min-h-[72vh]
+    min-h-[50vh] md:min-h-[60vh] lg:min-h-[45vh]
   "
->
-  <div className="relative z-10 w-full max-w-7xl text-center">
-    {/* ---------- HEADLINE ---------- */}
-    <h1
-      className="
-        animate-fadeInOut font-extrabold text-[#3e9934] tracking-tight leading-none
+      >
+        <div className="relative z-10 w-full max-w-7xl text-center">
+          {/* ---------- HEADLINE ---------- */}
+          <h1
+            className="
+        animate-fadeInOut font-extrabold text-[#3e9934] tracking-[0.04em] leading-none
         whitespace-nowrap
         text-[clamp(2.5rem,12vw,12rem)]     /* Bigger min & max */
       "
-    >
-      EXPERIENCE
-    </h1>
+          >
+            EXPERIENCE
+          </h1>
 
-    {/* ---------- STATIC TAGLINE ---------- */}
-   <p
-  className="
-    mt-6 uppercase font-medium tracking-[0.38em] text-[#3e9934]
+          {/* ---------- STATIC TAGLINE ---------- */}
+          <p
+            className="
+    mt-4 uppercase font-medium tracking-[0.47em] text-[#3e9934]
     text-[clamp(1rem,5vw,2.25rem)]
-    break-words text-center ml-10          /* ⬅ allows wrapping, centers lines */
+    break-words text-center ml-4         /* ⬅ allows wrapping, centers lines */
   "
->
-  INDIA’S FINEST GATED COMMUNITIES
-</p>
-
-  </div>
-</section>
+          >
+            INDIA’S FINEST GATED COMMUNITIES
+          </p>
+        </div>
+      </section>
 
       <section data-aos="fade-left" className="bg-white py-12 px-4 sm:px-8">
         <h2 className="text-3xl md:text-4xl font-semibold text-center mb-8 text-gray-800"></h2>
@@ -361,17 +351,16 @@ const Page = () => {
               data-aos-duration="1400"
               className="text-gray-700 mb-6 text-sm sm:text-base leading-relaxed"
             >
-              
-              SVS Construction is a name synonymous with trust, quality, and innovation 
-              in real estate. We come from a legacy of decades in real estate development.
-               Our journey started in the year 2002 to redefine urban living with premium
-               infrastructure and design.
+              SVS Construction is a name synonymous with trust, quality, and
+              innovation in real estate. We come from a legacy of decades in
+              real estate development. Our journey started in the year 2002 to
+              redefine urban living with premium infrastructure and design.
               <br />
               <br />
-              Our community is more focused on creativity and comfort, which meets with customers’
-              expectations. SVS continues to build premium residential and plotted development in top cities,
-              including Hyderabad and Vizag. 
-
+              Our community is more focused on creativity and comfort, which
+              meets with customers’ expectations. SVS continues to build premium
+              residential and plotted development in top cities, including
+              Hyderabad and Vizag.
             </p>
             <Link
               href="#"
@@ -418,9 +407,9 @@ const Page = () => {
             Our Journey
           </h2>
           <p data-aos="fade-left" className="text-md md:text-lg">
-           From the beginning of building residential projects in Hyderabad a decade ago
-            to now delivering innovative and sustainable projects with modern features across
-             top locations.
+            From the beginning of building residential projects in Hyderabad a
+            decade ago to now delivering innovative and sustainable projects
+            with modern features across top locations.
           </p>
         </div>
 
@@ -479,12 +468,13 @@ const Page = () => {
               className="w-14 h-1 bg-gray-800 mb-4"
             ></div>
             <p data-aos="fade-left" className="text-gray-700 mb-6">
-              SVS Constructions has always believed in the power of collaboration. Over
-              the years, we have partnered with some of the biggest names in the
-              real estate industry to deliver landmark projects on our land.
-              These collaborations have not only strengthened our reputation but
-              also allowed us to bring our vision to life through world-class
-              developments. Some of our notable collaborations include:
+              SVS Constructions has always believed in the power of
+              collaboration. Over the years, we have partnered with some of the
+              biggest names in the real estate industry to deliver landmark
+              projects on our land. These collaborations have not only
+              strengthened our reputation but also allowed us to bring our
+              vision to life through world-class developments. Some of our
+              notable collaborations include:
             </p>
 
             {/* Partner Logos */}
@@ -535,13 +525,10 @@ const Page = () => {
           data-aos="fade-left"
           className="text-white text-md md:text-lg leading-relaxed"
         >
-          At SVS Construction, we are not only building projects 
-          but are also committed to building quality construction 
-          and sustainability. Our vision starts from a strong customer
-          base to gives state-of-the-art infrastructure that aligns with 
-          customer requirements. 
-
-
+          At SVS Construction, we are not only building projects but are also
+          committed to building quality construction and sustainability. Our
+          vision starts from a strong customer base to gives state-of-the-art
+          infrastructure that aligns with customer requirements.
         </p>
       </section>
     </div>
