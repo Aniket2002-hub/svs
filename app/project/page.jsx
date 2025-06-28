@@ -71,7 +71,7 @@ export default function BelmondPage() {
       <div
         data-aos="fade-right"
         className="relative w-full h-[270px] md:h-[300px] lg:h-[400px] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: "url('/Assets/vizag image.jpeg')" }}
+        style={{ backgroundImage: "url('/Assets/Frame 102.png')" }}
       >
         <div className="relative z-10 max-w-5xl mx-auto ">
           <h2
@@ -238,6 +238,12 @@ export default function BelmondPage() {
                 </div>
                 <div>
                   <p className="text-xs text-gray-500">CALL ANYTIME</p>
+                  <a
+                    href="tel:+918978801173"
+                    className="text-sm font-semibold text-gray-800"
+                  >
+                    +91 8978801173
+                  </a>
                 </div>
               </div>
             </div>

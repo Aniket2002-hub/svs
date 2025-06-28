@@ -31,10 +31,10 @@ export default function AboutUsPage() {
        {/* Hero Section */}
       <div data-aos="fade-right"
         className="relative w-full h-[270px] md:h-[300px] lg:h-[400px] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: "url('/Assets/vizag image.jpeg')" }}
+        style={{ backgroundImage: "url('/Assets/Frame 94.png')" }}
       >
         <div className="relative z-10 max-w-5xl mx-auto ">
-          <h2 data-aos="slide-right" data-aos-duration="1500" className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">About Company</h2>
+          <h2 data-aos="slide-right" data-aos-duration="1500" className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6"></h2>
       </div>
       </div>
 

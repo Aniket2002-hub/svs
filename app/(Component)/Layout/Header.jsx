@@ -38,7 +38,7 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-[#092704] shadow text-white' : 'bg-transparent text-white'
+        scrolled ? 'bg-[#61796f] shadow text-white' : 'bg-transparent text-white'
       }`}
     >
       {/* ——— Desktop bar ——— */}
@@ -57,12 +57,12 @@ export default function Navbar() {
           {/* About Us dropdown */}
           <li className="relative group">
             <span className="cursor-pointer">About&nbsp;Us</span>
-            <ul className="absolute top-full left-0 mt-2 w-52 bg-[#3e9934] text-white rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-50">
+            <ul className="absolute top-full left-0 mt-2 w-52 bg-[#9cc6b5] text-white rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-50">
               <li>
                 <Link
                   href="/about-us/about-company"
                   target="_blank" rel="noopener noreferrer"
-                  className="block px-4 py-2 hover:bg-[#092704]"
+                  className="block px-4 py-2 hover:bg-[#61796f]"
                 >
                   About Company
                 </Link>
@@ -71,7 +71,7 @@ export default function Navbar() {
                 <Link
                   href="/about-us/vision"
                   target="_blank" rel="noopener noreferrer"
-                  className="block px-4 py-2 hover:bg-[#092704]"
+                  className="block px-4 py-2 hover:bg-[#61796f]"
                 >
                   Vision&nbsp;&amp;&nbsp;Mission
                 </Link>
@@ -80,7 +80,7 @@ export default function Navbar() {
                 <Link
                   href="/about-us/director-m"
                   target="_blank" rel="noopener noreferrer"
-                  className="block px-4 py-2 hover:bg-[#092704]"
+                  className="block px-4 py-2 hover:bg-[#61796f]"
                 >
                   Director&apos;s Message
                 </Link>
@@ -94,12 +94,12 @@ export default function Navbar() {
           {/* Media Center dropdown */}
           <li className="relative group">
             <span className="cursor-pointer">Media&nbsp;Center</span>
-            <ul className="absolute top-full left-0 mt-2 w-52 bg-[#3e9934] text-white rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-50">
+            <ul className="absolute top-full left-0 mt-2 w-52 bg-[#9cc6b5] text-white rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-50">
               <li>
                 <Link
                   href="/media-center/our-creation"
                   target="_blank" rel="noopener noreferrer"
-                  className="block px-4 py-2 hover:bg-[#092704]"
+                  className="block px-4 py-2 hover:bg-[#61796f]"
                 >
                   Our&nbsp;Creatives
                 </Link>
@@ -108,7 +108,7 @@ export default function Navbar() {
                 <Link
                   href="/media-center/our-videos"
                   target="_blank" rel="noopener noreferrer"
-                  className="block px-4 py-2 hover:bg-[#092704]"
+                  className="block px-4 py-2 hover:bg-[#61796f]"
                 >
                   Our&nbsp;Videos
                 </Link>
@@ -129,7 +129,7 @@ export default function Navbar() {
 
       {/* ——— Mobile off‑canvas panel ——— */}
       <div
-        className={`fixed top-0 left-0 w-full h-full bg-[#092704] text-white transform transition-transform duration-300 ease-in-out md:hidden z-40 p-6 space-y-4 overflow-y-auto ${
+        className={`fixed top-0 left-0 w-full h-full bg-[#61796f] text-white transform transition-transform duration-300 ease-in-out md:hidden z-40 p-6 space-y-4 overflow-y-auto ${
           menuOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >

@@ -114,7 +114,7 @@ const page = () => {
       <div
         data-aos="fade-right"
         className="relative w-full h-[270px] md:h-[300px] lg:h-[400px] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: "url('/Assets/vizag image.jpeg')" }}
+        style={{ backgroundImage: "url('/Assets/SVS_Belmond_Rajapulova_Junction_Vizag_Banner_News.png')" }}
       >
         <div className="relative z-10 max-w-5xl mx-auto text-center">
           <h2
@@ -122,7 +122,7 @@ const page = () => {
             data-aos-duration="1500"
             className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-black"
           >
-            Press Coverage
+           
           </h2>
         </div>
       </div>

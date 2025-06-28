@@ -28,7 +28,7 @@ const blocks = [
     title: "SVS RESIDENTIAL",
     description:
       "SVS Residential has a strong foundation for building innovative and sustainable projects for a decade. From stylish apartments in Hyderabad to eco-friendly green spaces in Vizag, we have delivered multiple residential projects. With our vision of quality construction and customer trust, we are creating idyllic homes focused on comfort, community, and aesthetics.",
-    color: "bg-[#00ADEF]",
+    color: "bg-[#90afa2]",
     buttonText: "View More",
     animation: "fade-right",
   },
@@ -36,7 +36,7 @@ const blocks = [
     title: "SVS COMMERCIAL",
     description:
       "Designed with great vision, SVS Commercial stands on a foundation of reliability and quality construction, delivering vibrant working spaces that inspire productivity and innovation. From retail outlets to standalone commercial hubs, it reflects our creativity and precision that helps for a business environment and its growth.",
-    color: "bg-[#3BC14A]",
+    color: "bg-[#90afa2]",
     buttonText: "View More",
     animation: "fade-up",
   },
@@ -44,7 +44,7 @@ const blocks = [
     title: "SVS PLOTS",
     description:
       "SVS Plotted development focuses on delivering thoughtfully designed layouts like “Belmond,” which includes a strategic location, nearby infrastructure, and value appreciation that empower growth. Our plotted community offers wide roads, vastu-compliant, sustainable infrastructure, and freedom to build your vision.",
-    color: "bg-[#F7941E]",
+    color: "bg-[#90afa2]",
     buttonText: "View More",
     animation: "fade-left",
   },
@@ -87,6 +87,7 @@ const stats = [
     suffix: "+",
     label: "Educational Infrastructure",
     animation: "fade-left",
+    
   },
   {
     value: 40000,
@@ -97,11 +98,11 @@ const stats = [
 ];
 
 const partners = [
-  { name: "Vipul", logo: "/images/vipul.png" },
-  { name: "Bestech", logo: "/images/bestech.png" },
-  { name: "CHD", logo: "/images/chd.png" },
-  { name: "Orchid", logo: "/images/orchid.png" },
-  { name: "Unitech", logo: "/images/unitech.png" },
+  { name: "Vipul", logo: "/Assets/Balaji-bliss-logo-1.png" },
+  { name: "Bestech", logo: "/Assets/Central-Park-logo.png" },
+  { name: "CHD", logo: "/Assets/Central-Park-logo-phase-2.png" },
+  { name: "Orchid", logo: "/Assets/Girish-Residencey-logo-1.png" },
+  { name: "Unitech", logo: "/Assets/kavya-greens-logo-1.png" },
 ];
 
 // export const metadata = {
@@ -182,31 +183,31 @@ const Page = () => {
         </div>
       </section>
 
-      <section className="grid w-full bg-white py-2 md:grid-cols-2">
+      <section className="grid w-full bg-white py-2 ml-0 md:grid-cols-2 gap-2">
         {/* ─── Left: Image ───────────────────────────────────────── */}
         <div
           data-aos="fade-right"
           className="relative h-[450px] w-full md:h-auto"
         >
           <Image
-            src="/Assets/jewar_airport.avif"
+            src="/Assets/Bhogapuram_Airport_Vizag.jpg"
             alt="Belmond"
             fill
-            className="object-cover"
+            className="object-cover ml-0"
           />
         </div>
 
         {/* ─── Right: Content ────────────────────────────────────── */}
         <div
           data-aos="fade-left"
-          className="flex flex-col justify-center rounded-md bg-[#f8b334] p-8 text-white shadow-md md:p-12"
+          className="flex flex-col justify-center  bg-[#90afa2]  text-white shadow-md md:p-12"
         >
-          <div className="max-w-xl">
+          <div className="max-w-xl ml-0">
             <p className="mb-1 text-sm font-semibold text-black"></p>
             <h4 className="text-lg font-semibold text-red-700"></h4>
-            <h2 className="my-2 text-3xl font-bold text-white">SVS Belmond</h2>
+            <h2 className="my-1 text-3xl font-bold text-black " style={{ fontFamily: "raleway,sans-serif" }}>SVS Belmond</h2>
 
-            <p className="mb-6 text-md">
+            <p className="mb-6 text-md text-black italic" style={{ fontFamily: "raleway,sans-serif" }}>
               Exclusive Residential Plots, at Rajapulova Junction, Vizag
               <br />
               Size from 129.09 to 655.65 Sq. Yards (1161.81 sq. ft to 5900.85
@@ -218,10 +219,10 @@ const Page = () => {
               href="#"
               className="
               inline-flex w-fit items-center justify-center rounded-full
-              border-2 border-[#092704] bg-white px-6 py-3 font-semibold
-              text-[#092704] transition-colors duration-300
-              hover:bg-[#092704] hover:text-white
-            "
+              border-2 border-white bg-[#61796f] px-6 py-3 font-semibold
+              text-white transition-colors duration-300
+              hover:bg-white hover:text-black
+            " style={{ fontFamily: "raleway,sans-serif" }}
             >
               Book&nbsp;Now&nbsp;→
             </Link>
@@ -237,14 +238,14 @@ const Page = () => {
             data-aos={block.animation}
             className={`text-white px-10 py-12 flex flex-col justify-between ${block.color}`}
           >
-            <h2 className="text-2xl font-bold mb-4">{block.title}</h2>
-            <p className="text-base leading-relaxed mb-6 max-w-[90%]">
+            <h2 className="text-2xl font-bold mb-4 text-black " style={{ fontFamily: "raleway,sans-serif" }}>{block.title}</h2>
+            <p className="text-base leading-relaxed mb-6 max-w-[90%] text-black " style={{ fontFamily: "raleway,sans-serif" }}>
               {block.description}
             </p>
-            <div className="flex items-center">
+            <div className="flex items-center bg-[#90afa2]">
               <a
                 href="#"
-                className="flex items-center border border-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition"
+                className="flex items-center bg-[#61796f] border border-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition  font-semibold" style={{ fontFamily: "raleway,sans-serif" }}
               >
                 <span>{block.buttonText}</span>
               </a>
@@ -264,7 +265,7 @@ const Page = () => {
           {/* ---------- HEADLINE ---------- */}
           <h1
             className="
-        animate-fadeInOut font-extrabold text-[#3e9934] tracking-[0.04em] leading-none
+        animate-fadeInOut font-extrabold text-[#61796f] tracking-[0.04em] leading-none
         whitespace-nowrap
         text-[clamp(2.5rem,12vw,12rem)]     /* Bigger min & max */
       "
@@ -275,7 +276,7 @@ const Page = () => {
           {/* ---------- STATIC TAGLINE ---------- */}
           <p
             className="
-    mt-4 uppercase font-medium tracking-[0.47em] text-[#3e9934]
+    mt-4 uppercase font-medium tracking-[0.47em] text-[#61796f] leading-none
     text-[clamp(1rem,5vw,2.25rem)]
     break-words text-center ml-4         /* ⬅ allows wrapping, centers lines */
   "
@@ -323,7 +324,7 @@ const Page = () => {
         </Swiper>
       </section>
 
-      <section className="bg-[#f4f6ff] py-10 px-4 sm:px-6 md:px-12 lg:px-16">
+      <section className="bg-[#dff2ea] py-10 px-4 sm:px-6 md:px-12 lg:px-16" style={{ fontFamily: "raleway,sans-serif" }}>
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* Left Text Content */}
           <div>
@@ -366,11 +367,11 @@ const Page = () => {
               href="#"
               data-aos="fade-right"
               data-aos-duration="1500"
-              className="
-                       inline-flex w-fit items-center justify-center rounded
-    border-2 border-[#092704] bg-white px-6 py-2 font-semibold text-[#092704]
-    transition-colors duration-300
-    hover:bg-[#092704] hover:text-white
+              className="inline-flex w-fit items-center justify-center rounded-full
+              border-2 border-white bg-[#61796f] px-6 py-3 font-semibold
+              text-white transition-colors duration-300
+              hover:bg-white hover:text-black hover:border-[#61796f]  border-2
+                       
   "
             >
               View&nbsp;More
@@ -396,34 +397,34 @@ const Page = () => {
       </section>
 
       <section
-        className="bg-fixed bg-center bg-cover py-16 px-6 md:px-20"
-        style={{ backgroundImage: 'url("/Assets/background-img11.jpg")' }} // 🔁 Replace with your actual background image path
+        className="bg-fixed bg-center bg-cover py-16 px-6 md:px-20"  
+        style={{ backgroundImage: 'url("/Assets/SVS_Belmond_Rajapulova_Junction_Vizag_Layered.jpg")' ,fontFamily: "raleway,sans-serif" }} // 🔁 Replace with your actual background image path
       >
         <div className="text-center text-white max-w-4xl mx-auto mb-12">
           <h2
             data-aos="fade-right"
-            className="text-3xl md:text-4xl font-bold mb-4"
+            className="text-3xl md:text-4xl font-bold mb-4 text" style={{ fontFamily: "raleway,sans-serif" }}
           >
             Our Journey
           </h2>
-          <p data-aos="fade-left" className="text-md md:text-lg">
+          <p data-aos="fade-left" className="text-md md:text-lg text" style={{ fontFamily: "raleway,sans-serif" }}>
             From the beginning of building residential projects in Hyderabad a
             decade ago to now delivering innovative and sustainable projects
             with modern features across top locations.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto  hover:text-white">
           {stats.map((stat, i) => (
             <div
               key={i}
               data-aos={stat.animation}
-              className="bg-white text-center p-6 rounded-2xl shadow-md hover:shadow-xl transition"
+              className="bg-white text-center p-6 rounded-2xl shadow-md hover:shadow-xl transition   hover:text-white"
             >
               <h3 className="text-2xl font-bold text-black mb-1">
                 <CountUp end={stat.value} duration={3} separator="," />
                 {stat.suffix}
-                <div className="text-sm font-semibold text-gray-700">
+                <div className="text-sm font-semibold ">
                   Sq. Ft.
                 </div>
               </h3>
@@ -441,7 +442,7 @@ const Page = () => {
             className="w-full h-auto rounded-xl overflow-hidden shadow-md"
           >
             <Image
-              src="/Assets/handshake.jpg" // Replace with actual image
+              src="/Assets/SVS_Constructions_Delivering_Excellence.jpg" // Replace with actual image
               alt="Collaboration"
               width={600}
               height={400}

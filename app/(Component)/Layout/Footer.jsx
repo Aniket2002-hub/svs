@@ -35,7 +35,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#092704] text-white pt-6">
+    <footer className="bg-[#61796f] text-white pt-6">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div>
@@ -50,7 +50,7 @@ const Footer = () => {
                 />
                 <button
                   type="submit"
-                  className="rounded-md bg-[#0a5a2c] py-3 px-6 text-base sm:text-lg font-semibold text-white hover:bg-[#09401f] sm:rounded-l-none sm:rounded-r-md"
+                  className="rounded-md bg-[#9cc6b5] py-3 px-6 text-base sm:text-lg font-semibold text-white hover:bg-[#61796f] sm:rounded-l-none sm:rounded-r-md"
                 >
                   Subscribe
                 </button>
@@ -168,7 +168,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="bg-white text-[#092704] py-4 mt-10 text-center text-sm shadow-md">
+      <div className="bg-white text-[#61796f] py-4 mt-10 text-center text-sm shadow-md">
         All rights reserved for <span className="font-bold">SVS Constructions</span>, Powered By {" "}
         <Link href="https://www.ireedindia.com" target="_blank" className="font-bold hover:underline">
           IREED Media

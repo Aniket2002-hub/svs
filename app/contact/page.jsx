@@ -7,6 +7,8 @@ import {
   FaXTwitter,
 } from "react-icons/fa6";
 import { MdLocationOn, MdEmail, MdPhone } from "react-icons/md";
+import { IoIosCall } from "react-icons/io";
+import { GiRotaryPhone } from "react-icons/gi";
 
 const page = () => {
   return (
@@ -15,7 +17,7 @@ const page = () => {
       <div
         data-aos="fade-right"
         className="relative w-full h-[270px] md:h-[300px] lg:h-[400px] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: "url('/Assets/vizag image.jpeg')" }}
+        style={{ backgroundImage: "url('/Assets/SVS_Belmond_Rajapulova_Junction_Vizag_Banner_Contact_Us.jpg')" }}
       >
         <div className="relative z-10 max-w-5xl mx-auto ">
           <h2
@@ -23,7 +25,7 @@ const page = () => {
             data-aos-duration="1500"
             className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6"
           >
-            Contact Us
+          
           </h2>
         </div>
       </div>
@@ -42,20 +44,18 @@ const page = () => {
           {/* Contact Info Blocks */}
           <div className="mb-[20px]">
             <h2 className="text-[18px] font-semibold text-[#114707] font-spartan">
-             Corporate Office
+              Corporate Office
             </h2>
             <p className="text-[15px] text-black font-poppins">
-             # C&D, SVS Girish Residency, Nizampet Road, Kukatpally, 
+              # C&D, SVS Girish Residency, Nizampet Road, Kukatpally,
               <br />
-          
-              
-             Hyderabad-500 072.
+              Hyderabad-500 072.
             </p>
           </div>
 
           <div className="mb-[20px]">
             <h2 className="text-[18px] font-semibold text-[#114707] font-spartan">
-             Vizag Office
+              Vizag Office
             </h2>
             <p className="text-[15px] text-black font-poppins">
               # 50 – 102 – 4. Beside HDFC, North Extension, Seethammadhara,
@@ -64,7 +64,7 @@ const page = () => {
             </p>
           </div>
 
-           <div className="mb-[20px]">
+          <div className="mb-[20px]">
             <h2 className="text-[18px] font-semibold text-[#114707] font-spartan">
               Gurgaon Office
             </h2>
@@ -90,9 +90,24 @@ const page = () => {
             <h2 className="text-[18px] font-semibold text-[#114707] font-spartan">
               Phone
             </h2>
-            <p className="text-[15px] text-black font-poppins">
-              +91 8978801173
-            </p>
+            <div className="flex items-center space-x-2">
+              <IoIosCall className="text-lg text-[#114707]" />
+              <a
+                href="tel:+918978801173"
+                className="text-base text-black hover:underline"
+              >
+                +91 8978801173
+              </a>
+            </div>
+            <div className="flex items-center space-x-2">
+              <GiRotaryPhone className="text-2xl text-[#114707]" />
+              <a
+                href="tel:+918912524444"
+                className="text-base text-black hover:underline"
+              >
+                (0891) 2524444
+              </a>
+            </div>
           </div>
         </div>
 
@@ -138,7 +153,6 @@ const page = () => {
     border-2 border-[#092704] bg-white px-6 py-2 font-semibold text-[#092704]
     transition-colors duration-300
     hover:bg-[#092704] hover:text-white w-full cursor-pointer"
-               
               >
                 Submit query →
               </button>
