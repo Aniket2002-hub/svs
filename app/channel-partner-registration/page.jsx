@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { ChevronRight } from "lucide-react";
 
 const Page = () => {
   return (
@@ -9,21 +10,22 @@ const Page = () => {
         <div
           data-aos="fade-right"
           className="relative w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] bg-cover bg-center flex items-center justify-center"
-          style={{ backgroundImage: "url('/Assets/vizag image.jpeg')" }}
+          style={{
+            backgroundImage:
+              "url('/Assets/SVS_Belmond_Rajapulova_Junction_Vizag_Banner_Channel_Registration.png')",
+          }}
         >
           <div className="relative z-10 text-center px-4">
             <h2
               data-aos="slide-right"
               data-aos-duration="1500"
               className="text-xl sm:text-2xl md:text-4xl font-bold text-black drop-shadow"
-            >
-              Channel Partner Registration
-            </h2>
+            ></h2>
           </div>
         </div>
 
         {/* About Section */}
-        <section className="bg-[#f1f0fd] py-10 px-4">
+        <section className="bg-[#dff2ea] py-10 px-4">
           <div className="max-w-5xl mx-auto text-center">
             <h1
               data-aos="fade-left"
@@ -52,10 +54,10 @@ const Page = () => {
         </section>
 
         {/* How it works */}
-        <section className="text-center mt-12 px-4">
+        <section className="text-center mt-12 px-4 ">
           <h1
             data-aos="fade-left"
-            className="text-md md:text-xl font-bold text-gray-700"
+            className="text-md md:text-xl font-bold text-black"
           >
             How It Works
           </h1>
@@ -74,7 +76,7 @@ const Page = () => {
                 key={item}
                 data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
                 data-aos-duration={1000 + index * 500}
-                className="bg-[#947960] h-[120px] w-[90%] sm:w-[270px] flex items-center justify-center rounded-md text-white text-center font-bold text-sm sm:text-base px-4 py-3"
+                className="bg-[#90afa2] h-[120px] w-[90%] sm:w-[270px] flex items-center justify-center rounded-md text-black text-center font-bold text-sm sm:text-base px-4 py-3"
               >
                 {item}
               </div>
@@ -83,7 +85,7 @@ const Page = () => {
         </section>
 
         {/* Registration Form */}
-        <section className="bg-[#f0efff] py-12 px-4 mt-12">
+        <section className="bg-[#dff2ea] py-12 px-4 mt-12 ">
           <div className="max-w-6xl mx-auto text-center">
             <h2
               data-aos="fade-left"
@@ -134,12 +136,101 @@ const Page = () => {
             </form>
 
             <div className="mt-6 flex justify-center">
-              <button className="inline-flex items-center justify-center rounded-full border-2 border-[#092704] bg-white px-6 py-2 text-sm sm:text-base font-semibold text-black transition duration-300 hover:bg-[#092704] hover:text-white cursor-pointer">
+              <button className="inline-flex items-center justify-center rounded-full border-2 border-[#61796f] bg-[#61796f] text-white px-6 py-2 text-sm sm:text-base font-semibold text-black transition duration-300 hover:bg-white hover:text-black cursor-pointer">
                 Submit
               </button>
             </div>
           </div>
         </section>
+        <div className="bg-[#dff2ea]  mx-auto p-6 rounded-md shadow-md ">
+          <div className="max-w-6xl mx-auto border-2 border-black p-3">
+            <h1 className="text-center text-2xl font-bold">
+              Terms & Conditions
+            </h1>
+            <div
+              data-aos="fade-right"
+              className="w-16 border-b-2 border-gray-700 mx-auto mt-2 mb-4"
+            />
+            <div className="max-w-6xl mx-auto mt-4 text-gray-700">
+              <div className="max-w-6xl mx-auto mt-4 text-gray-700 space-y-4">
+                <div className="flex items-start">
+                  <span className="font-bold mr-2 w-6">1.</span>
+                  <p>
+                    Channel Partner should be registered as ‘Agent’ under
+                    provisions of the Real Estate (Regulation and Development)
+                    Act, 2016 and the Rules framed thereunder with the Real
+                    Estate Regulatory Authority (RERA).
+                  </p>
+                </div>
+
+                <div className="flex items-start">
+                  <span className="font-bold mr-0 w-6">2.</span>
+                  <p>
+                    Channel Partner Form must be submitted for registration with
+                    SVS Constructions before any marketing and promotional
+                    activity undertaken by a Channel Partner.
+                  </p>
+                </div>
+
+                <div className="flex items-start">
+                  <span className="font-bold mr-2 w-6">3.</span>
+                  <p>  
+                      Appointment of Channel Partner shall be sole discretion of
+                    SVS Constructions (which may change from project to
+                    project). Channel Partner registered with SVS Constructions
+                    will not have authority to market projects unless approved
+                    on RERA website. Registration with SVS Constructions does
+                    not classify someone as an authorized Channel Partner.
+                  </p>
+                </div>
+
+                <div className="flex items-start">
+                  <span className="font-bold mr-0 w-6">4.</span>
+                  <p>
+                    Channel Partner Sales will be considered subject to the
+                    following terms:
+                  </p>
+                </div>
+              </div>
+
+              <div className="max-w-5xl mx-auto mt-4 text-gray-700 space-y-2">
+                <div className="flex items-start">
+                  <ChevronRight className="mt-0" />
+                  <p className="ml-2">
+                    Every registered Channel Partner is required to offer
+                    professional conduct towards each client.
+                  </p>
+                </div>
+
+                <div className="flex items-start">
+                  <ChevronRight className="mt-0" />
+                  <p className="ml-2">
+                    Every client visit to the project site or sales office
+                    should be accompanied by a registered Channel Partner.
+                  </p>
+                </div>
+
+                <div className="flex items-start">
+                  <ChevronRight className="mt-0" />
+                  <p className="ml-2">
+                    Client registered towards a Channel Partner will remain
+                    mapped with the said Channel Partner for a period of 90
+                    days.
+                  </p>
+                </div>
+
+                <div className="flex items-start">
+                  <ChevronRight className="mt-0" />
+                  <p className="ml-2">
+                    Brokerage will be equally divided between the two Channel
+                    Partners for an overlapping client, if sale is closed within
+                    90 days of registration.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

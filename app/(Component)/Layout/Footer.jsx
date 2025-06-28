@@ -50,7 +50,7 @@ const Footer = () => {
                 />
                 <button
                   type="submit"
-                  className="rounded-md bg-[#9cc6b5] py-3 px-6 text-base sm:text-lg font-semibold text-white hover:bg-[#61796f] sm:rounded-l-none sm:rounded-r-md"
+                  className="rounded-md bg-[#9cc6b5] py-3 px-6 text-base sm:text-lg font-semibold text-white hover:bg-[#90afa2] sm:rounded-l-none sm:rounded-r-md"
                 >
                   Subscribe
                 </button>
@@ -61,7 +61,7 @@ const Footer = () => {
               <h2 className="text-xl font-semibold uppercase mb-2">Real Estate Categories</h2>
               <div className="w-40 h-[1px] bg-white mb-3"></div>
               <p className="text-base">
-                <span className="font-semibold">Properties by Type:</span> Apartments | Villas | Independent Houses | Commercial Spaces | Studio Flats
+                <span className="font-semibold">Properties by Type:</span> Apartments | Villas | Commercial Spaces | Layouts
               </p>
               <p className="text-base mt-2">
                 <span className="font-semibold">Properties by Location:</span> {[
@@ -85,7 +85,7 @@ const Footer = () => {
               <h2 className="text-xl font-semibold uppercase mb-2">Services Offered</h2>
               <div className="w-40 h-[1px] bg-white mb-3"></div>
               <p className="text-base mb-2">
-                <span className="font-semibold">For Sellers:</span> List Your Property | Photography Services | Market Analysis | Pricing Advice 
+                <span className="font-semibold">For Sellers:</span> List Your Property | Market Analysis | Pricing Advice 
                 
               </p>
               <p className="text-base">
@@ -94,7 +94,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center lg:justify-end ">
             <a href="/Assets/SVS_Belmond_Brochure.pdf" target="_blank" rel="noopener noreferrer">
               <img
                 src="/Assets/Frame 1.jpg"
@@ -169,9 +169,9 @@ const Footer = () => {
       </div>
 
       <div className="bg-white text-[#61796f] py-4 mt-10 text-center text-sm shadow-md">
-        All rights reserved for <span className="font-bold">SVS Constructions</span>, Powered By {" "}
+        All Rights Reserved for <span className="font-bold">SVS Constructions Group</span> (Powered By {" "}
         <Link href="https://www.ireedindia.com" target="_blank" className="font-bold hover:underline">
-          IREED Media
+          IREED Media)
         </Link>
       </div>
     </footer>

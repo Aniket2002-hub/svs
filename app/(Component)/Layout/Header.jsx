@@ -45,24 +45,23 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" target="_blank" rel="noopener noreferrer">
-          <Image src="/Assets/svs logo.jpg" alt="Logo" width={50} height={50} />
+          <Image src="/Assets/Group 82.png" alt="Logo" width={50} height={50} />
         </Link>
 
         {/* Desktop menu */}
         <ul className="hidden md:flex space-x-6 text-base font-medium">
           <li>
-            <Link href="/" target="_blank" rel="noopener noreferrer">Home</Link>
-          </li>
-
+            <Link href="/" target="_blank" rel="noopener noreferrer" className='text-[20px]'>Home</Link>
+          </li> 
           {/* About Us dropdown */}
           <li className="relative group">
-            <span className="cursor-pointer">About&nbsp;Us</span>
+            <span className="cursor-pointer text-[20px]">About&nbsp;Us</span>
             <ul className="absolute top-full left-0 mt-2 w-52 bg-[#9cc6b5] text-white rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-50">
               <li>
                 <Link
                   href="/about-us/about-company"
                   target="_blank" rel="noopener noreferrer"
-                  className="block px-4 py-2 hover:bg-[#61796f]"
+                  className="block px-4 py-2 hover:bg-[#61796f] "
                 >
                   About Company
                 </Link>
@@ -88,12 +87,12 @@ export default function Navbar() {
             </ul>
           </li>
 
-          <li><Link href="/project" target="_blank" rel="noopener noreferrer">Project</Link></li>
-          <li><Link href="/career"  target="_blank" rel="noopener noreferrer">Career</Link></li>
+          <li><Link href="/project" target="_blank" rel="noopener noreferrer" className='text-[20px]'>Project</Link></li>
+          <li><Link href="/career"  target="_blank" rel="noopener noreferrer" className='text-[20px]'>Career</Link></li>
 
           {/* Media Center dropdown */}
           <li className="relative group">
-            <span className="cursor-pointer">Media&nbsp;Center</span>
+            <span className="cursor-pointer text-[20px] ">Media&nbsp;Center</span>
             <ul className="absolute top-full left-0 mt-2 w-52 bg-[#9cc6b5] text-white rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-50">
               <li>
                 <Link
@@ -116,9 +115,9 @@ export default function Navbar() {
             </ul>
           </li>
 
-          <li><Link href="/news-media"                target="_blank" rel="noopener noreferrer">Press Coverage</Link></li>
-          <li><Link href="/channel-partner-registration" target="_blank" rel="noopener noreferrer">Partner&nbsp;Registration</Link></li>
-          <li><Link href="/contact"                   target="_blank" rel="noopener noreferrer">Contact&nbsp;Us</Link></li>
+          <li><Link href="/news-media"                target="_blank" rel="noopener noreferrer" className='text-[20px]'>Press Coverage</Link></li>
+          <li><Link href="/channel-partner-registration" target="_blank" rel="noopener noreferrer" className='text-[20px]'>Partner&nbsp;Registration</Link></li>
+          <li><Link href="/contact"                   target="_blank" rel="noopener noreferrer" className='text-[20px]'>Contact&nbsp;Us</Link></li>
         </ul>
 
         {/* Hamburger */}

@@ -162,7 +162,7 @@ const page = () => {
                 </a>
 
                 {/* 📄 Caption */}
-                <div className="bg-[#00AEEF] text-white font-semibold text-center px-4 py-3 text-sm sm:text-base rounded-md cursor-pointer">
+                <div className="bg-[#61796f] text-white font-semibold text-center px-4 py-3 text-sm sm:text-base rounded-md cursor-pointer hover:bg-white hover:text-black border-2 border-[#61796f]">
                   <a
                     href={item.imageLink}
                     target="_blank"

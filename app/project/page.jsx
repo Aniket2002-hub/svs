@@ -54,11 +54,11 @@ export default function BelmondPage() {
   ];
 
   const logos = [
-    { src: "/Assets/orchid logo.jpg", alt: "Orchid" },
-    { src: "/Assets/unitech logo.jpg", alt: "Unitech" },
-    { src: "/Assets/bestech logo.jpg", alt: "Bestech" },
-    { src: "/Assets/vipul logo.jpg", alt: "Vipul" },
-    { src: "/Assets/CHD logo.jpg", alt: "CHD" },
+    { src: "/Assets/Balaji-bliss-logo-1.png", alt: "Orchid" },
+    { src: "/Assets/Central-Park-logo.png", alt: "Unitech" },
+    { src: "/Assets/Central-Park-logo-phase-2.png", alt: "Bestech" },
+    { src: "/Assets/Girish-Residencey-logo-1.png" },
+    { src: "/Assets/kavya-greens-logo-1.png", alt: "CHD" },
   ];
   const [modalImage, setModalImage] = useState(null);
 
@@ -71,7 +71,7 @@ export default function BelmondPage() {
       <div
         data-aos="fade-right"
         className="relative w-full h-[270px] md:h-[300px] lg:h-[400px] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: "url('/Assets/Frame 102.png')" }}
+        style={{ backgroundImage: "url('/Assets/SVS_Belmond_Rajapulova_Junction_Vizag_Banner_Projects.png')" }}
       >
         <div className="relative z-10 max-w-5xl mx-auto ">
           <h2
@@ -79,7 +79,7 @@ export default function BelmondPage() {
             data-aos-duration="1500"
             className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6"
           >
-            Belmond
+            
           </h2>
         </div>
       </div>
@@ -87,7 +87,7 @@ export default function BelmondPage() {
       {/* Collaborations Section */}
       <section
         data-aos="fade-left"
-        className="py-16 px-4 md:px-12 max-w-7xl mx-auto"
+        className="py-16 px-4 md:px-12 max-w-7xl mx-auto "
       >
         <h3 className="text-sm font-semibold text-gray-600 mb-2">
           {/* Collaborations */}
@@ -129,23 +129,23 @@ export default function BelmondPage() {
       </section>
 
       {/* Launched Projects Section */}
-      <section className="py-16 px-4 md:px-12 max-w-7xl mx-auto">
+      <section className="py-16 px-4 md:px-12 max-w-7xl mx-auto ">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
           Residential
         </h2>
         <div className="w-20 border-b-2 border-black mb-10" />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3  gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3  gap-12 ">
           {LaunchedProjects.map((item, index) => (
             <div
               key={index}
               data-aos={item.animation}
-              className="rounded-xl overflow-hidden shadow-sm hover:shadow-[green] transition-shadow bg-white cursor-pointer transition-transform duration-300 hover:-translate-y-4"
+              className="rounded-xl overflow-hidden shadow-sm hover:shadow-[#61796f] transition-shadow bg-white cursor-pointer transition-transform duration-300 hover:-translate-y-4"
             >
               {/* Outer wrapper */}
-              <div className="flex flex-col space-y-4 p-3 rounded-xl border border-gray-200 hover:border-gray-300 transition-all duration-300">
+              <div className="flex flex-col space-y-4 p-3 rounded-xl bg-[#dff2ea] border border-gray-200 hover:border-gray-300 transition-all duration-300">
                 {/* Image section */}
-                <div className="relative w-full h-48 rounded-md overflow-hidden">
+                <div className="relative w-full h-48 rounded-md overflow-hidden bg-[#dff2ea] ">
                   <a href={item.pdf} target="_blank" rel="noopener noreferrer">
                     <Image
                       src={item.img}
@@ -173,7 +173,7 @@ export default function BelmondPage() {
       </section>
 
       {/* === Belmond Intro Section === */}
-      <section className="bg-[#faf9f6] py-16 sm:py-20 relative overflow-hidden text-gray-900">
+      <section className="bg-[#dff2ea] py-16 sm:py-20 relative overflow-hidden text-gray-900">
         {/* Background Leaf Pattern */}
         <div className="absolute inset-0 bg-[url('/Assets/leaf-pattern.png')] bg-no-repeat bg-left opacity-10 pointer-events-none z-0" />
 
@@ -207,7 +207,7 @@ export default function BelmondPage() {
           </div>
 
           {/* === Right Text Section === */}
-          <div className="text-gray-800 max-w-xl ml-0 lg:ml-4 text-center lg:text-left">
+          <div className="text-gray-800 bg-white max-w-xl ml-0 lg:ml-4 text-center lg:text-left  p-6 rounded-lg shadow-lg">
             <p className="text-sm text-[#686454] font-semibold tracking-wide uppercase mb-2">
               Belmond at Rajapulova,Vizag
             </p>
@@ -227,7 +227,7 @@ export default function BelmondPage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="border border-[#092704] text-[#092704] px-6 py-3 rounded-md font-semibold hover:bg-[#092704] hover:text-white transition">
+                <button className="border bg-[#61796f] rounded-full border-white text-white px-6 py-3 rounded-md font-semibold hover:bg-white hover:text-black hover:border-black transition">
                   DOWNLOAD BROCHURE
                 </button>
               </a>
@@ -376,7 +376,7 @@ export default function BelmondPage() {
       </div>
 
       {/* === Location Section with Modal Image Preview === */}
-      <section className="bg-[#f6f6f6] py-12 px-4 mt-20">
+      <section className="bg-[#dff2ea] py-12 px-4 mt-20">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-8">
             Location
@@ -434,7 +434,7 @@ export default function BelmondPage() {
           )}
         </div>
       </section>
-      <section className="bg-[#f6f6f6] py-12 px-4 mt-20">
+      <section className="bg-white py-12 px-4 mt-0">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-8">
             Layout

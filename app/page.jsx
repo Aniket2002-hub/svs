@@ -87,7 +87,6 @@ const stats = [
     suffix: "+",
     label: "Educational Infrastructure",
     animation: "fade-left",
-    
   },
   {
     value: 40000,
@@ -121,7 +120,7 @@ const Page = () => {
           autoplay={{ delay: 5000, disableOnInteraction: false }}
           effect="fade"
           loop={true}
-          className="absolute inset-0 -z-10 w-full h-full"  
+          className="absolute inset-0 -z-10 w-full h-full"
         >
           {videos.map((video, index) => (
             <SwiperSlide key={index}>
@@ -205,13 +204,29 @@ const Page = () => {
           <div className="max-w-xl ml-0">
             <p className="mb-1 text-sm font-semibold text-black"></p>
             <h4 className="text-lg font-semibold text-red-700"></h4>
-            <h2 className="my-1 text-3xl font-bold text-black " style={{ fontFamily: "raleway,sans-serif" }}>SVS Belmond</h2>
+            <h2
+              className="my-1 text-3xl font-bold text-black "
+              style={{ fontFamily: "raleway,sans-serif" }}
+            >
+              SVS Belmond
+            </h2>
 
-            <p className="mb-6 text-md text-black italic" style={{ fontFamily: "raleway,sans-serif" }}>
-              Exclusive Residential Plots, at Rajapulova Junction, Vizag
+            <p
+              className="mb-6 text-md text-black "
+              style={{ fontFamily: "raleway,sans-serif" }}
+            >
+              {" "}
+              Successful real estate developments are distinguished by their
+              premium locations. At SVS Constructions, we are committed to craft
+              projects with strategic benefits near major
+              infrastructure developments. Our buyers most definitely will enjoy
+              enhanced connectivity, convenience, and long-term value. Every
+              purchase at SVS Constructions will create an unparalleled value.
+              {/* Exclusive Residential Plots, at
+              Rajapulova Junction, Vizag
               <br />
               Size from 129.09 to 655.65 Sq. Yards (1161.81 sq. ft to 5900.85
-              sq. ft.)
+              sq. ft.) */}
             </p>
 
             {/* ─── Book Now button (white → green flip) ─────────── */}
@@ -222,7 +237,8 @@ const Page = () => {
               border-2 border-white bg-[#61796f] px-6 py-3 font-semibold
               text-white transition-colors duration-300
               hover:bg-white hover:text-black
-            " style={{ fontFamily: "raleway,sans-serif" }}
+            "
+              style={{ fontFamily: "raleway,sans-serif" }}
             >
               Book&nbsp;Now&nbsp;→
             </Link>
@@ -238,14 +254,23 @@ const Page = () => {
             data-aos={block.animation}
             className={`text-white px-10 py-12 flex flex-col justify-between ${block.color}`}
           >
-            <h2 className="text-2xl font-bold mb-4 text-black " style={{ fontFamily: "raleway,sans-serif" }}>{block.title}</h2>
-            <p className="text-base leading-relaxed mb-6 max-w-[90%] text-black " style={{ fontFamily: "raleway,sans-serif" }}>
+            <h2
+              className="text-2xl font-bold mb-4 text-black "
+              style={{ fontFamily: "raleway,sans-serif" }}
+            >
+              {block.title}
+            </h2>
+            <p
+              className="text-base leading-relaxed mb-6 max-w-[90%] text-black "
+              style={{ fontFamily: "raleway,sans-serif" }}
+            >
               {block.description}
             </p>
             <div className="flex items-center bg-[#90afa2]">
               <a
                 href="#"
-                className="flex items-center bg-[#61796f] border border-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition  font-semibold" style={{ fontFamily: "raleway,sans-serif" }}
+                className="flex items-center bg-[#61796f] border border-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition  font-semibold"
+                style={{ fontFamily: "raleway,sans-serif" }}
               >
                 <span>{block.buttonText}</span>
               </a>
@@ -324,7 +349,10 @@ const Page = () => {
         </Swiper>
       </section>
 
-      <section className="bg-[#dff2ea] py-10 px-4 sm:px-6 md:px-12 lg:px-16" style={{ fontFamily: "raleway,sans-serif" }}>
+      <section
+        className="bg-[#dff2ea] py-10 px-4 sm:px-6 md:px-12 lg:px-16"
+        style={{ fontFamily: "raleway,sans-serif" }}
+      >
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* Left Text Content */}
           <div>
@@ -397,17 +425,26 @@ const Page = () => {
       </section>
 
       <section
-        className="bg-fixed bg-center bg-cover py-16 px-6 md:px-20"  
-        style={{ backgroundImage: 'url("/Assets/SVS_Belmond_Rajapulova_Junction_Vizag_Layered.jpg")' ,fontFamily: "raleway,sans-serif" }} // 🔁 Replace with your actual background image path
+        className="bg-fixed bg-center bg-cover py-16 px-6 md:px-20"
+        style={{
+          backgroundImage:
+            'url("/Assets/SVS_Belmond_Rajapulova_Junction_Vizag_Layered.jpg")',
+          fontFamily: "raleway,sans-serif",
+        }} // 🔁 Replace with your actual background image path
       >
         <div className="text-center text-white max-w-4xl mx-auto mb-12">
           <h2
             data-aos="fade-right"
-            className="text-3xl md:text-4xl font-bold mb-4 text" style={{ fontFamily: "raleway,sans-serif" }}
+            className="text-3xl md:text-4xl font-bold mb-4 text"
+            style={{ fontFamily: "raleway,sans-serif" }}
           >
             Our Journey
           </h2>
-          <p data-aos="fade-left" className="text-md md:text-lg text" style={{ fontFamily: "raleway,sans-serif" }}>
+          <p
+            data-aos="fade-left"
+            className="text-md md:text-lg text"
+            style={{ fontFamily: "raleway,sans-serif" }}
+          >
             From the beginning of building residential projects in Hyderabad a
             decade ago to now delivering innovative and sustainable projects
             with modern features across top locations.
@@ -424,9 +461,7 @@ const Page = () => {
               <h3 className="text-2xl font-bold text-black mb-1">
                 <CountUp end={stat.value} duration={3} separator="," />
                 {stat.suffix}
-                <div className="text-sm font-semibold ">
-                  Sq. Ft.
-                </div>
+                <div className="text-sm font-semibold ">Sq. Ft.</div>
               </h3>
               <p className="mt-3 text-gray-800">{stat.label}</p>
             </div>
@@ -442,7 +477,7 @@ const Page = () => {
             className="w-full h-auto rounded-xl overflow-hidden shadow-md"
           >
             <Image
-              src="/Assets/SVS_Constructions_Delivering_Excellence.jpg" // Replace with actual image
+              src="/Assets/SVS_Constructions_Delivering_Excellence_Belmond_Vizag.jpg" // Replace with actual image
               alt="Collaboration"
               width={600}
               height={400}
@@ -451,12 +486,12 @@ const Page = () => {
           </div>
 
           {/* Right Text */}
-          <div>
+          <div style={{ fontFamily: "raleway,sans-serif" }}>
             <h4
               data-aos="fade-left"
               className="text-xl font-semibold text-gray-700 mb-1"
             >
-              Collaborations
+              Eloquence
             </h4>
             <h2
               data-aos="fade-left"
@@ -468,7 +503,7 @@ const Page = () => {
               data-aos="fade-left"
               className="w-14 h-1 bg-gray-800 mb-4"
             ></div>
-            <p data-aos="fade-left" className="text-gray-700 mb-6">
+            <p data-aos="fade-left" className="text-gray-700 italic mb-6">
               SVS Constructions has always believed in the power of
               collaboration. Over the years, we have partnered with some of the
               biggest names in the real estate industry to deliver landmark
@@ -504,32 +539,36 @@ const Page = () => {
 
       <section
         className="relative bg-fixed bg-center bg-cover bg-no-repeat py-26 px-6 text-white text-center"
-        style={{ backgroundImage: "url('/Assets/background-img13.jpg')" }} // Replace with your image path
+        style={{
+          backgroundImage:
+            "url('/Assets/SVS_Belmond_Rajapulova_Junction_Vizag_Banner_Home_Page.png')",
+          fontFamily: "raleway,sans-serif",
+        }} // Replace with your image path
       >
         <h4
           data-aos="fade-right"
-          className="text-lg md:text-xl font-semibold text-white mb-2"
+          className="text-lg md:text-xl font-semibold  mb-2 text-black"
         >
           Our Vision
         </h4>
         <h2
           data-aos="fade-left"
-          className="text-3xl md:text-4xl font-bold mb-4"
+          className="text-3xl md:text-4xl font-bold mb-4  text-black"
         >
-          Crafting tomorrow’s landmarks, today.
+          Building Legacies Crafting Milestones
         </h2>
         <div
           data-aos="fade-right"
-          className="w-16 h-1 bg-white mx-auto mb-6"
+          className="w-16 h-1 bg-black mx-auto mb-6  "
         ></div>
         <p
           data-aos="fade-left"
-          className="text-white text-md md:text-lg leading-relaxed"
+          className=" text-md md:text-lg leading-relaxed  text-black max-w-6xl text-center mx-auto"
         >
-          At SVS Construction, we are not only building projects but are also
-          committed to building quality construction and sustainability. Our
-          vision starts from a strong customer base to gives state-of-the-art
-          infrastructure that aligns with customer requirements.
+          At SVS Constructions, we are committed to deliver qualitative projects
+          to last a lifetime.We are dedicated to deliver high-quality projects
+          built to stand the test of time. Our developments are crafted with
+          care and precision, creating enduring spaces.
         </p>
       </section>
     </div>

@@ -31,19 +31,19 @@ const page = () => {
       </div>
 
       {/* Contact Section */}
-      <div className="flex flex-wrap justify-between gap-0 px-[132px] py-[95px] bg-white box-border max-[992px]:flex-col max-[992px]:px-[30px] max-[576px]:px-[15px]">
+      <div className="flex flex-wrap justify-between gap-0 px-[132px] py-[95px] bg-[#dff2ea] box-border max-[992px]:flex-col max-[992px]:px-[30px] max-[576px]:px-[15px]">
         {/* Left Section */}
         <div
           data-aos="slide-right"
           className="flex-1 min-w-[300px] max-[992px]:w-full"
         >
-          <h1 className="text-[32px] text-[#114707] mb-[20px] font-spartan">
+          <h1 className="text-[32px] text-[61796f] mb-[20px] font-spartan">
             We're Always Eager to <br /> Hear From You!
           </h1>
 
           {/* Contact Info Blocks */}
           <div className="mb-[20px]">
-            <h2 className="text-[18px] font-semibold text-[#114707] font-spartan">
+            <h2 className="text-[18px] font-semibold text-[61796f] font-spartan">
               Corporate Office
             </h2>
             <p className="text-[15px] text-black font-poppins">
@@ -54,7 +54,7 @@ const page = () => {
           </div>
 
           <div className="mb-[20px]">
-            <h2 className="text-[18px] font-semibold text-[#114707] font-spartan">
+            <h2 className="text-[18px] font-semibold text-[61796f] font-spartan">
               Vizag Office
             </h2>
             <p className="text-[15px] text-black font-poppins">
@@ -65,7 +65,7 @@ const page = () => {
           </div>
 
           <div className="mb-[20px]">
-            <h2 className="text-[18px] font-semibold text-[#114707] font-spartan">
+            <h2 className="text-[18px] font-semibold text-[61796f] font-spartan">
               Gurgaon Office
             </h2>
             <p className="text-[15px] text-black font-poppins">
@@ -78,7 +78,7 @@ const page = () => {
           </div>
 
           <div className="mb-[20px]">
-            <h2 className="text-[18px] font-semibold text-[#114707] font-spartan">
+            <h2 className="text-[18px] font-semibold text-black font-spartan">
               Email
             </h2>
             <p className="text-[15px] text-black font-poppins">
@@ -87,11 +87,11 @@ const page = () => {
           </div>
 
           <div className="mb-[20px]">
-            <h2 className="text-[18px] font-semibold text-[#114707] font-spartan">
+            <h2 className="text-[18px] font-semibold text-[61796f] font-spartan">
               Phone
             </h2>
             <div className="flex items-center space-x-2">
-              <IoIosCall className="text-lg text-[#114707]" />
+              <IoIosCall className="text-lg text-[#61796f]" />
               <a
                 href="tel:+918978801173"
                 className="text-base text-black hover:underline"
@@ -100,7 +100,7 @@ const page = () => {
               </a>
             </div>
             <div className="flex items-center space-x-2">
-              <GiRotaryPhone className="text-2xl text-[#114707]" />
+              <GiRotaryPhone className="text-2xl text-[#61796f]" />
               <a
                 href="tel:+918912524444"
                 className="text-base text-black hover:underline"
@@ -117,10 +117,10 @@ const page = () => {
           className="flex-1 min-w-[300px] mt-0 max-[992px]:mt-[155px] max-[992px]:w-full"
         >
           <div className="bg-[#f9f9f9] p-8 rounded-[10px] shadow-md hover:shadow-[#114707]">
-            <h2 className="mb-2 text-[#114707] font-spartan text-bold">
+            <h2 className="mb-2 text-black font-spartan text-bold">
               Get in touch
             </h2>
-            <p className="mb-5 font-poppins text-[#114707]">
+            <p className="mb-5 font-poppins text-black">
               Fill out this form for booking a consultant advising session.
             </p>
             <form>
@@ -150,9 +150,9 @@ const page = () => {
               <button
                 type="submit"
                 className="inline-flex w-fit items-center justify-center rounded
-    border-2 border-[#092704] bg-white px-6 py-2 font-semibold text-[#092704]
+    border-2 border-[#61796f] bg-[#61796f] px-6 py-2 font-semibold text-white
     transition-colors duration-300
-    hover:bg-[#092704] hover:text-white w-full cursor-pointer"
+    hover:bg-white hover:text-black w-full cursor-pointer"
               >
                 Submit query →
               </button>
