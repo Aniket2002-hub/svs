@@ -17,19 +17,32 @@ import { SlSocialTwitter } from "react-icons/sl";
 
 const Footer = () => {
   const socialLinks = [
-    { href: "https://www.facebook.com/svsconstructionsgroup", icon: FaFacebookF },
-    { href: "https://www.instagram.com/svsconstructionsgroup/", icon: FaInstagram },
+    {
+      href: "https://www.facebook.com/svsconstructionsgroup",
+      icon: FaFacebookF,
+    },
+    {
+      href: "https://www.instagram.com/svsconstructionsgroup/",
+      icon: FaInstagram,
+    },
     { href: "https://x.com/svsconstuctions", icon: SlSocialTwitter },
-    { href: "https://www.linkedin.com/company/estate-avenues", icon: FaLinkedin },
+    {
+      href: "https://www.linkedin.com/company/estate-avenues",
+      icon: FaLinkedin,
+    },
     { href: "https://www.youtube.com/@svsconstructionsgroup", icon: FaYoutube },
   ];
 
   const services = [
-    { href: "/about-us/about-company", label: "About Company" },
+    // { href: "/about-us/about-company", label: "About Company" },
     { href: "/about-us/vision", label: "Vision & Mission" },
-    { href: "/about-us/director-m", label: "Director's Message" },
-    { href: "/about-us/our-team", label: "Our Team" },
+    { href: "/about-us/director-m", label: "Our Leadership" },
+    { href: "/about-us/our-team", label: "Strategic Partner" },
     { href: "/crm", label: "Project" },
+    { href: "/crm", label: "Media Center" },
+    { href: "/crm", label: "Press Coverage" },
+    { href: "/crm", label: "Partner Registration" },
+    { href: "/crm", label: "" },
     { href: "/banking-assistance", label: "Career" },
     { href: "/post-property", label: "Contact Us" },
   ];
@@ -41,7 +54,9 @@ const Footer = () => {
           <div>
             <div className="mb-10">
               <h3 className="text-xl sm:text-2xl font-bold">Get Updates</h3>
-              <p className="mt-1 text-sm sm:text-base">Subscribe to Stay Informed with the Latest News and Updates.</p>
+              <p className="mt-1 text-sm sm:text-base">
+                Subscribe to Stay Informed with the Latest News and Updates.
+              </p>
               <form className="mt-4 flex flex-col sm:flex-row">
                 <input
                   type="email"
@@ -58,44 +73,59 @@ const Footer = () => {
             </div>
 
             <div className="mb-10">
-              <h2 className="text-xl font-semibold uppercase mb-2">Real Estate Categories</h2>
+              <h2 className="text-xl font-semibold uppercase mb-2">
+                Our Project Categories
+              </h2>
               <div className="w-40 h-[1px] bg-white mb-3"></div>
               <p className="text-base">
-                <span className="font-semibold">Properties by Type:</span> Apartments | Villas | Commercial Spaces | Layouts
+                <span className="font-semibold">Our Portfolio:</span>{" "}
+                Apartments | Villas | Layouts | Commercial Spaces
               </p>
               <p className="text-base mt-2">
-                <span className="font-semibold">Properties by Location:</span> {[
+                <span className="font-semibold">Our Location:</span>{" "}
+                {[
                   { location: "Hyderabad", href: "/gurgaon-projects" },
                   { location: "Vizag", href: "/ranchi-projects" },
-                  { location: "Delhi", href: "/delhi-projects" },
-                  { location: "Noida", href: "/noida-projects" },
-                  { location: "Ranchi", href: "/ranchi-projects" },
+                  { location: "Gurugram", href: "/gurgaon-projects" },
+                  // { location: "Noida", href: "/noida-projects" },
+                  // { location: "Ranchi", href: "/ranchi-projects" },
                 ].map((item, index) => (
                   <span key={index}>
-                    <Link href={item.href} target="_blank" className="hover:underline">
+                    <Link
+                      href={item.href}
+                      target="_blank"
+                      className="hover:underline"
+                    >
                       {item.location}
                     </Link>
-                    {index < 4 && " | "}
+                    {index < 2 && " | "}
                   </span>
                 ))}
               </p>
             </div>
 
             <div>
-              <h2 className="text-xl font-semibold uppercase mb-2">Services Offered</h2>
+              <h2 className="text-xl font-semibold uppercase mb-2">
+                Services Offered
+              </h2>
               <div className="w-40 h-[1px] bg-white mb-3"></div>
               <p className="text-base mb-2">
-                <span className="font-semibold">For Sellers:</span> List Your Property | Market Analysis | Pricing Advice 
-                
+                <span className="font-semibold">For Buyers:</span> List Your
+                Property | Market Analysis | Pricing Advice
               </p>
               <p className="text-base">
-                <span className="font-semibold">For Investors:</span> ROI Calculator | Investment Tips | Upcoming Projects
+                <span className="font-semibold">NRI Services: </span> Secured
+                 & High Returns | Investment Advice | Upcoming Projects
               </p>
             </div>
           </div>
 
           <div className="flex justify-center lg:justify-end ">
-            <a href="/Assets/SVS_Belmond_Brochure.pdf" target="_blank" rel="noopener noreferrer">
+            <a
+              href="/Assets/SVS_Belmond_Brochure.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 src="/Assets/Frame 1.jpg"
                 alt="Belmond"
@@ -107,12 +137,18 @@ const Footer = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12">
           <div>
-            <h3 className="text-xl font-bold mb-4 uppercase">Business Solutions</h3>
+            <h3 className="text-xl font-bold mb-4 uppercase">
+              Business Solutions
+            </h3>
             <div className="w-24 h-[1px] bg-white mb-6"></div>
             <ul className="space-y-3">
               {services.map((service) => (
                 <li key={service.href}>
-                  <Link href={service.href} target="_blank" className="text-base hover:text-gray-200 hover:underline">
+                  <Link
+                    href={service.href}
+                    target="_blank"
+                    className="text-base hover:text-gray-200 hover:underline"
+                  >
                     {service.label}
                   </Link>
                 </li>
@@ -124,30 +160,63 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4 uppercase">Contact Us</h3>
             <div className="w-28 h-[1px] bg-white mb-6"></div>
             <address className="not-italic space-y-4">
+              <span className="text-lg font-semibold text-[]">
+                  Vizag Office
+                </span>
               <p className="text-base leading-relaxed">
-                #50–102–4, Beside HDFC North <br />
-                Extension,Seethammadhara,  <br />
-                Visakhapatnam - 530013.
+                Office Suite No. 50 - 102 - 4,  <br />
+                 Near HDFC Bank, Seethammadhara,  <br />
+                Vizag - 530 013, Andhra Pradesh
               </p>
-              <div className="flex items-center space-x-2">
-                <MdEmail className="text-lg" />
-                <span className="text-base break-all">svsconstructions.group@gmail.com</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <IoIosCall className="text-lg" />
-                <a href="tel:+918978801173" className="text-base text-white hover:underline">+91 8978801173</a>
-              </div>
-              <div className="flex items-center space-x-2">
-                <GiRotaryPhone className="text-2xl" />
-                <a href="tel:+918912524444" className="text-base text-white hover:underline">(0891) 2524444</a>
-              </div>
-              <div className="flex gap-4 mt-4">
-                {socialLinks.map((social, index) => (
-                  <Link key={index} href={social.href} className="hover:text-gray-200" target="_blank">
-                    <social.icon size={20} />
-                  </Link>
-                ))}
-              </div>
+              <address className="not-italic space-y-4">
+                <span className="text-lg font-semibold text-[]">
+                  Hyderabad Office
+                </span>
+                <p className="text-base leading-relaxed">
+                
+                  Office Suite No. C&D, SVS Girish Residency,{" "}
+                  <br />
+                  Nizampet Road,Kukatpally, Hyderabad - 500 072, {" "}
+                  <br />
+                  Hyderabad - 500 072, Telangana <br />
+                </p>
+                <div className="flex items-center space-x-2 ">
+                  <MdEmail className="text-lg " />
+                  <span className="text-base break-all">
+                    svsconstructions.group@gmail.com
+                  </span>
+                </div>
+                <div className="flex items-center space-x-2 mt-[-15px]">
+                  <IoIosCall className="text-lg" />
+                  <a
+                    href="tel:+918978801173"
+                    className="text-base text-white hover:underline "
+                  >
+                    +91 8978801173
+                  </a>
+                </div>
+                <div className="flex items-center space-x-2 mt-[-15px]">
+                  <GiRotaryPhone className="text-2xl" />
+                  <a
+                    href="tel:+918912524444"
+                    className="text-base text-white hover:underline"
+                  >
+                    (0891) 2524444
+                  </a>
+                </div>
+                <div className="flex gap-4 mt-4">
+                  {socialLinks.map((social, index) => (
+                    <Link
+                      key={index}
+                      href={social.href}
+                      className="hover:text-gray-200"
+                      target="_blank"
+                    >
+                      <social.icon size={20} />
+                    </Link>
+                  ))}
+                </div>
+              </address>
             </address>
           </div>
 
@@ -169,8 +238,13 @@ const Footer = () => {
       </div>
 
       <div className="bg-white text-[#61796f] py-4 mt-10 text-center text-sm shadow-md">
-        All Rights Reserved for <span className="font-bold">SVS Constructions Group</span> (Powered By {" "}
-        <Link href="https://www.ireedindia.com" target="_blank" className="font-bold hover:underline">
+        All Rights Reserved for{" "}
+        <span className="font-bold">SVS Constructions Group</span> (Powered By{" "}
+        <Link
+          href="https://www.ireedindia.com"
+          target="_blank"
+          className="font-bold hover:underline"
+        >
           IREED Media)
         </Link>
       </div>

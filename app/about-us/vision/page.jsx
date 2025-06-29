@@ -94,7 +94,7 @@ const Page = () => {
             <h2 className="mb-4 text-2xl font-bold text-gray-700 sm:text-3xl md:text-4xl">
               Our Values
             </h2>
-            <div className="mx-auto mb-10 h-1 w-16 bg-gray-800" />
+            <div className="mx-auto mb-5 h-1 w-16 bg-gray-800 " />
 
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
               {[
@@ -128,7 +128,7 @@ const Page = () => {
                   variants={fadeInUp}
                   whileHover={{ scale: 1.05 }}
                   className="
-            rounded-xl border-2 border-white bg-[#61796f] p-6 shadow-md
+            rounded-xl border-1 border-white bg-[#61796f] p-6 shadow-md
             text-white transition-colors duration-300
             hover:bg-white hover:text-black hover:border-black
           "

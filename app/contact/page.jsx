@@ -47,9 +47,9 @@ const page = () => {
               Corporate Office
             </h2>
             <p className="text-[15px] text-black font-poppins">
-              # C&D, SVS Girish Residency, Nizampet Road, Kukatpally,
+               Office Suite No. C&D, SVS Girish Residency, Nizampet Road,
               <br />
-              Hyderabad-500 072.
+               Kukatpally, Hyderabad - 500 072, Telangana
             </p>
           </div>
 
@@ -58,22 +58,22 @@ const page = () => {
               Vizag Office
             </h2>
             <p className="text-[15px] text-black font-poppins">
-              # 50 – 102 – 4. Beside HDFC, North Extension, Seethammadhara,
+              Office Suite No. 50 - 102 - 4, Near HDFC Bank,
               <br />
-              Visakhapatnam-530 013.
+               Seethammadhara, Vizag - 530 013, Andhra Pradesh
             </p>
           </div>
 
           <div className="mb-[20px]">
             <h2 className="text-[18px] font-semibold text-[61796f] font-spartan">
-              Gurgaon Office
+              Gurugram Office
             </h2>
             <p className="text-[15px] text-black font-poppins">
               Office Suite 8 & 9, 3rd Floor, Ninex City Mart,
               <br />
-              Sohna Road, Near Radisson Hotel, Sector 49,
+              Sohna Road, Sector 49, Gurugram - 122 018, Haryana
               <br />
-              Gurugram - 122018 Haryana
+             
             </p>
           </div>
 

@@ -52,7 +52,7 @@ const blocks = [
 
 const slides = [
   {
-    src: "/Assets/CHLIDREN PARK.jpg",
+    src: "/Assets/Avenue PARK.png",
     label: "",
   },
   {
@@ -64,7 +64,7 @@ const slides = [
     label: "",
   },
   {
-    src: "/Assets/AVENUE PARK.jpg",
+    src: "/Assets/CHILDREN PARK.png",
     label: "",
   },
 ];
@@ -138,31 +138,31 @@ const Page = () => {
 
         {/* Social Icons */}
         {/* Social Media Icons */}
-        <div className="fixed right-4 bottom-10 flex flex-col items-center space-y-4 z-30 text-white text-xl">
+        <div className="fixed right-0 bottom-8 flex flex-col items-center space-y-4 z-30 text-white text-xl bg-[#67916f] p-4">
           <a
             href=" https://www.instagram.com/svsconstructionsgroup/"
-            className="hover:scale-110 transition text-pink-500"
+            className="hover:scale-110 transition text-white"
           >
             <FaInstagram />
           </a>
           <a
             href="https://x.com/svsconstuctions"
-            className="hover:scale-110 transition text-sky-500"
+            className="hover:scale-110 transition text-white"
           >
             <SlSocialTwitter />
           </a>
           <a
             href=" https://www.facebook.com/svsconstructionsgroup "
-            className="hover:scale-110 transition text-blue-900"
+            className="hover:scale-110 transition text-white"
           >
             <FaFacebookF />
           </a>
-          <a href="#" className="hover:scale-110 transition text-blue-500">
+          <a href="#" className="hover:scale-110 transition text-white">
             <FaLinkedinIn />
           </a>
           <a
             href="https://www.youtube.com/@svsconstructionsgroup "
-            className="hover:scale-110 transition text-red-600"
+            className="hover:scale-110 transition text-white"
           >
             <FaYoutube />
           </a>
@@ -208,7 +208,7 @@ const Page = () => {
               className="my-1 text-3xl font-bold text-black "
               style={{ fontFamily: "raleway,sans-serif" }}
             >
-              SVS Belmond
+              SVS Belmond, Rajapulova,Vizag
             </h2>
 
             <p
