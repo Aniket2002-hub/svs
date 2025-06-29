@@ -7,8 +7,10 @@ import { FaBars, FaTimes } from "react-icons/fa";
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [aboutDropdownOpen, setAboutDropdownOpen] = useState(false);
   const [mediaDropdownOpen, setMediaDropdownOpen] = useState(false);
+  const [projectsDropdownOpen, setProjectsDropdownOpen] = useState(false);
+  const [ongoingSubmenuOpen, setOngoingSubmenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -17,354 +19,142 @@ export default function Navbar() {
   }, []);
 
   const toggleMenu = () => {
-    setMenuOpen((prev) => !prev);
-    setDropdownOpen(false);
+    setMenuOpen(!menuOpen);
+    setAboutDropdownOpen(false);
+    setProjectsDropdownOpen(false);
     setMediaDropdownOpen(false);
+    setOngoingSubmenuOpen(false);
   };
 
   const closeMenu = () => {
     setMenuOpen(false);
-    setDropdownOpen(false);
+    setAboutDropdownOpen(false);
+    setProjectsDropdownOpen(false);
     setMediaDropdownOpen(false);
+    setOngoingSubmenuOpen(false);
   };
 
-  const toggleDropdown = () => setDropdownOpen((prev) => !prev);
-  const toggleMediaDropdown = () => setMediaDropdownOpen((prev) => !prev);
-
   return (
-    <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-[#61796f] shadow text-white"
-          : "bg-transparent text-white"
-      }`}
-    >
+    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-[#61796f] shadow text-white" : "bg-transparent text-white"}`}>
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" target="_blank" rel="noopener noreferrer">
           <Image src="/Assets/Group 82.png" alt="Logo" width={50} height={50} />
         </Link>
 
+        {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6 text-base font-medium">
-          <li>
-            <Link
-              href="/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[20px]"
-            >
-              Home
-            </Link>
-          </li>
+          <li><Link href="/" target="_blank" rel="noopener noreferrer" className="text-[20px]">Home</Link></li>
 
           <li className="relative group">
             <span className="cursor-pointer text-[20px]">About&nbsp;Us</span>
             <ul className="absolute top-full left-0 mt-2 w-52 bg-[#9cc6b5] text-white rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-50">
-              <li>
-                <Link
-                  href="/about-us/vision"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block px-4 py-2 hover:bg-[#61796f]"
-                >
-                  Vision&nbsp;&amp;&nbsp;Mission
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/about-us/Our-Leadership"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block px-4 py-2 hover:bg-[#61796f]"
-                >
-                  Our Leadership
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/about-us/our-team"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block px-4 py-2 hover:bg-[#61796f]"
-                >
-                  Strategic Partner
-                </Link>
-              </li>
+              <li><Link href="/about-us/vision" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-[#61796f]">Vision &amp; Mission</Link></li>
+              <li><Link href="/about-us/Our-Leadership" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-[#61796f]">Our Leadership</Link></li>
+              <li><Link href="/about-us/our-team" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-[#61796f]">Strategic Partner</Link></li>
             </ul>
           </li>
 
-          {/* Projects Dropdown */}
           <li className="relative group">
             <span className="cursor-pointer text-[20px]">Projects</span>
             <ul className="absolute top-full left-0 mt-2 bg-[#9cc6b5] text-white rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-50 min-w-[200px]">
-              <li>
-                <Link
-                  href="/project/completed"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block px-4 py-2 hover:bg-[#61796f]"
-                >
-                  Completed
-                </Link>
-              </li>
+              <li><Link href="/project/completed" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-[#61796f]">Completed</Link></li>
               <li className="relative group/project">
-                <span className="block px-4 py-2 hover:bg-[#61796f] cursor-pointer">
-                  Ongoing
-                </span>
+                <span className="block px-4 py-2 hover:bg-[#61796f] cursor-pointer">Ongoing</span>
                 <ul className="absolute top-0 left-full mt-0 ml-1 w-48 bg-[#9cc6b5] text-white rounded shadow-lg opacity-0 invisible group-hover/project:opacity-100 group-hover/project:visible transition duration-200 z-50">
-                  <li>
-                    <Link
-                      href="/project/ongoing/Belmond"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block px-4 py-2 hover:bg-[#61796f]"
-                    >
-                      Belmond
-                    </Link>
-                  </li>
+                  <li><Link href="/project/ongoing/Belmond" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-[#61796f]">Belmond</Link></li>
                 </ul>
               </li>
             </ul>
           </li>
-          <li>
-            <Link
-              href="/career"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[20px]"
-            >
-              Career
-            </Link>
-          </li>
+
+          <li><Link href="/career" target="_blank" rel="noopener noreferrer" className="text-[20px]">Career</Link></li>
 
           <li className="relative group">
-            <span className="cursor-pointer text-[20px]">
-              Media&nbsp;Center
-            </span>
+            <span className="cursor-pointer text-[20px]">Media&nbsp;Center</span>
             <ul className="absolute top-full left-0 mt-2 w-52 bg-[#9cc6b5] text-white rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-50">
-              <li>
-                <Link
-                  href="/media-center/our-creation"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block px-4 py-2 hover:bg-[#61796f]"
-                >
-                  Our&nbsp;Creatives
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/media-center/our-videos"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block px-4 py-2 hover:bg-[#61796f]"
-                >
-                  Our&nbsp;Videos
-                </Link>
-              </li>
+              <li><Link href="/media-center/our-creation" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-[#61796f]">Our Creatives</Link></li>
+              <li><Link href="/media-center/our-videos" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-[#61796f]">Our Videos</Link></li>
             </ul>
           </li>
 
-          <li>
-            <Link
-              href="/news-media"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[20px]"
-            >
-              Press Coverage
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/channel-partner-registration"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[20px]"
-            >
-              Partner&nbsp;Registration
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/contact"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[20px]"
-            >
-              Contact&nbsp;Us
-            </Link>
-          </li>
+          <li><Link href="/news-media" target="_blank" rel="noopener noreferrer" className="text-[20px]">Press Coverage</Link></li>
+          <li><Link href="/channel-partner-registration" target="_blank" rel="noopener noreferrer" className="text-[20px]">Partner Registration</Link></li>
+          <li><Link href="/contact" target="_blank" rel="noopener noreferrer" className="text-[20px]">Contact Us</Link></li>
         </ul>
 
+        {/* Hamburger Icon */}
         <button onClick={toggleMenu} className="md:hidden text-2xl text-white">
           {menuOpen ? <FaTimes /> : <FaBars />}
         </button>
       </div>
 
-      {/* Mobile menu unchanged */}
-      <div
-        className={`fixed top-0 left-0 w-full h-full bg-[#61796f] text-white transform transition-transform duration-300 ease-in-out md:hidden z-40 p-6 space-y-4 overflow-y-auto ${
-          menuOpen ? "translate-x-0" : "-translate-x-full"
-        }`}
-      >
+      {/* Mobile Menu */}
+      <div className={`fixed top-0 left-0 w-full h-full bg-[#61796f] text-white transform transition-transform duration-300 ease-in-out md:hidden z-40 p-6 space-y-4 overflow-y-auto ${menuOpen ? "translate-x-0" : "-translate-x-full"}`}>
         <div className="flex justify-between items-center mb-6">
           <Image src="/Assets/svs logo.jpg" alt="Logo" width={40} height={40} />
-          <button onClick={closeMenu} className="text-xl">
-            <FaTimes />
-          </button>
+          <button onClick={closeMenu} className="text-xl"><FaTimes /></button>
         </div>
 
-        <Link
-          href="/"
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={closeMenu}
-          className="block py-2 border-b border-white"
-        >
-          Home
-        </Link>
+        <Link href="/" target="_blank" rel="noopener noreferrer" onClick={closeMenu} className="block py-2 border-b border-white">Home</Link>
 
+        {/* About Us */}
         <div>
           <div className="flex items-center justify-between border-b border-white">
-            <Link
-              href="/about-us"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={closeMenu}
-              className="py-2"
-            >
-              About&nbsp;Us
-            </Link>
-            <button onClick={toggleDropdown} className="py-2 font-semibold">
-              ▼
-            </button>
+            <span className="py-2">About Us</span>
+            <button onClick={() => setAboutDropdownOpen(!aboutDropdownOpen)} className="py-2 font-semibold">▼</button>
           </div>
-          {dropdownOpen && (
+          {aboutDropdownOpen && (
             <ul className="pl-4 mt-2 space-y-2">
+              <li><Link href="/about-us/vision" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Vision & Mission</Link></li>
+              <li><Link href="/about-us/Our-Leadership" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Our Leadership</Link></li>
+              <li><Link href="/about-us/our-team" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Strategic Partner</Link></li>
+            </ul>
+          )}
+        </div>
+
+        {/* Projects */}
+        <div>
+          <div className="flex items-center justify-between border-b border-white">
+            <span className="py-2">Projects</span>
+            <button onClick={() => setProjectsDropdownOpen(!projectsDropdownOpen)} className="py-2 font-semibold">▼</button>
+          </div>
+          {projectsDropdownOpen && (
+            <ul className="pl-4 mt-2 space-y-2">
+              <li><Link href="/project/completed" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Completed</Link></li>
               <li>
-                <Link
-                  href="/about-us/our-team"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={closeMenu}
-                >
-                  Our Team
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/about-us/vision"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={closeMenu}
-                >
-                  Vision&nbsp;&amp;&nbsp;Mission
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/about-us/Our-Leadership"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={closeMenu}
-                >
-                  Our Leadership
-                </Link>
+                <div className="flex items-center justify-between">
+                  <span className="py-2">Ongoing</span>
+                  <button onClick={() => setOngoingSubmenuOpen(!ongoingSubmenuOpen)} className="font-semibold">▶</button>
+                </div>
+                {ongoingSubmenuOpen && (
+                  <ul className="pl-4 mt-2 space-y-2">
+                    <li><Link href="/project/ongoing/Belmond" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Belmond</Link></li>
+                  </ul>
+                )}
               </li>
             </ul>
           )}
         </div>
 
-        <Link
-          href="/project"
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={closeMenu}
-          className="block py-2 border-b border-white"
-        >
-          Project
-        </Link>
-        <Link
-          href="/career"
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={closeMenu}
-          className="block py-2 border-b border-white"
-        >
-          Career
-        </Link>
+        <Link href="/career" target="_blank" rel="noopener noreferrer" onClick={closeMenu} className="block py-2 border-b border-white">Career</Link>
 
+        {/* Media Center */}
         <div>
           <div className="flex items-center justify-between border-b border-white">
-            <Link
-              href="/media-center"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={closeMenu}
-              className="py-2"
-            >
-              Media&nbsp;Center
-            </Link>
-            <button
-              onClick={toggleMediaDropdown}
-              className="py-2 font-semibold"
-            >
-              ▼
-            </button>
+            <span className="py-2">Media Center</span>
+            <button onClick={() => setMediaDropdownOpen(!mediaDropdownOpen)} className="py-2 font-semibold">▼</button>
           </div>
           {mediaDropdownOpen && (
             <ul className="pl-4 mt-2 space-y-2">
-              <li>
-                <Link
-                  href="/media-center/our-creation"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={closeMenu}
-                >
-                  Our&nbsp;Creation
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/media-center/our-videos"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={closeMenu}
-                >
-                  Our&nbsp;Videos
-                </Link>
-              </li>
+              <li><Link href="/media-center/our-creation" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Our Creatives</Link></li>
+              <li><Link href="/media-center/our-videos" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Our Videos</Link></li>
             </ul>
           )}
         </div>
 
-        <Link
-          href="/news-media"
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={closeMenu}
-          className="block py-2 border-b border-white"
-        >
-          Press Coverage
-        </Link>
-        <Link
-          href="/channel-partner-registration"
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={closeMenu}
-          className="block py-2 border-b border-white"
-        >
-          Partner&nbsp;Registration
-        </Link>
-        <Link
-          href="/contact"
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={closeMenu}
-          className="block py-2 border-b border-white"
-        >
-          Contact&nbsp;Us
-        </Link>
+        <Link href="/news-media" target="_blank" rel="noopener noreferrer" onClick={closeMenu} className="block py-2 border-b border-white">Press Coverage</Link>
+        <Link href="/channel-partner-registration" target="_blank" rel="noopener noreferrer" onClick={closeMenu} className="block py-2 border-b border-white">Partner Registration</Link>
+        <Link href="/contact" target="_blank" rel="noopener noreferrer" onClick={closeMenu} className="block py-2 border-b border-white">Contact Us</Link>
       </div>
     </nav>
   );
