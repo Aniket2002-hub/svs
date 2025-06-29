@@ -263,12 +263,12 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  href="/about-us/director-m"
+                  href="/about-us/Our-Leadership"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={closeMenu}
                 >
-                  Director&apos;s Message
+                  Our Leadership
                 </Link>
               </li>
             </ul>
