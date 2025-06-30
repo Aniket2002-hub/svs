@@ -36,15 +36,16 @@ const Footer = () => {
   const services = [
     // { href: "/about-us/about-company", label: "About Company" },
     { href: "/about-us/vision", label: "Vision & Mission" },
-    { href: "/about-us/director-m", label: "Our Leadership" },
+    { href: "/about-us/Our-Leadership", label: "Our Leadership" },
     { href: "/about-us/our-team", label: "Strategic Partner" },
-    { href: "/crm", label: "Project" },
-    { href: "/crm", label: "Media Center" },
-    { href: "/crm", label: "Press Coverage" },
-    { href: "/crm", label: "Partner Registration" },
-    { href: "/crm", label: "" },
-    { href: "/banking-assistance", label: "Career" },
-    { href: "/post-property", label: "Contact Us" },
+    { href: "/project/completed", label: "projects" },
+    { href: "/project/ongoing/Belmond", label: "Belmond" },
+    { href: "/news-media", label: "Press Coverage" },
+    { href: "/media-center/our-videos", label: "Our Videos" },
+    { href: "/media-center/our-creation", label: "Our Creatives" },
+    { href: "/career", label: "Career" },
+    { href: "/channel-partner-registration", label: "Partner Registration" },
+    { href: "/contact", label: "Contact Us" },
   ];
 
   return (

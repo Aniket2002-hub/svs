@@ -59,7 +59,7 @@ export default function PersonalStory() {
                   : "max-h-[150px] overflow-hidden md:max-h-full"
               }`}
             >
-              Mr. SVSN Verma is a strong leader and the chairperson of SVS
+              Mr. SVSN Varma is a strong leader and the chairperson of SVS
               Constructions Pvt. Ltd. He is a key figure in the company. Over
               the past two decades, Mr. Verma's efforts have shaped the
               company's growth. His steady commitment to innovation, quality,
@@ -116,7 +116,7 @@ export default function PersonalStory() {
                   : "max-h-[150px] overflow-hidden md:max-h-full"
               }`}
             >
-              Mr. Giish Verma is the managing director of SVS Construction
+              Mr. Girish Varma is the managing director of SVS Construction
               Company. He leads business expansion with a clear focus on
               improving operational efficiency and supporting sustainable
               growth. He has gained extensive experience through his earlier
@@ -128,13 +128,12 @@ export default function PersonalStory() {
               University's Kellogg School of Management in Chicago with a focus
               on the Family Business Program.
               <br />
-              His leadership features a strategic vision that blends deep
-              industry knowledge with innovative methods, helping SVS
-              Construction thrive in a competitive real estate market. His
+              His leadership features a strategic vision that combines deep
+              industry knowledge with innovative methods, enabling SVS
+              Construction to thrive in a competitive real estate market. His
               ability to tackle various business challenges makes him stand out.
               He plays a crucial role as Managing Director, overseeing the
-              company's operations, innovation, global perspective, and
-              commitment to excellence.
+              company's operations, innovation, and commitment to excellence.
             </p>
             {/* Show Read More on mobile only */}
             <div className="mt-3 block md:hidden">

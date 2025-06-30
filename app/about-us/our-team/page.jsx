@@ -7,8 +7,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FiX, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import { FaLinkedin } from "react-icons/fa";
 
-
-
 // === TEAM DATA ===
 const TEAM = [
   {
@@ -17,7 +15,8 @@ const TEAM = [
     photo: "/Assets/SVS_Belmond_Rajapulova_Junction_Vizag_Our Teams_BP.png",
     linkedin:
       "https://www.linkedin.com/in/bhaswarpaul?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-    bio: `Sales is my passion …`,
+    bio: `Mr Bhaswar Paul is a known real estate expert, especially in the Gurgaon market, having a great experience of 25+ years in the real estate sector. He has worked with India’s top developers, M3M, Central Park, IREO, and More. His expertise in the sector doesn’t stop here, he has started his new move over the last couple of years in the education sector and training students, as well as providing learning about the real estate market. 
+`,
   },
   {
     name: "Harsha Jasoratia",
@@ -25,7 +24,9 @@ const TEAM = [
     photo: "/Assets/SVS_Belmond_Rajapulova_Junction_Vizag_Our Teams_HJ.png",
     linkedin:
       "https://www.linkedin.com/in/harshjasrotia?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-    bio: `Every property we develop, every project we execute is a journey. We start on a barren piece of land, move in with machines and materials which travel with passionate designers and artists. It's quite literally months of backpacking and being on the move. But in the end we have built someone a home.`,
+    bio: `Mr. Harsh Jasrotia brings over 18 years of extensive experience in business development and strategic leadership, having held prominent roles at renowned organizations such as Lodha Developers, M3M India, InfoEdge, Phoenix Mills, and Career Launcher.
+     He holds a strong academic foundation with education from IIT Patna and Panjab University.
+`,
   },
   {
     name: "Kamaldeep Singh",
@@ -33,7 +34,7 @@ const TEAM = [
     photo: "/Assets/SVS_Belmond_Rajapulova_Junction_Vizag_Our Teams_KP.png",
     linkedin:
       "https://www.linkedin.com/in/kamaldeep01?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-    bio: `Prudent cash‑flow management …`,
+    bio: `Mr. Kamldeep Prajapati comes with the great experience of more than five years in the real estate sector. And worked with top real estate companies. His expertise in sales, business head, and as well as leading make him stand out.`,
   },
 ];
 
@@ -152,7 +153,7 @@ export default function DirectorsMessage() {
               ref={panelRef}
               className="relative mt-12 overflow-hidden rounded-md flex flex-col lg:flex-row scroll-mt-40"
               style={{ backgroundColor: "#9cc6b5" }}
-             >
+            >
               {/* Close + Nav Buttons */}
               <button
                 onClick={() => setIdx(null)}
@@ -200,13 +201,22 @@ export default function DirectorsMessage() {
 
                   {/* Text */}
                   <div className="basis-1/2 p-8 flex flex-col justify-center">
-                    <h3 className="text-2xl md:text-3xl font-bold text-gray-900"   style={{ fontFamily: "raleway,sans-serif" }}>
+                    <h3
+                      className="text-2xl md:text-3xl font-bold text-gray-900"
+                      style={{ fontFamily: "raleway,sans-serif" }}
+                    >
                       {TEAM[idx].name}
                     </h3>
-                    <p className="mt-1 text-lg font-bold text-gray-800"   style={{ fontFamily: "raleway,sans-serif" }}>
+                    <p
+                      className="mt-1 text-lg font-bold text-gray-800"
+                      style={{ fontFamily: "raleway,sans-serif" }}
+                    >
                       {TEAM[idx].title}
                     </p>
-                    <p className="mt-8 leading-relaxed text-gray-800 whitespace-pre-line"   style={{ fontFamily: "raleway,sans-serif" }}>
+                    <p
+                      className="mt-8 leading-relaxed text-gray-800 whitespace-pre-line"
+                      style={{ fontFamily: "raleway,sans-serif" }}
+                    >
                       {TEAM[idx].bio}
                     </p>
                   </div>

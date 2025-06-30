@@ -41,49 +41,50 @@ export default function BelmondPage() {
         </div>
       </div>
 
-      {/* Collaborations Section */}
-      <section
-        data-aos="fade-left"
-        className="py-16 px-4 md:px-12 max-w-7xl mx-auto "
-      >
-        <h3 className="text-sm font-semibold text-gray-600 mb-2">
-          {/* Collaborations */}
-        </h3>
-        <h2 className="text-2xl md:text-3xl font-bold text-black mb-4">
-          Delivering Excellence with Every Build
-        </h2>
-        <div className="w-20 border-b-2 border-black mb-6" />
+      <div className="bg-white py-12 px-6 md:px-16">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-10">
+          {/* Text Content */}
+          <div className="md:w-1/2 space-y-6">
+            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
+              Crafting Futures, Building Lifestyles
+            </h2>
+            <p className="text-gray-700">
+              Belmond is one of the ongoing development projects by SVS
+              Constructions. It is located at Rajapulova Junction in Vizag.
+              Positioned at the meeting point of three important districts,
+              Visakhapatnam, Vizianagaram, and Srikakulam, Belmond has excellent
+              connectivity and regional importance. This makes it a top choice
+              for both investment and living. Covering about 12.35 acres, this
+              well-designed community includes 175 high-quality residential
+              plots. Each plot aims to offer a mix of nature, comfort, and
+              modern infrastructure. Every part of Belmond reflects our
+              commitment to quality, sustainability, and long-term value.
+            </p>
+            <p className="text-gray-700">
+              Additionally, there is a new upcoming grand international airport
+              which is just 10-15 minutes away from Belmond and minutes away
+              from the upcoming Vizab metro station. which is the major reason
+              for its steady value appreciation. Belmond is not just a plotted
+              development; it’s a gateway to living an eco-friendly lifestyle,
+              which has potential, beauty, and limitless opportunities.
+            </p>
+            {/* <button className="bg-yellow-500 text-black px-4 py-2 rounded hover:bg-yellow-600 transition">
+              Download Brochure
+            </button> */}
+          </div>
 
-        <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-10">
-          In the heart of every project, we embed our unwavering commitment to
-          Excellence and deliver premium spaces that reflect better quality. Our
-          creativity is the result of the collaboration of our passionate team,
-          their thoughtful, innovative ideas, and design that aligns with
-          customers' requirements. We believe home is not just a space to live,
-          it’s a place to feel, grow, and experience living. Our project is
-          located in a prime location with better connectivity and
-          infrastructure that will not only elevate living but also increase the
-          value appreciation.
-        </p>
-
-        {/* Logos */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 justify-items-center items-center">
-          {logos.map((logo, index) => (
-            <div
-              key={index}
-              className="bg-white shadow-md rounded-lg p-4 flex justify-center items-center w-full h-24"
-            >
-              <Image
-                src={logo.src}
-                alt={logo.alt}
-                width={100}
-                height={60}
-                className="object-contain"
-              />
-            </div>
-          ))}
+          {/* Image */}
+          <div className="md:w-1/2">
+            <Image
+              src="/Assets/belmond img.jpg" // Replace this with your image path in public folder
+              alt="Project View"
+              width={800}
+              height={500}
+              className="rounded-xl shadow-md object-cover w-full h-auto"
+            />
+          </div>
         </div>
-      </section>
+      </div>
 
       {/* === Belmond Intro Section === */}
       <section className="bg-[#dff2ea] py-16 sm:py-20 relative overflow-hidden text-gray-900">

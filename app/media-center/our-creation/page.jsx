@@ -6,7 +6,7 @@ const Page = () => {
   const [selectedPlatform, setSelectedPlatform] = useState("Infography");
 
   const videoData = {
-    Infography: [
+    Infographics: [
       {
         title: "Interior Design Tips",
         date: "12-Jun-2025",
@@ -60,12 +60,12 @@ const Page = () => {
   return (
     <>
       {/* Hero Section */}
-       <div
+      <div
         data-aos="fade-right"
         className="relative w-full h-[270px] md:h-[300px] lg:h-[400px] bg-cover bg-center flex items-center justify-center"
         style={{
           backgroundImage:
-            "url('/Assets/SVS_Belmond_Rajapulova_Junction_Vizag_Banner_Our_Creatives.png')",
+            "url('/Assets/SVS_Belmond_Rajapulova_Junction_Vizag_Banner_Our_Creatives2.png')",
         }}
       >
         <div className="relative z-10 max-w-5xl mx-auto text-center">
@@ -82,7 +82,10 @@ const Page = () => {
         <h2 className="text-3xl font-semibold text-gray-800">Our Creatives</h2>
         <div className="w-20 h-1 bg-[#61796f] mt-2 mb-4" />
         <p className="text-gray-700 max-w-3xl">
-          Watch our infographics, reels, and posts curated to inspire and inform property buyers.
+          Explore a visual journey of our work, showcasing project highlights,
+          construction progress, milestones, events, and more. Each creative
+          reflects our commitment to quality, innovation, and the vision behind
+          every SVS development.
         </p>
       </div>
 
@@ -108,7 +111,7 @@ const Page = () => {
         {videoData[selectedPlatform]?.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {videoData[selectedPlatform].map((video, i) => {
-              if (selectedPlatform === "Infography") {
+              if (selectedPlatform === "Infographics") {
                 return (
                   <div
                     key={i}
