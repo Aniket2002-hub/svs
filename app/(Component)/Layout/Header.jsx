@@ -144,7 +144,7 @@ export default function Navbar() {
           {mediaDropdownOpen && (
             <ul className="pl-4 mt-2 space-y-2">
               <li><Link href="/news-media" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Press Coverage</Link></li>
-              <li><Link href="/media-center/our videos" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Our Videos</Link></li>
+              <li><Link href="/media-center/our-videos" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Our Videos</Link></li>
               <li><Link href="/media-center/our-creation" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Our Creatives</Link></li>
             </ul>
           )}
