@@ -160,6 +160,18 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4 uppercase">Contact Us</h3>
             <div className="w-28 h-[1px] bg-white mb-6"></div>
             <address className="not-italic space-y-4">
+                <span className="text-lg font-semibold text-[]">
+                  Hyderabad Office
+                </span>
+                <p className="text-base leading-relaxed">
+                
+                  Office Suite No. C&D, SVS Girish Residency,{" "}
+                  <br />
+                  Nizampet Road, Kukatpally {" "}
+                  <br />
+                  Hyderabad - 500 072, Telangana <br />
+                </p>
+                <address className="not-italic space-y-4">
               <span className="text-lg font-semibold text-[]">
                   Vizag Office
                 </span>
@@ -168,18 +180,6 @@ const Footer = () => {
                  Near HDFC Bank, Seethammadhara,  <br />
                 Vizag - 530 013, Andhra Pradesh
               </p>
-              <address className="not-italic space-y-4">
-                <span className="text-lg font-semibold text-[]">
-                  Hyderabad Office
-                </span>
-                <p className="text-base leading-relaxed">
-                
-                  Office Suite No. C&D, SVS Girish Residency,{" "}
-                  <br />
-                  Nizampet Road,Kukatpally, Hyderabad - 500 072, {" "}
-                  <br />
-                  Hyderabad - 500 072, Telangana <br />
-                </p>
                 <div className="flex items-center space-x-2 ">
                   <MdEmail className="text-lg " />
                   <span className="text-base break-all">

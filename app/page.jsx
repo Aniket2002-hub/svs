@@ -20,7 +20,7 @@ import "swiper/css/effect-fade";
 import "./globals.css";
 
 // Video Paths
-const videos = ["/Assets/background-videos1.mov"];
+const videos = ["/Assets/bg video.mp4"];
 
 // Colored Info Blocks
 const blocks = [
@@ -205,7 +205,7 @@ const Page = () => {
             <p className="mb-1 text-sm font-semibold text-black"></p>
             <h4 className="text-lg font-semibold text-red-700"></h4>
             <h2
-              className="my-1 text-3xl font-bold text-black "
+              className="my-1 text-3xl font-bold text-black  "
               style={{ fontFamily: "raleway,sans-serif" }}
             >
               SVS Belmond, Rajapulova,Vizag

@@ -44,7 +44,7 @@ const page = () => {
           {/* Contact Info Blocks */}
           <div className="mb-[20px]">
             <h2 className="text-[18px] font-semibold text-[61796f] font-spartan">
-              Corporate Office
+              Hyderabad Office
             </h2>
             <p className="text-[15px] text-black font-poppins">
                Office Suite No. C&D, SVS Girish Residency, Nizampet Road,

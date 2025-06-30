@@ -1,0 +1,198 @@
+'use client';
+import { useState } from 'react';
+import Image from 'next/image';
+
+function getYouTubeVideoId(url) {
+  const match = url.match(
+    /(?:youtube\.com\/(?:.*v=|embed\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/
+  );
+  return match ? match[1] : null;
+}
+
+const videoData = {
+  2025: [
+    {
+      title: 'Vizag Tourist Places',
+      date: '03-Jun-2025',
+      thumbnail: '/Assets/youtube logo.avif',
+      href: 'https://youtu.be/gwb8Edxzs0k?si=PAE6rgY6FbiTeSj-',
+    },
+    {
+      title: 'Bhogapuram International Airport marks a milestone in transforming the Indian aviation industry',
+      date: '17-Jun-2025',
+      thumbnail: '/Assets/youtube logo.avif',
+      href: 'https://youtu.be/-b6goU9bqII?si=ZkHmp3O3AOAzEZLY',
+    },
+    {
+      title: 'PM Modi\'s speech during International Day of Yoga celebrations in Visakhapatnam, Andhra Pradesh',
+      date: '10-Jun-2025',
+      thumbnail: '/Assets/youtube logo.avif',
+      href: 'https://youtu.be/llXysFlhThc?si=Ltwe4d6Mw8KmY2T2',
+    },
+  ],
+  2024: [
+    {
+      title: 'Hyderabad Housing Boom of 2024',
+      date: '15-Apr-2024',
+      thumbnail: '/Assets/youtube logo.avif',
+      href: '',
+    },
+    {
+      title: 'Best Flats Under ₹1 Cr - Pune 2024',
+      date: '02-Mar-2024',
+      thumbnail: '/Assets/youtube logo.avif',
+      href: 'https://youtu.be/-b6goU9bqII?si=38zNtnMM3DVOKcIq',
+    },
+  ],
+  2023: [
+    {
+      title: 'The Ship Factory of World - Visakhapatnam',
+      thumbnail: '/Assets/youtube logo.avif',
+      href: 'https://youtu.be/CSyihxr5DFs?si=H1aMk86ytCU8W7YK',
+    },
+  ],
+  2022: [
+    {
+      title: 'Is Real Estate Still a Good Investment in 2022?',
+      date: '18-Dec-2022',
+      thumbnail: '/Assets/youtube logo.avif',
+      href: 'https://youtu.be/-b6goU9bqII?si=38zNtnMM3DVOKcIq',
+    },
+  ],
+};
+
+export default function OurVideos() {
+  const [selectedYear, setSelectedYear] = useState('2025');
+
+  return (
+    <div>
+      {/* Hero Section */}
+      <div
+        data-aos="fade-right"
+        className="relative w-full h-[270px] md:h-[300px] lg:h-[400px] bg-cover bg-center flex items-center justify-center"
+        style={{
+          backgroundImage:
+            "url('/Assets/SVS_Belmond_Rajapulova_Junction_Vizag_Banner_Our_Videos.png')",
+        }}
+      >
+        <div className="relative z-10 max-w-5xl mx-auto text-center">
+          <h2
+            data-aos="slide-right"
+            data-aos-duration="1500"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-black"
+          ></h2>
+        </div>
+      </div>
+
+      {/* Description and CTA */}
+      <div className="px-6 md:px-20 py-10 bg-white">
+        <div className="flex items-center justify-between flex-wrap gap-4">
+          <div>
+            <h2 className="text-3xl font-semibold text-gray-800">Our Videos</h2>
+            <div className="w-20 h-1 bg-[#61796f] mt-2 mb-4"></div>
+            <p className="text-gray-700 max-w-3xl">
+              Watch our explainer videos, question answer sessions and YouTube
+              discussions featuring ideas and practical advice curated for you.
+            </p>
+          </div>
+
+          <a
+            href="https://www.youtube.com/@svsconstructionsgroup"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-red-600 hover:bg-red-700 text-white font-semibold px-4 py-2 rounded flex items-center"
+          >
+            Our YouTube Channel
+            <svg
+              className="w-5 h-5 ml-2"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path d="M10 15l5.19-3L10 9v6z" />
+              <path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.7-.8-2.1-.9C15.8 5 12 5 12 5s-3.8 0-6.9.1c-.5 0-1.4.1-2.1.9C2.4 6.6 2.2 8 2.2 8S2 9.6 2 11.3v1.4c0 1.7.2 3.3.2 3.3s.2 1.4.8 2c.8.8 1.9.8 2.4.9 1.7.1 7.1.1 7.1.1s3.8 0 6.9-.1c.5 0 1.4-.1 2.1-.9.6-.6.8-2 .8-2s.2-1.6.2-3.3v-1.4C22 9.6 21.8 8 21.8 8z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      {/* Featured Embedded Video */}
+      <div className="px-6 md:px-20">
+        <div className="w-full h-[500px] mb-6">
+          <iframe
+            className="w-full h-full rounded shadow-lg"
+            src="https://www.youtube.com/embed/-b6goU9bqII"
+            title="YouTube video"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </div>
+
+      {/* Year Filter Buttons */}
+      <div className="px-6 md:px-20 pb-4">
+        <div className="flex gap-2 flex-wrap">
+          {Object.keys(videoData)
+            .sort((a, b) => b.localeCompare(a))
+            .map((year) => (
+              <button
+                key={year}
+                onClick={() => setSelectedYear(year)}
+                className={`px-4 py-2 border rounded ${
+                  selectedYear === year
+                    ? 'bg-[#61796f] text-white'
+                    : 'bg-white text-gray-700 hover:bg-gray-100'
+                }`}
+              >
+                {year}
+              </button>
+            ))}
+        </div>
+      </div>
+
+      {/* Video Cards with Hover Effect */}
+      <div className="px-6 md:px-20 py-8 bg-blue-50">
+        {videoData[selectedYear]?.length > 0 ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {videoData[selectedYear].map((video, i) => {
+              const videoId = getYouTubeVideoId(video.href || '');
+              const dynamicThumbnail = videoId
+                ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`
+                : '/Assets/default-thumb.jpg';
+
+              const thumbnailSrc = video.thumbnail || dynamicThumbnail;
+
+              return (
+                <a
+                  href={video.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  key={i}
+                  className="group bg-white shadow rounded overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+                >
+                  <Image
+                    src={thumbnailSrc}
+                    alt={video.title}
+                    width={500}
+                    height={300}
+                    className="w-full h-78 object-cover transition duration-300 group-hover:brightness-105"
+                  />
+                  <div className="p-4">
+                    <h3 className="font-semibold text-lg text-gray-800 group-hover:text-[] transition">
+                      {video.title}
+                    </h3>
+                    <p className="text-sm text-gray-500 mt-1">{video.date}</p>
+                  </div>
+                </a>
+              );
+            })}
+          </div>
+        ) : (
+          <p className="text-center text-gray-600">
+            No videos found for {selectedYear}.
+          </p>
+        )}
+      </div>
+    </div>
+  );
+}

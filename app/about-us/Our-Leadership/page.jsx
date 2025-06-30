@@ -13,8 +13,7 @@ export default function PersonalStory() {
         data-aos="fade-right"
         className="relative w-full h-[270px] md:h-[300px] lg:h-[400px] bg-cover bg-center flex items-center justify-center"
         style={{
-          backgroundImage:
-            "url('/Assets/SVS_Vizag_Banner_Our Teams,.png')",
+          backgroundImage: "url('/Assets/SVS_Vizag_Banner_Our Teams,.png')",
         }}
       >
         <div className="relative z-10 max-w-5xl mx-auto text-center">
@@ -60,21 +59,18 @@ export default function PersonalStory() {
                   : "max-h-[150px] overflow-hidden md:max-h-full"
               }`}
             >
-              Mr. SVSN Varma stands as a true luminary, his leadership is
-              defined by an unflinching commitment to excellence at every sphere
-              of life. His farsighted acumen charts a course of business
-              innovation, inspiring everyone around to dream beyond the
-              boundaries of convention, work hard to realize those dreams,
-              remain focused to the core objective and never deviate from the
-              commitment to excellence.
-              <br /> Mr. Varma is a thought leader with the highest level of
-              integrity, self-awareness, courage, respect, compassion, and
-              resilience. He constantly inspires, motivates, empowers and guides
-              others towards a shared vision. As both a mentor and a motivator,
-              his dynamic leadership, wisdom, and decisiveness have steered the
-              company toward new heights. He remains an enduring pillar of
-              inspiration, encouraging all to explore uncharted territories and
-              achieve extraordinary results.
+              Mr. SVSN Verma is a strong leader and the chairperson of SVS
+              Constructions Pvt. Ltd. He is a key figure in the company. Over
+              the past two decades, Mr. Verma's efforts have shaped the
+              company's growth. His steady commitment to innovation, quality,
+              and excellence elevates the company under his guidance. Mr. Verma
+              encourages and inspires others to go beyond the norm in their
+              construction projects.
+              <br />
+              He has led the company to new heights with his energetic
+              leadership, experience, and decisiveness. He is a strong
+              decision-maker and a great motivator who inspires others to push
+              themselves to achieve their goals.
             </p>
             {/* Show Read More on mobile only */}
             <div className="mt-2 block md:hidden">
@@ -120,27 +116,25 @@ export default function PersonalStory() {
                   : "max-h-[150px] overflow-hidden md:max-h-full"
               }`}
             >
-              Mr. Girish Varma holds a degree in Chemical Engineering from
-              Chaitanya Bharathi Institute of Technology (CBIT), Gandipet,
-              Hyderabad, Telangana. He holds an MBA from the prestigious Indian
-              School of Business (ISB), Gachibowli, Hyderabad, Telangana. His
-              unrelenting appetite for knowledge drove him to pursue
-              Certifications in International Marketing, Business Management,
-              and Crisis Management from the prestigious Harvard University,
-              Cambridge, Massachusetts, United States. His entrepreneurial
-              instincts inspired him to undertake Degree in Family Business
-              Program from the ivy league and The Kellogg School of Management
-              at Northwestern University, Evanston, Illinois, United States.{" "}
+              Mr. Giish Verma is the managing director of SVS Construction
+              Company. He leads business expansion with a clear focus on
+              improving operational efficiency and supporting sustainable
+              growth. He has gained extensive experience through his earlier
+              studies in Chemical Engineering at CBIT, Hyderabad, and he earned
+              an MBA from the respected Indian School of Business (IBS). His
+              credentials go further; he holds certifications from Harvard
+              University in International Marketing, Business Management, and
+              Crisis Management. Additionally, he graduated from Northwestern
+              University's Kellogg School of Management in Chicago with a focus
+              on the Family Business Program.
               <br />
-              He seamlessly and effortlessly blends technical prowess with
-              strategic acumen. His qualifications extend far beyond college
-              premises. His ability to pierce through the challenges in business
-              separates him from the rest. In his role as a Managing Director he
-              navigates the organization’s operations, leveraging his wealth of
-              knowledge and experience to drive innovation, efficiency, and
-              sustainable growth. His leadership style along with technical
-              acumen and a global perspective is the bedrock of the
-              organization’s success.
+              His leadership features a strategic vision that blends deep
+              industry knowledge with innovative methods, helping SVS
+              Construction thrive in a competitive real estate market. His
+              ability to tackle various business challenges makes him stand out.
+              He plays a crucial role as Managing Director, overseeing the
+              company's operations, innovation, global perspective, and
+              commitment to excellence.
             </p>
             {/* Show Read More on mobile only */}
             <div className="mt-3 block md:hidden">
