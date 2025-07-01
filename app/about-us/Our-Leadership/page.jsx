@@ -35,6 +35,7 @@ export default function PersonalStory() {
               className="w-full h-auto object-cover"
             />
           </div>
+          
 
           {/* Text SECOND on mobile */}
           <div className="p-2 bg-white rounded order-2 md:order-1">
@@ -60,9 +61,10 @@ export default function PersonalStory() {
               }`}
             >
               Mr. SVSN Verma is a strong leader and the chairperson of SVS
-              Constructions Pvt. Ltd. He is a key figure in the company. Over
-              the past two decades, Mr. Verma's efforts have shaped the
-              company's growth and built a strong foundation for future
+              Constructions Pvt. Ltd. He is a key figure in the company; his
+              great initiative and strategic thinking have given the strong
+              boost. Over the past two decades, Mr. Verma's efforts have shaped
+              the company's growth and built a strong foundation for future
               development. His steady commitment to innovation, quality, and
               customer trust elevates the company under his guidance and remains
               focused on the core objective of delivering excellence and quality
@@ -119,17 +121,18 @@ export default function PersonalStory() {
                   : "max-h-[150px] overflow-hidden md:max-h-full"
               }`}
             >
-              Mr. Girish Varma is the managing director of SVS Construction
-              Company. He leads business expansion with a clear focus on
-              improving operational efficiency and supporting sustainable
-              growth. He has gained extensive experience through his earlier
-              studies in Chemical Engineering at CBIT, Hyderabad, and he earned
-              an MBA from the respected Indian School of Business (IBS). His
-              credentials go further; he holds certifications from Harvard
-              University in International Marketing, Business Management, and
-              Crisis Management. Additionally, he graduated from Northwestern
-              University's Kellogg School of Management in Chicago with a focus
-              on the Family Business Program.
+              Mr. Girish Varma holds a degree in Chemical Engineering from
+              Chaitanya Bharathi Institute of Technology (CBIT), Gandipet,
+              Hyderabad, Telangana. He holds an MBA from the prestigious Indian
+              School of Business (ISB), Gachibowli, Hyderabad, Telangana. His
+              unrelenting appetite for knowledge drove him to pursue
+              Certifications in International Marketing, Business Management,
+              and Crisis Management from the prestigious Harvard University,
+              Cambridge, Massachusetts, United States. His entrepreneurial
+              instincts inspired him to undertake a Degree in the Family
+              Business Program from the Ivy League and the Kellogg School of
+              Management at Northwestern University, Evanston, Illinois, (a
+              suburb of Chicago), United States.
               <br />
               His leadership features a strategic vision that combines deep
               industry knowledge with innovative methods, enabling SVS

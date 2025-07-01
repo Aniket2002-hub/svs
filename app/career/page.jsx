@@ -38,12 +38,18 @@ const jobOpenings = [
             business goals
           </li>
           <li>
-           Developing sales forecasts, performance reports, and pipeline analysis
+            Developing sales forecasts, performance reports, and pipeline
+            analysis
           </li>
           <li>Leading contract negotiations and closure of high-value deals</li>
-          <li>Ensuring client satisfaction and timely resolution of escalations</li>
+          <li>
+            Ensuring client satisfaction and timely resolution of escalations
+          </li>
           <li>Responsible for operational activities</li>
-          <li>Conducting market research and competitor analysis to stay ahead of trends</li>
+          <li>
+            Conducting market research and competitor analysis to stay ahead of
+            trends
+          </li>
         </ul>
         <br />
         <p className="font-semibold">Required Skills:</p>
@@ -51,9 +57,7 @@ const jobOpenings = [
           <li>Proven track record of meeting or exceeding sales targets</li>
           <li>Strong leadership and team management capabilities</li>
           <li>Excellent strategic thinking and business acumen</li>
-          <li>
-            Superior interpersonal and relationship-building skills
-          </li>
+          <li>Superior interpersonal and relationship-building skills</li>
           <li>Proficiency in CRM tools and sales analytics platforms</li>
           <li>Strong negotiation and presentation skills</li>
           <li>Excellent written and verbal communication </li>
@@ -78,28 +82,39 @@ const jobOpenings = [
         <p className="font-semibold">Job description:</p>
         <ul className="list-disc pl-5 space-y-1">
           <li>
-           Manage and grow relationships with key clients across portfolios
+            Manage and grow relationships with key clients across portfolios
+          </li>
+          <li>Understand client needs and provide tailored solutions</li>
+          <li>
+            Serve as the primary point of contact for client communications
           </li>
           <li>
-            Understand client needs and provide tailored solutions
+            Collaborate with internal teams to ensure seamless service delivery
           </li>
           <li>
-           Serve as the primary point of contact for client communications
+            Upsell and cross-sell relevant products and services to existing
+            clients
           </li>
           <li>
-           Collaborate with internal teams to ensure seamless service delivery
-          </li>
-          <li>
-            Upsell and cross-sell relevant products and services to existing clients
-          </li>
-          <li>
-           Developing sales forecasts, performance reports, and pipeline analysis
+            Developing sales forecasts, performance reports, and pipeline
+            analysis
           </li>
           <li>Ensure timely resolution of client issues and escalations</li>
-          <li>Regularly monitor client satisfaction and take proactive steps to improve it</li>
-          <li>Prepare and deliver performance reports to clients and internal stakeholders</li>
-          <li>Ensure client retention through consistent engagement and value delivery</li>
-          <li>Stay updated on market trends to offer strategic advice to clients</li>
+          <li>
+            Regularly monitor client satisfaction and take proactive steps to
+            improve it
+          </li>
+          <li>
+            Prepare and deliver performance reports to clients and internal
+            stakeholders
+          </li>
+          <li>
+            Ensure client retention through consistent engagement and value
+            delivery
+          </li>
+          <li>
+            Stay updated on market trends to offer strategic advice to clients
+          </li>
         </ul>
         <br />
         <p className="font-semibold">Required Skills:</p>
@@ -107,9 +122,7 @@ const jobOpenings = [
           <li>Strong interpersonal and relationship-building skills</li>
           <li>Customer-first mindset with problem-solving approach</li>
           <li>Excellent time management and organizational skills</li>
-          <li>
-            Proficiency in CRM tools and client tracking systems
-          </li>
+          <li>Proficiency in CRM tools and client tracking systems</li>
           <li>Strong communication and presentation skills</li>
           <li>High emotional intelligence and professional conduct</li>
           <li>Proactive, responsible, and results-oriented attitude</li>
@@ -118,10 +131,10 @@ const jobOpenings = [
           Apply Now
         </button>
       </>
-       ),
-   },
+    ),
+  },
   {
-    title: "Business Development Executive / Manager",
+    title: "Business Development Executive",
     description: (
       <>
         <p>
@@ -134,7 +147,7 @@ const jobOpenings = [
         <p className="font-semibold">Job description:</p>
         <ul className="list-disc pl-5 space-y-1">
           <li>
-           Identify new business opportunities and generate qualified leads
+            Identify new business opportunities and generate qualified leads
           </li>
           <li>
             Conduct market research and competitor analysis to find growth areas
@@ -143,18 +156,16 @@ const jobOpenings = [
             Build and maintain strong relationships with prospective clients
           </li>
           <li>
-           Pitch company offerings to potential customers and close deals
+            Pitch company offerings to potential customers and close deals
           </li>
           <li>
-           Collaborate with internal teams to ensure successful onboarding and execution
+            Collaborate with internal teams to ensure successful onboarding and
+            execution
           </li>
-          <li>
-          Attend industry events, networking sessions, and conferences
-          </li>
+          <li>Attend industry events, networking sessions, and conferences</li>
           <li>Maintain a healthy sales pipeline and update CRM regularly</li>
           <li>Prepare regular reports on business development activities</li>
           <li>Work closely with marketing to align outreach strategies</li>
-          
         </ul>
         <br />
         <p className="font-semibold">Required Skills:</p>
@@ -162,9 +173,7 @@ const jobOpenings = [
           <li>Strong negotiation and persuasive communication skills</li>
           <li>Ability to work independently with a go-getter attitude</li>
           <li>Excellent lead generation and cold-calling abilities</li>
-          <li>
-            Good understanding of sales metrics and CRM tools
-          </li>
+          <li>Good understanding of sales metrics and CRM tools</li>
           <li>Time management and multitasking capabilities</li>
           <li>Target-driven with the ability to handle rejection positively</li>
           <li>Creative and analytical approach to problem-solving</li>
@@ -174,7 +183,7 @@ const jobOpenings = [
           Apply Now
         </button>
       </>
-       ),
+    ),
   },
   {
     title: "Market Analyst",
@@ -190,27 +199,34 @@ const jobOpenings = [
         <p className="font-semibold">Job description:</p>
         <ul className="list-disc pl-5 space-y-1">
           <li>
-            Conduct detailed market research and analysis to identify trends and opportunities
+            Conduct detailed market research and analysis to identify trends and
+            opportunities
           </li>
           <li>
-           Monitor industry news, competitor activity, and market developments
+            Monitor industry news, competitor activity, and market developments
           </li>
           <li>
-            Prepare research-based insights and reports for internal decision-making
+            Prepare research-based insights and reports for internal
+            decision-making
           </li>
           <li>
-            Analyse consumer behaviour, pricing strategies, and demand-supply gaps
+            Analyse consumer behaviour, pricing strategies, and demand-supply
+            gaps
           </li>
+          <li>Build and manage databases to track key market indicators</li>
           <li>
-           Build and manage databases to track key market indicators
-          </li>
-          <li>
-           Developing sales forecasts, performance reports, and pipeline analysis
+            Developing sales forecasts, performance reports, and pipeline
+            analysis
           </li>
           <li>Leading contract negotiations and closure of high-value deals</li>
-          <li>Ensuring client satisfaction and timely resolution of escalations</li>
+          <li>
+            Ensuring client satisfaction and timely resolution of escalations
+          </li>
           <li>Responsible for operational activities</li>
-          <li>Conducting market research and competitor analysis to stay ahead of trends</li>
+          <li>
+            Conducting market research and competitor analysis to stay ahead of
+            trends
+          </li>
         </ul>
         <br />
         <p className="font-semibold">Required Skills:</p>
@@ -218,9 +234,7 @@ const jobOpenings = [
           <li>Proven track record of meeting or exceeding sales targets</li>
           <li>Strong leadership and team management capabilities</li>
           <li>Excellent strategic thinking and business acumen</li>
-          <li>
-            Superior interpersonal and relationship-building skills
-          </li>
+          <li>Superior interpersonal and relationship-building skills</li>
           <li>Proficiency in CRM tools and sales analytics platforms</li>
           <li>Strong negotiation and presentation skills</li>
           <li>Excellent written and verbal communication </li>
@@ -229,11 +243,11 @@ const jobOpenings = [
           Apply Now
         </button>
       </>
-       ),
+    ),
   },
- 
- {
-    title: "Human Resources Executive / Manager",
+
+  {
+    title: "Human Resources Executive ",
     description: (
       <>
         <p>
@@ -245,24 +259,18 @@ const jobOpenings = [
         <br />
         <p className="font-semibold">Job description:</p>
         <ul className="list-disc pl-5 space-y-1">
-          <li>
-            Manage end-to-end recruitment and onboarding processes
-          </li>
+          <li>Manage end-to-end recruitment and onboarding processes</li>
           <li>
             Maintain employee records and ensure compliance with HR policies
           </li>
           <li>
             Address employee queries, grievances, and conduct exit interviews
           </li>
-          <li>
-           Organize training sessions and development programs
-          </li>
+          <li>Organize training sessions and development programs</li>
           <li>
             Drive employee engagement and internal communication initiatives
           </li>
-          <li>
-           Support payroll and performance appraisal processes
-          </li>
+          <li>Support payroll and performance appraisal processes</li>
           <li>Collaborate with departments to address manpower planning</li>
           <li>Ensure timely documentation and policy updates</li>
           <li>Participate in talent management and succession plannings</li>
@@ -274,9 +282,7 @@ const jobOpenings = [
           <li>Strong understanding of HR policies and labour laws</li>
           <li>Excellent interpersonal and conflict-resolution skills</li>
           <li>Hands-on experience with HR software and ATS platforms</li>
-          <li>
-            Good organizational and multitasking abilities
-          </li>
+          <li>Good organizational and multitasking abilities</li>
           <li>Strong communication and presentation skills</li>
           <li>Empathy, discretion, and ethical conduct</li>
           <li>Proficiency in MS Office tools</li>
@@ -286,7 +292,7 @@ const jobOpenings = [
           Apply Now
         </button>
       </>
-       ),
+    ),
   },
 ];
 
@@ -393,8 +399,10 @@ export default function CareerPage() {
         </div>
 
         <div className="text-center mb-8">
-          <p className="text-base font-medium text-gray-700">
-            Fill your details and share with us. We will connect with you soon.
+          <p className="text-base font-medium text-gray-700  ">
+            Share your details and upload your CV; we’re always on the lookout <br />
+            for passionate professionals. Once submitted, our team will connect
+            with you shortly.
           </p>
           <div className="w-16 border-b-2 border-black mx-auto mt-2" />
         </div>

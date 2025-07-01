@@ -50,7 +50,7 @@ const Page = () => {
             Our Vision
           </h2>
           <div className="w-16 h-1 mx-auto bg-gray-800 mb-6" />
-          <p className="text-gray-700 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto text-justify">
+          <p className="text-gray-700 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto ">
             At SVS Construction, we are not only building projects but are also
             committed to building quality construction and sustainability. Our
             vision starts from a strong customer base to give state-of-the-art
@@ -72,7 +72,7 @@ const Page = () => {
             Our Mission
           </h2>
           <div className="w-16 h-1 mx-auto bg-gray-800 mb-6" />
-          <p className="text-gray-700 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto text-justify">
+          <p className="text-gray-700 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto ">
             To build premium spaces that enhance the quality of life and create
             a strong customer base with long-lasting values. We’re strongly
             committed to delivering innovative and quality construction with

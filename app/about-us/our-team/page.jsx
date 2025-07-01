@@ -15,7 +15,7 @@ const TEAM = [
     photo: "/Assets/SVS_Belmond_Rajapulova_Junction_Vizag_Our Teams_BP.png",
     linkedin:
       "https://www.linkedin.com/in/bhaswarpaul?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-    bio: `Mr Bhaswar Paul is a known real estate expert, especially in the Gurgaon market, having a great experience of 25+ years in the real estate sector. He has worked with India’s top developers, M3M, Central Park, IREO, and More. His expertise in real estate doesn’t stop here; he has initiated a new and unique initiative in the education sector over the last couple of years, training students and providing them with knowledge about the real estate market. 
+    bio: `Mr. Bhaswar Paul is a skilled real estate professional with 25+ years of experience in business development, real estate sales, and market planning, and is also the founder & CEO of IREED Academy. He has worked with some of India’s top developers, including M3M, Central Park, and IREO. He is known for his strong sales leadership, global client network, and ability to manage high-net-worth individual portfolios. Mr. Paul offers valuable industry insights and a team-oriented approach. His outstanding interpersonal skills and international experience make him a trusted advisor in real estate.
 `,
   },
   {
@@ -34,7 +34,7 @@ const TEAM = [
     photo: "/Assets/SVS_Belmond_Rajapulova_Junction_Vizag_Our Teams_KP.png",
     linkedin:
       "https://www.linkedin.com/in/kamaldeep01?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-    bio: `Mr. Kamldeep Prajapati comes with the great experience of more than five years in the real estate sector. And worked with top real estate companies. His expertise in sales, business head, and as well as leading make him stand out.`,
+    bio: `Mr. Kamaldeep Prajapati is a results-driven professional with solid experience in business development, corporate events, B2B sales, sales management, and operations management. With a positive mindset and hands-on experience, he excels at promoting business growth and building strong corporate relationships. His strong leadership and execution skills make him an important part of our team, consistently adding value through new strategies and operational effectiveness. Kamaldeep’s commitment to success shows in every project he leads, helping us reach our organizational goals.`,
   },
 ];
 
