@@ -166,7 +166,7 @@ const Page = () => {
 
         {/* Social Icons */}
         {/* Social Media Icons */}
-        <div className="fixed right-0 bottom-8 flex flex-col items-center space-y-4 z-30 text-white text-xl bg-[#67916f] p-4">
+        <div className="fixed right-0 bottom-8 flex flex-col items-center space-y-4 z-30 text-white text-xl bg-[#67916f]/50 p-4 rounded-md">
           <a
             href=" https://www.instagram.com/svsconstructionsgroup/"
             className="hover:scale-110 transition text-white"
@@ -526,8 +526,7 @@ const Page = () => {
               className="w-14 h-1 bg-gray-800 mb-4"
             ></div>
             <p data-aos="fade-left" className="text-gray-700  mb-2">
-              SVS Constructions has always believed in the power of
-              collaboration. Over the years, we have partnered with some of the
+               Over the years, SVS has partnered with some of the
               biggest names in the real estate industry to deliver landmark
               projects.
             </p>

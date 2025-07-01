@@ -22,9 +22,9 @@ export default function PersonalStory() {
       </div>
 
       {/* Description */}
-      <div className="px-6 md:px-20 py-10 bg-[] max-w-7xl mx-auto">
+      <div className="px-6 md:px-20 py-10 bg-[#dff2ea] max-w-8xl mx-auto">
         <h2 className="text-3xl font-semibold text-gray-800">Our Leadership</h2>
-        <div className="w-16 border-b-2 border-gray-700 h-1  mt-2 mb-2" />
+        <div className="w-16 border-b-2 border-gray-700 h-1  mt-2 mb-0" />
         <p className="text-gray-700">
           Our strong leadership at SVS Constructions is the bedrock for crafting
           legacy and building milestone projects for our valued customers. They
@@ -38,7 +38,7 @@ export default function PersonalStory() {
       </div>
 
       {/* Story Section */}
-      <section className="bg-[#dff2ea] w-full py-18 px-4">
+      <section className="bg-[#dff2ea] w-full py-5 px-4">
         {/* First White Card */}
         <div className="bg-white max-w-6xl mx-auto rounded-lg p-6 grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-6">
           {/* Image FIRST on mobile */}
