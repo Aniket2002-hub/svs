@@ -38,7 +38,7 @@ export default function Navbar() {
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-[#61796f] shadow text-white" : "bg-transparent text-white"}`}>
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" target="_blank" rel="noopener noreferrer">
-          <Image src="/Assets/Group 82.png" alt="Logo" width={50} height={50} />
+          <Image src="/Assets/logooooo.png" alt="Logo" width={50} height={50} />
         </Link>
 
         {/* Desktop Menu */}

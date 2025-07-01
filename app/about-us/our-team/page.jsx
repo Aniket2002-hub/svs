@@ -15,7 +15,7 @@ const TEAM = [
     photo: "/Assets/SVS_Belmond_Rajapulova_Junction_Vizag_Our Teams_BP.png",
     linkedin:
       "https://www.linkedin.com/in/bhaswarpaul?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-    bio: `Mr. Bhaswar Paul is a skilled real estate professional with 25+ years of experience in business development, real estate sales, and market planning, and is also the founder & CEO of IREED Academy. He has worked with some of India’s top developers, including M3M, Central Park, and IREO. He is known for his strong sales leadership, global client network, and ability to manage high-net-worth individual portfolios. Mr. Paul offers valuable industry insights and a team-oriented approach. His outstanding interpersonal skills and international experience make him a trusted advisor in real estate.
+    bio: ` Bhaswar Paul is a skilled real estate professional with 25+ years of experience in business development, real estate sales, and market planning, and is also the founder & CEO of IREED Academy. He has worked with some of India’s top developers, including M3M, Central Park, and IREO. He is known for his strong sales leadership, global client network, and ability to manage high-net-worth individual portfolios. Mr. Paul offers valuable industry insights and a team-oriented approach. His outstanding interpersonal skills and international experience make him a trusted advisor in real estate.
 `,
   },
   {
@@ -24,7 +24,7 @@ const TEAM = [
     photo: "/Assets/SVS_Belmond_Rajapulova_Junction_Vizag_Our Teams_HJ.png",
     linkedin:
       "https://www.linkedin.com/in/harshjasrotia?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-    bio: `Mr. Harsh Jasrotia brings over 18 years of extensive experience in business development and strategic leadership, having held prominent roles at renowned organizations such as Lodha Developers, M3M India, InfoEdge, Phoenix Mills, and Career Launcher.
+    bio: ` Harsh Jasrotia brings over 18 years of extensive experience in business development and strategic leadership, having held prominent roles at renowned organizations such as Lodha Developers, M3M India, InfoEdge, Phoenix Mills, and Career Launcher.
      He holds a strong academic foundation with education from IIT Patna and Panjab University.
 `,
   },
@@ -34,7 +34,7 @@ const TEAM = [
     photo: "/Assets/SVS_Belmond_Rajapulova_Junction_Vizag_Our Teams_KP.png",
     linkedin:
       "https://www.linkedin.com/in/kamaldeep01?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-    bio: `Mr. Kamaldeep Prajapati is a results-driven professional with solid experience in business development, corporate events, B2B sales, sales management, and operations management. With a positive mindset and hands-on experience, he excels at promoting business growth and building strong corporate relationships. His strong leadership and execution skills make him an important part of our team, consistently adding value through new strategies and operational effectiveness. Kamaldeep’s commitment to success shows in every project he leads, helping us reach our organizational goals.`,
+    bio: ` Kamaldeep Prajapati is a results-driven professional with solid experience in business development, corporate events, B2B sales, sales management, and operations management. With a positive mindset and hands-on experience, he excels at promoting business growth and building strong corporate relationships. His strong leadership and execution skills make him an important part of our team, consistently adding value through new strategies and operational effectiveness. Kamaldeep’s commitment to success shows in every project he leads, helping us reach our organizational goals.`,
   },
 ];
 

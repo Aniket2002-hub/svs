@@ -222,7 +222,7 @@ export default function BelmondPage() {
           {/* Collaborations */}
         </h3>
         <h2 className="text-2xl md:text-3xl font-bold text-black mb-4">
-          Vizag Layouts - Delivered Excellence with Every Build
+          Vizag Layouts - Sustainable Living Amidst Nature's Bounty
         </h2>
         <div className="w-20 border-b-2 border-black mb-6" />
 

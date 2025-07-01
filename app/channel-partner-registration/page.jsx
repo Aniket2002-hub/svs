@@ -76,7 +76,9 @@ const Page = () => {
                 key={item}
                 data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
                 data-aos-duration={1000 + index * 500}
-                className="bg-[#90afa2] h-[120px] w-[90%] sm:w-[270px] flex items-center justify-center rounded-md text-black text-center font-bold text-sm sm:text-base px-4 py-3"
+                className=" h-[120px] w-[90%] sm:w-[270px]  rounded-xl border-1 border-white bg-[#61796f] p-6 shadow-md
+            text-white  duration-300
+            hover:bg-white hover:text-black hover:border-black"
               >
                 {item}
               </div>
@@ -174,8 +176,8 @@ const Page = () => {
 
                 <div className="flex items-start">
                   <span className="font-bold mr-2 w-6">3.</span>
-                  <p>  
-                      Appointment of Channel Partner shall be sole discretion of
+                  <p>
+                    Appointment of Channel Partner shall be sole discretion of
                     SVS Constructions (which may change from project to
                     project). Channel Partner registered with SVS Constructions
                     will not have authority to market projects unless approved
