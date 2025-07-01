@@ -15,7 +15,7 @@ const TEAM = [
     photo: "/Assets/SVS_Belmond_Rajapulova_Junction_Vizag_Our Teams_BP.png",
     linkedin:
       "https://www.linkedin.com/in/bhaswarpaul?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-    bio: `Mr Bhaswar Paul is a known real estate expert, especially in the Gurgaon market, having a great experience of 25+ years in the real estate sector. He has worked with India’s top developers, M3M, Central Park, IREO, and More. His expertise in the sector doesn’t stop here, he has started his new move over the last couple of years in the education sector and training students, as well as providing learning about the real estate market. 
+    bio: `Mr Bhaswar Paul is a known real estate expert, especially in the Gurgaon market, having a great experience of 25+ years in the real estate sector. He has worked with India’s top developers, M3M, Central Park, IREO, and More. His expertise in real estate doesn’t stop here; he has initiated a new and unique initiative in the education sector over the last couple of years, training students and providing them with knowledge about the real estate market. 
 `,
   },
   {

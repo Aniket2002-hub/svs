@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 
 const Page = () => {
-  const [selectedPlatform, setSelectedPlatform] = useState("Infography");
+  const [selectedPlatform, setSelectedPlatform] = useState("Infographics");
 
   const videoData = {
     Infographics: [

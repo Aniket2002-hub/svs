@@ -35,7 +35,7 @@ const blocks = [
   {
     title: "SVS COMMERCIAL",
     description:
-      "Designed with great vision, SVS Commercial stands on a foundation of reliability and quality construction, delivering vibrant working spaces that inspire productivity and innovation. From retail outlets to standalone commercial hubs, it reflects our creativity and precision that helps for a business environment and its growth.",
+      "Designed with great vision, SVS Commercial stands on a foundation of reliability, quality construction, and excellence, delivering vibrant working spaces that inspire productivity and innovation. From retail outlets and offices to standalone commercial hubs and parks, it reflects our creativity and precision that helps for a business environment, and its long-term growth. ",
     color: "bg-[#90afa2]",
     buttonText: "View More",
     animation: "fade-up",
@@ -43,7 +43,7 @@ const blocks = [
   {
     title: "SVS PLOTS",
     description:
-      "SVS Plotted development focuses on delivering thoughtfully designed layouts like “Belmond,” which includes a strategic location, nearby infrastructure, and value appreciation that empower growth. Our plotted community offers wide roads, vastu-compliant, sustainable infrastructure, and freedom to build your vision.",
+      "SVS Plotted development is our premium projects focus on delivering thoughtfully designed layouts like “Belmond,” which includes a strategic location, nearby infrastructure, and value appreciation that empower growth, whether it's residential or commercial space.  Our plotted community offers internal wide roads, vastu-compliant, sustainable infrastructure, and freedom to build your vision. ",
     color: "bg-[#90afa2]",
     buttonText: "View More",
     animation: "fade-left",

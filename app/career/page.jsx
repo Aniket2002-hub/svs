@@ -5,57 +5,60 @@ import { FaPlus, FaMinus } from "react-icons/fa";
 
 const jobOpenings = [
   {
-    title: "Client Engagement",
+    title: "Senior Sales Manager",
     description: (
       <>
         <p>
-          Role: <strong>Client Engagement</strong>
+          Role: <strong>Senior Sales Manager</strong>
         </p>
-        <p>Place of Posting: Gurgaon</p>
-        <p>Yrs of Exp: 0 - 2 Years</p>
+        <p>Place of Posting: Vizag</p>
+        <p>Yrs of Exp: 5+ Years</p>
         <p>Position Opened: 2</p>
         <br />
         <p className="font-semibold">Job description:</p>
         <ul className="list-disc pl-5 space-y-1">
-          <li>Conducting Analysis and sharing the reports with the clients</li>
-          <li>Client Communication</li>
           <li>
-            Working with clients focused on real estate investment and
-            development
+            Driving sales strategy and execution across assigned regions or
+            verticals
           </li>
           <li>
-            Manage a set of dedicated clients including developers, private
-            equity investors and financial institutions
+            Building and managing high-performing sales teams to achieve revenue
+            targets
           </li>
           <li>
-            Build relationships and proactively identify opportunities to work
-            closely with the client
+            Identifying growth opportunities and formulating client acquisition
+            strategies
           </li>
           <li>
-            Coordinate internally with teams to get desired outputs for the
-            client
+            Managing key client relationships and ensuring long-term
+            partnerships
           </li>
-          <li>Ensure clients renew and see value in the subscription</li>
-          <li>Engage with clients in other cities as needed</li>
+          <li>
+            Coordinating with marketing, product, and operations teams to align
+            business goals
+          </li>
+          <li>
+           Developing sales forecasts, performance reports, and pipeline analysis
+          </li>
+          <li>Leading contract negotiations and closure of high-value deals</li>
+          <li>Ensuring client satisfaction and timely resolution of escalations</li>
           <li>Responsible for operational activities</li>
-          <li>Conduct Primary and Secondary Research when required</li>
+          <li>Conducting market research and competitor analysis to stay ahead of trends</li>
         </ul>
         <br />
         <p className="font-semibold">Required Skills:</p>
         <ul className="list-disc pl-5 space-y-1">
-          <li>A go-getter with the right attitude</li>
-          <li>Works best under pressure</li>
+          <li>Proven track record of meeting or exceeding sales targets</li>
+          <li>Strong leadership and team management capabilities</li>
+          <li>Excellent strategic thinking and business acumen</li>
           <li>
-            Highly customer-focused with effective time management skills
+            Superior interpersonal and relationship-building skills
           </li>
-          <li>
-            Flair for numbers and computer proficiency, especially in database
-            tracking
-          </li>
-          <li>Strong negotiating skills and capacity</li>
-          <li>Strong written and verbal communication skills</li>
+          <li>Proficiency in CRM tools and sales analytics platforms</li>
+          <li>Strong negotiation and presentation skills</li>
+          <li>Excellent written and verbal communication </li>
         </ul>
-        <button className="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+        <button className="mt-4 inline-block bg-[#61796f] text-white px-4 py-2 rounded hover:bg-[#4b5b4e]">
           Apply Now
         </button>
       </>

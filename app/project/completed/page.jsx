@@ -92,11 +92,18 @@ export default function BelmondPage() {
     },
   ];
   const logos = [
-    { src: "/Assets/Balaji-bliss-logo-1.png", alt: "Orchid" },
+    { src: "/Assets/Balaji-bliss-logo-1.png", alt: "Balaji Bliss" },
+    // { src: "/Assets/Central-Park-logo.png", alt: "Unitech" },
+    // { src: "/Assets/Central-Park-logo-phase-2.png", alt: "Bestech" },
+    { src: "/Assets/Girish-Residencey-logo-1.png", alt: "Girish Residency" },
+    { src: "/Assets/kavya-greens-logo-1.png", alt: "Kavya Greens" },
+  ];
+   const logo = [
+    
     { src: "/Assets/Central-Park-logo.png", alt: "Unitech" },
     { src: "/Assets/Central-Park-logo-phase-2.png", alt: "Bestech" },
-    { src: "/Assets/Girish-Residencey-logo-1.png" },
-    { src: "/Assets/kavya-greens-logo-1.png", alt: "CHD" },
+     { src: "/Assets/SVS-Marvel-Destiny-logo.png", alt: "SVS Marvel Destiny" },
+  
   ];
    return (
     <div className="w-full">
@@ -125,7 +132,7 @@ export default function BelmondPage() {
               {/* Collaborations */}
             </h3>
             <h2 className="text-2xl md:text-3xl font-bold text-black mb-4">
-              Delivering Excellence with Every Build
+              Delivered Excellence with Every Build
             </h2>
             <div className="w-20 border-b-2 border-black mb-6" />
     
@@ -203,6 +210,49 @@ export default function BelmondPage() {
               ))}
             </div>
           </section>
+
+          <section
+            data-aos="fade-left"
+            className="py-16 px-4 md:px-12 max-w-7xl mx-auto "
+          >
+            <h3 className="text-sm font-semibold text-gray-600 mb-2">
+              {/* Collaborations */}
+            </h3>
+            <h2 className="text-2xl md:text-3xl font-bold text-black mb-4">
+              Delivered Excellence with Every Build
+            </h2>
+            <div className="w-20 border-b-2 border-black mb-6" />
+    
+            <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-10">
+              In the heart of every project, we embed our unwavering commitment to
+              Excellence and deliver premium spaces that reflect better quality. Our
+              creativity is the result of the collaboration of our passionate team,
+              their thoughtful, innovative ideas, and design that aligns with
+              customers' requirements. We believe home is not just a space to live,
+              it’s a place to feel, grow, and experience living. Our project is
+              located in a prime location with better connectivity and
+              infrastructure that will not only elevate living but also increase the
+              value appreciation.
+            </p>
+             {/* Logos */}
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 justify-items-center items-center">
+              {logo.map((logo, index) => (
+                <div
+                  key={index}
+                  className="bg-white shadow-md rounded-lg p-4 flex justify-center items-center w-full h-24"
+                >
+                  <Image
+                    src={logo.src}
+                    alt={logo.alt}
+                    width={100}
+                    height={60}
+                    className="object-contain"
+                  />
+                </div>
+              ))}
+            </div>
+          </section>
+            
     
           {/* vizag Projects Section */}
           <section className="py-16 px-4 md:px-12 max-w-7xl mx-auto ">

@@ -59,16 +59,19 @@ export default function PersonalStory() {
                   : "max-h-[150px] overflow-hidden md:max-h-full"
               }`}
             >
-              Mr. SVSN Varma is a strong leader and the chairperson of SVS
+              Mr. SVSN Verma is a strong leader and the chairperson of SVS
               Constructions Pvt. Ltd. He is a key figure in the company. Over
               the past two decades, Mr. Verma's efforts have shaped the
-              company's growth. His steady commitment to innovation, quality,
-              and excellence elevates the company under his guidance. Mr. Verma
-              encourages and inspires others to go beyond the norm in their
-              construction projects.
+              company's growth and built a strong foundation for future
+              development. His steady commitment to innovation, quality, and
+              customer trust elevates the company under his guidance and remains
+              focused on the core objective of delivering excellence and quality
+              construction. Mr. Verma encourages and inspires others to go
+              beyond the norm in their construction projects.
               <br />
               He has led the company to new heights with his energetic
-              leadership, experience, and decisiveness. He is a strong
+              leadership, experience, and decisiveness. And continues to stand
+              as a strong pillar for the company’s growth. He is a strong
               decision-maker and a great motivator who inspires others to push
               themselves to achieve their goals.
             </p>
