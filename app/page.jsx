@@ -295,36 +295,37 @@ const Page = () => {
       </section>
 
       <section
-        className="
+  className="
     relative flex items-center justify-center w-full bg-white mt-10
     px-4 sm:px-6 overflow-x-hidden
-    min-h-[50vh] md:min-h-[60vh] lg:min-h-[45vh]
+    min-h-[50vh] md:min-h-[60vh] lg:min-h-[70vh]
   "
-      >
-        <div className="relative z-10 w-full max-w-7xl text-center">
-          {/* ---------- HEADLINE ---------- */}
-          <h1
-            className="
-        animate-fadeInOut font-extrabold text-[#61796f] tracking-[0.04em] leading-none
-        whitespace-nowrap
-        text-[clamp(2.5rem,12vw,12rem)]     /* Bigger min & max */
+>
+  <div className="relative z-10 w-full max-w-7xl text-center">
+    {/* HEADLINE */}
+    <h1
+      className="
+        font-extrabold text-[#61796f] tracking-wide leading-none uppercase
+        text-[clamp(2.5rem,10vw,10rem)]     /* Mobile to Desktop: max 10rem */
+        sm:text-[clamp(4rem,12vw,12rem)]    /* Larger upper bound for big screens */
       "
-          >
-            DISCOVER
-          </h1>
+    >
+      DISCOVER
+    </h1>
 
-          {/* ---------- STATIC TAGLINE ---------- */}
-          <p
-            className="
-    mt-4 uppercase font-medium tracking-[0.49em] text-[#61796f] leading-none
-    text-[clamp(1rem,5vw,2.25rem)]
-    break-words text-center ml-4         /* ⬅ allows wrapping, centers lines */
-  "
-          >
-            Elevated Living with SVS
-          </p>
-        </div>
-      </section>
+    {/* SUBHEADING */}
+    <p
+      className="
+        mt-4 uppercase font-medium tracking-[0.5em] text-[#61796f]
+        text-[clamp(rem,3vw,2.3rem)]        /* Subtitle scales larger too */
+        px-2 sm:px-0 text-center
+      "
+    >
+      ELEVATED LIVING WITH SVS
+    </p>
+  </div>
+</section>
+
 
       <section data-aos="fade-left" className="bg-white py-12 px-4 sm:px-8">
         <h2 className="text-3xl md:text-4xl font-semibold text-center mb-8 text-gray-800"></h2>
