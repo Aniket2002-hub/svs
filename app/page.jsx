@@ -230,7 +230,7 @@ const Page = () => {
         data-aos="fade-left"
         className="flex flex-col justify-center bg-[#90afa2] text-white p-6 sm:p-10 md:p-12"
       >
-        <div className="max-w-xl">
+        <div className="max-w-xl ">
           <h2
             className="text-2xl sm:text-3xl font-bold text-black mb-4"
             style={{ fontFamily: "raleway,sans-serif" }}
@@ -317,7 +317,7 @@ const Page = () => {
     <p
       className="
         mt-4 uppercase font-medium tracking-[0.5em] text-[#61796f]
-        text-[clamp(rem,3vw,2.3rem)]        /* Subtitle scales larger too */
+        text-[clamp(2rem,3vw,2.3rem)]        /* Subtitle scales larger too */
         px-2 sm:px-0 text-center
       "
     >
