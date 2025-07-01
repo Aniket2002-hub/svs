@@ -64,11 +64,230 @@ const jobOpenings = [
       </>
     ),
   },
-  { title: "Sr. Manager- Sales - Mumbai" },
-  { title: ".NET Core Developer" },
-  { title: "Business Development" },
-  { title: "Market Research (Voice Process)" },
-  { title: "Regional Technical Manager" },
+  {
+    title: "Relationship Manager",
+    description: (
+      <>
+        <p>
+          Role: <strong>Relationship Manager</strong>
+        </p>
+        <p>Place of Posting: Vizag</p>
+        <p>Yrs of Exp: 5+ Years</p>
+        <p>Position Opened: 2</p>
+        <br />
+        <p className="font-semibold">Job description:</p>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>
+           Manage and grow relationships with key clients across portfolios
+          </li>
+          <li>
+            Understand client needs and provide tailored solutions
+          </li>
+          <li>
+           Serve as the primary point of contact for client communications
+          </li>
+          <li>
+           Collaborate with internal teams to ensure seamless service delivery
+          </li>
+          <li>
+            Upsell and cross-sell relevant products and services to existing clients
+          </li>
+          <li>
+           Developing sales forecasts, performance reports, and pipeline analysis
+          </li>
+          <li>Ensure timely resolution of client issues and escalations</li>
+          <li>Regularly monitor client satisfaction and take proactive steps to improve it</li>
+          <li>Prepare and deliver performance reports to clients and internal stakeholders</li>
+          <li>Ensure client retention through consistent engagement and value delivery</li>
+          <li>Stay updated on market trends to offer strategic advice to clients</li>
+        </ul>
+        <br />
+        <p className="font-semibold">Required Skills:</p>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>Strong interpersonal and relationship-building skills</li>
+          <li>Customer-first mindset with problem-solving approach</li>
+          <li>Excellent time management and organizational skills</li>
+          <li>
+            Proficiency in CRM tools and client tracking systems
+          </li>
+          <li>Strong communication and presentation skills</li>
+          <li>High emotional intelligence and professional conduct</li>
+          <li>Proactive, responsible, and results-oriented attitude</li>
+        </ul>
+        <button className="mt-4 inline-block bg-[#90afa2] text-white px-4 py-2 font-semibold rounded hover:bg-white hover:border-[#90afa2] hover:border-2 hover:text-black rounded-full">
+          Apply Now
+        </button>
+      </>
+       ),
+   },
+  {
+    title: "Business Development Executive / Manager",
+    description: (
+      <>
+        <p>
+          Role: <strong>Business Development</strong>
+        </p>
+        <p>Place of Posting: Vizag</p>
+        <p>Yrs of Exp: 5+ Years</p>
+        <p>Position Opened: 2</p>
+        <br />
+        <p className="font-semibold">Job description:</p>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>
+           Identify new business opportunities and generate qualified leads
+          </li>
+          <li>
+            Conduct market research and competitor analysis to find growth areas
+          </li>
+          <li>
+            Build and maintain strong relationships with prospective clients
+          </li>
+          <li>
+           Pitch company offerings to potential customers and close deals
+          </li>
+          <li>
+           Collaborate with internal teams to ensure successful onboarding and execution
+          </li>
+          <li>
+          Attend industry events, networking sessions, and conferences
+          </li>
+          <li>Maintain a healthy sales pipeline and update CRM regularly</li>
+          <li>Prepare regular reports on business development activities</li>
+          <li>Work closely with marketing to align outreach strategies</li>
+          
+        </ul>
+        <br />
+        <p className="font-semibold">Required Skills:</p>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>Strong negotiation and persuasive communication skills</li>
+          <li>Ability to work independently with a go-getter attitude</li>
+          <li>Excellent lead generation and cold-calling abilities</li>
+          <li>
+            Good understanding of sales metrics and CRM tools
+          </li>
+          <li>Time management and multitasking capabilities</li>
+          <li>Target-driven with the ability to handle rejection positively</li>
+          <li>Creative and analytical approach to problem-solving</li>
+          <li>Excellent verbal and written communication skills</li>
+        </ul>
+        <button className="mt-4 inline-block bg-[#90afa2] text-white px-4 py-2 font-semibold rounded hover:bg-white hover:border-[#90afa2] hover:border-2 hover:text-black rounded-full">
+          Apply Now
+        </button>
+      </>
+       ),
+  },
+  {
+    title: "Market Analyst",
+    description: (
+      <>
+        <p>
+          Role: <strong>Market Analyst</strong>
+        </p>
+        <p>Place of Posting: Vizag</p>
+        <p>Yrs of Exp: 5+ Years</p>
+        <p>Position Opened: 2</p>
+        <br />
+        <p className="font-semibold">Job description:</p>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>
+            Conduct detailed market research and analysis to identify trends and opportunities
+          </li>
+          <li>
+           Monitor industry news, competitor activity, and market developments
+          </li>
+          <li>
+            Prepare research-based insights and reports for internal decision-making
+          </li>
+          <li>
+            Analyse consumer behaviour, pricing strategies, and demand-supply gaps
+          </li>
+          <li>
+           Build and manage databases to track key market indicators
+          </li>
+          <li>
+           Developing sales forecasts, performance reports, and pipeline analysis
+          </li>
+          <li>Leading contract negotiations and closure of high-value deals</li>
+          <li>Ensuring client satisfaction and timely resolution of escalations</li>
+          <li>Responsible for operational activities</li>
+          <li>Conducting market research and competitor analysis to stay ahead of trends</li>
+        </ul>
+        <br />
+        <p className="font-semibold">Required Skills:</p>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>Proven track record of meeting or exceeding sales targets</li>
+          <li>Strong leadership and team management capabilities</li>
+          <li>Excellent strategic thinking and business acumen</li>
+          <li>
+            Superior interpersonal and relationship-building skills
+          </li>
+          <li>Proficiency in CRM tools and sales analytics platforms</li>
+          <li>Strong negotiation and presentation skills</li>
+          <li>Excellent written and verbal communication </li>
+        </ul>
+        <button className="mt-4 inline-block bg-[#90afa2] text-white px-4 py-2 font-semibold rounded hover:bg-white hover:border-[#90afa2] hover:border-2 hover:text-black rounded-full">
+          Apply Now
+        </button>
+      </>
+       ),
+  },
+ 
+ {
+    title: "Human Resources Executive / Manager",
+    description: (
+      <>
+        <p>
+          Role: <strong>Human Resources</strong>
+        </p>
+        <p>Place of Posting: Vizag</p>
+        <p>Yrs of Exp: 5+ Years</p>
+        <p>Position Opened: 2</p>
+        <br />
+        <p className="font-semibold">Job description:</p>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>
+            Manage end-to-end recruitment and onboarding processes
+          </li>
+          <li>
+            Maintain employee records and ensure compliance with HR policies
+          </li>
+          <li>
+            Address employee queries, grievances, and conduct exit interviews
+          </li>
+          <li>
+           Organize training sessions and development programs
+          </li>
+          <li>
+            Drive employee engagement and internal communication initiatives
+          </li>
+          <li>
+           Support payroll and performance appraisal processes
+          </li>
+          <li>Collaborate with departments to address manpower planning</li>
+          <li>Ensure timely documentation and policy updates</li>
+          <li>Participate in talent management and succession plannings</li>
+          <li>Maintain a positive and inclusive workplace culture</li>
+        </ul>
+        <br />
+        <p className="font-semibold">Required Skills:</p>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>Strong understanding of HR policies and labour laws</li>
+          <li>Excellent interpersonal and conflict-resolution skills</li>
+          <li>Hands-on experience with HR software and ATS platforms</li>
+          <li>
+            Good organizational and multitasking abilities
+          </li>
+          <li>Strong communication and presentation skills</li>
+          <li>Empathy, discretion, and ethical conduct</li>
+          <li>Proficiency in MS Office tools</li>
+          <li>Strategic thinking with a people-first approach</li>
+        </ul>
+        <button className="mt-4 inline-block bg-[#90afa2] text-white px-4 py-2 font-semibold rounded hover:bg-white hover:border-[#90afa2] hover:border-2 hover:text-black rounded-full">
+          Apply Now
+        </button>
+      </>
+       ),
+  },
 ];
 
 export default function CareerPage() {
@@ -99,7 +318,7 @@ export default function CareerPage() {
           <h2 className="text-3xl font-semibold text-gray-800 mb-6">
             Current Openings
           </h2>
-          <div className="w-20 h-[3px] bg-blue-700 mb-6" />
+          <div className="w-20 h-[3px] bg-black mb-6" />
 
           <p className="text-gray-700 mb-4">
             As India's Gold standard company in real estate analytics, the job
@@ -128,7 +347,7 @@ export default function CareerPage() {
           </p>
 
           {/* Accordion */}
-          <div className="border rounded-md divide-y">
+          <div className="border  divide-y">
             {jobOpenings.map((job, index) => (
               <div
                 key={index}
@@ -137,7 +356,7 @@ export default function CareerPage() {
                 <button
                   onClick={() => toggleAccordion(index)}
                   className={`w-full text-left px-4 py-3 flex justify-between items-center font-medium ${
-                    openIndex === index ? "text-blue-700" : "text-gray-800"
+                    openIndex === index ? "text-black" : "text-gray-800"
                   }`}
                 >
                   {job.title}
@@ -180,7 +399,7 @@ export default function CareerPage() {
           <div className="w-16 border-b-2 border-black mx-auto mt-2" />
         </div>
 
-        <form className="max-w-5xl mx-auto bg-[#f1f0fd] border-2 border-black rounded-md p-6 sm:p-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <form className="max-w-4xl mx-auto bg-[#f1f0fd] border-2 border-black  p-6 sm:p-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
           {["Name", "Email", "Phone", "Position Applied For"].map(
             (placeholder, i) => (
               <input
