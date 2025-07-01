@@ -11,7 +11,7 @@ import { FaLinkedin } from "react-icons/fa";
 const TEAM = [
   {
     name: "Bhaswar Paul",
-    title: "Director Sales",
+    title: "Founder & CEO, IREED Academy",
     photo: "/Assets/SVS_Belmond_Rajapulova_Junction_Vizag_Our Teams_BP.png",
     linkedin:
       "https://www.linkedin.com/in/bhaswarpaul?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
@@ -20,7 +20,7 @@ const TEAM = [
   },
   {
     name: "Harsha Jasoratia",
-    title: "Director Projects",
+    title: "COO & Industry Practitioner, IREED Academy",
     photo: "/Assets/SVS_Belmond_Rajapulova_Junction_Vizag_Our Teams_HJ.png",
     linkedin:
       "https://www.linkedin.com/in/harshjasrotia?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
@@ -30,7 +30,7 @@ const TEAM = [
   },
   {
     name: "Kamaldeep Prajapati",
-    title: "Director Finance",
+    title: "Business Head (Up-Country Business), IREED Academy",
     photo: "/Assets/SVS_Belmond_Rajapulova_Junction_Vizag_Our Teams_KP.png",
     linkedin:
       "https://www.linkedin.com/in/kamaldeep01?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
@@ -92,18 +92,17 @@ export default function DirectorsMessage() {
     }),
   };
 
- const LinkedInBadge = ({ url }) =>
-  url ? (
-    <a
-      href={url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="absolute bottom-2 left-2 z-10 p-[6px] backdrop-blur group-hover:bg-white shadow transition-colors duration-300"
-    >
-      <FaLinkedin className="text-[#0A66C2] group-hover:text- transition-colors duration-300" />
-    </a>
-  ) : null;
-
+  const LinkedInBadge = ({ url }) =>
+    url ? (
+      <a
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="absolute bottom-2 left-2 z-10 p-[6px] backdrop-blur group-hover:bg-white shadow transition-colors duration-300"
+      >
+        <FaLinkedin className="text-[#0A66C2] group-hover:text- transition-colors duration-300" />
+      </a>
+    ) : null;
 
   return (
     <div className="w-full">
@@ -114,7 +113,23 @@ export default function DirectorsMessage() {
           backgroundImage: "url('/Assets/SVS_Vizag_Banner_Our Teams,.png')",
         }}
       />
-
+      {/* Description */}
+      <div className="px-6 md:px-20 py-10 bg-[] max-w-8xl mx-auto">
+        <h2 className="text-3xl font-semibold text-gray-800">
+          Strategic Partner
+        </h2>
+        <div className="w-16 border-b-2 border-gray-700 h-1  mt-2 mb-2" />
+        <p className="text-gray-700">
+          IREED Academy plays a crucial role as a strategic partner for
+          development organizations across India. They bring significant value
+          to a project by offering specialized expertise, necessary resources,
+          and market intelligence for the much-desired success. <br />
+           <br />
+          This partnership is forged with a collective objective to attain
+          project success, reach out to a wider audience, technology integration
+          and innovation for an overall improved efficiency.
+        </p>
+      </div>
       {/* Team Grid + Bio Section */}
       <section className="py-16 px-4 md:px-12">
         <div className="max-w-7xl mx-auto">
@@ -160,7 +175,7 @@ export default function DirectorsMessage() {
                 onClick={() => setIdx(null)}
                 className="absolute top-4 right-4 text-2xl text-gray-700 hover:text-gray-900"
               >
-                <FiX  className="text-white"/>
+                <FiX className="text-white" />
               </button>
               <button
                 aria-label="Prev"

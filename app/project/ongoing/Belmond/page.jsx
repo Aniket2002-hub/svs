@@ -215,11 +215,11 @@ export default function BelmondPage() {
                 label: "Street Lights",
                 icon: "💡",
               },
-              {
-                src: "/Assets/Elders Park.jpg", // Corrected
-                label: "Elders Park",
-                icon: "🧓",
-              },
+              // {
+              //   src: "/Assets/Elders Park.jpg", // Corrected
+              //   label: "Elders Park",
+              //   icon: "🧓",
+              // },
               {
                 src: "/Assets/CHILDREN PARK.png", // Corrected
                 label: "Children Park",

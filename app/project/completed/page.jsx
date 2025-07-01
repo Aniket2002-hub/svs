@@ -91,16 +91,16 @@ export default function BelmondPage() {
     },
   ];
   const logos = [
-    { src: "/Assets/Balaji-bliss-logo-1.png", alt: "Balaji Bliss" },
+    { src: "/Assets/Balaji-bliss-logo-1.png", alt: "Balaji Bliss",pdf: "/Assets/Balaji-bliss.pdf" },
     // { src: "/Assets/Central-Park-logo.png", alt: "Unitech" },
     // { src: "/Assets/Central-Park-logo-phase-2.png", alt: "Bestech" },
-    { src: "/Assets/Girish-Residencey-logo-1.png", alt: "Girish Residency" },
-    { src: "/Assets/kavya-greens-logo-1.png", alt: "Kavya Greens" },
+    { src: "/Assets/Girish-Residencey-logo-1.png", alt: "Girish Residency", pdf: "/Assets/Girish-Residencey.pdf" },
+    { src: "/Assets/kavya-greens-logo-1.png", alt: "Kavya Greens", pdf: "/Assets/Kavya-Greens.pdf" },
   ];
   const logo = [
-    { src: "/Assets/Central-Park-logo.png", alt: "Unitech" },
-    { src: "/Assets/Central-Park-logo-phase-2.png", alt: "Bestech" },
-    { src: "/Assets/SVS-Marvel-Destiny-logo.png", alt: "SVS Marvel Destiny" },
+    { src: "/Assets/Central-Park-logo.png", alt: "Unitech", pdf: "/Assets/Central-Park.pdf" },
+    { src: "/Assets/Central-Park-logo-phase-2.png", alt: "Bestech",pdf: "/Assets/SVS-Central-Park-Phase-II-Broucher.pdf", },
+    { src: "/Assets/SVS-Marvel-Destiny-logo.png", alt: "SVS Marvel Destiny", pdf: "/Assets/SVS-Marvel-Destiny.pdf" },
   ];
   return (
     <div className="w-full">
@@ -152,8 +152,13 @@ export default function BelmondPage() {
           {logos.map((logo, index) => (
             <div
               key={index}
-              className="bg-white shadow-md rounded-lg p-4 flex justify-center items-center w-full h-24"
+              className="bg-white shadow-md rounded-lg p-4 flex justify-center items-center w-full h-24 cursor-pointer transition-transform duration-300 hover:-translate-y-4"
             >
+               <a
+                    href={logo.pdf}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
               <Image
                 src={logo.src}
                 alt={logo.alt}
@@ -161,6 +166,7 @@ export default function BelmondPage() {
                 height={60}
                 className="object-contain"
               />
+              </a>
             </div>
           ))}
         </div>
@@ -234,8 +240,13 @@ export default function BelmondPage() {
           {logo.map((logo, index) => (
             <div
               key={index}
-              className="bg-white shadow-md rounded-lg p-4 flex justify-center items-center w-full h-24"
+              className="bg-white shadow-md rounded-lg p-4 flex justify-center items-center w-full h-24  cursor-pointer transition-transform duration-300 hover:-translate-y-4"
             >
+              <a
+                    href={logo.pdf}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
               <Image
                 src={logo.src}
                 alt={logo.alt}
@@ -243,6 +254,7 @@ export default function BelmondPage() {
                 height={60}
                 className="object-contain"
               />
+              </a>
             </div>
           ))}
         </div>

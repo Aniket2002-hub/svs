@@ -97,15 +97,39 @@ const stats = [
 ];
 
 const partners = [
-  { name: "Vipul", logo: "/Assets/Balaji-bliss-logo-1.png",pdf: "/Assets/Balaji-bliss.pdf", },
-  { name: "Unitech", logo: "/Assets/kavya-greens-logo-1.png",pdf: "/Assets/Kavya-Greens.pdf", },
-  { name: "Orchid", logo: "/Assets/Girish-Residencey-logo-1.png",pdf: "/Assets/Girish-Residencey.pdf", },
+  {
+    name: "Vipul",
+    logo: "/Assets/Balaji-bliss-logo-1.png",
+    pdf: "/Assets/Balaji-bliss.pdf",
+  },
+  {
+    name: "Unitech",
+    logo: "/Assets/kavya-greens-logo-1.png",
+    pdf: "/Assets/Kavya-Greens.pdf",
+  },
+  {
+    name: "Orchid",
+    logo: "/Assets/Girish-Residencey-logo-1.png",
+    pdf: "/Assets/Girish-Residencey.pdf",
+  },
 ];
 
 const part = [
-  { name: "Bestech", logo: "/Assets/Central-Park-logo.png",pdf: "/Assets/Central-Park.pdf", },
-  { name: "CHD", logo: "/Assets/Central-Park-logo-phase-2.png",pdf: "/Assets/SVS-Central-Park-Phase-II-Broucher.pdf", },
-   { name: "Bestech", logo: "/Assets/SVS-Marvel-Destiny-logo-pro.png",pdf: "/Assets/SVS-Marvel-Destiny.pdf",},
+  {
+    name: "Bestech",
+    logo: "/Assets/Central-Park-logo.png",
+    pdf: "/Assets/Central-Park.pdf",
+  },
+  {
+    name: "CHD",
+    logo: "/Assets/Central-Park-logo-phase-2.png",
+    pdf: "/Assets/SVS-Central-Park-Phase-II-Broucher.pdf",
+  },
+  {
+    name: "Bestech",
+    logo: "/Assets/SVS-Marvel-Destiny-logo-pro.png",
+    pdf: "/Assets/SVS-Marvel-Destiny.pdf",
+  },
 ];
 
 // export const metadata = {
@@ -299,7 +323,7 @@ const Page = () => {
         text-[clamp(2.5rem,12vw,12rem)]     /* Bigger min & max */
       "
           >
-            DISCOVER 
+            DISCOVER
           </h1>
 
           {/* ---------- STATIC TAGLINE ---------- */}
@@ -473,7 +497,7 @@ const Page = () => {
         </div>
       </section>
 
-   <section className="bg-white py-12 px-6 md:px-20">
+      <section className="bg-white py-12 px-6 md:px-20">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
           {/* Left Image */}
           <div
@@ -519,14 +543,18 @@ const Page = () => {
                   key={i}
                   className="p-3 bg-white border border-gray-200 rounded-lg shadow-sm flex items-center justify-center hover:shadow-md  cursor-pointer transition-transform duration-300 hover:-translate-x-2"
                 >
-                  <a href={partner.pdf} target="_blank" rel="noopener noreferrer">
-                  <Image
-                    src={partner.logo}
-                    alt={partner.name}
-                    width={80}
-                    height={50}
-                    className="object-contain h-12"
-                  />
+                  <a
+                    href={partner.pdf}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      src={partner.logo}
+                      alt={partner.name}
+                      width={80}
+                      height={50}
+                      className="object-contain h-12"
+                    />
                   </a>
                 </div>
               ))}
@@ -542,14 +570,18 @@ const Page = () => {
                   key={i}
                   className="p-3 bg-white border border-gray-200 rounded-lg shadow-sm flex items-center justify-center hover:shadow-md transition cursor-pointer transition-transform duration-300 hover:-translate-x-2"
                 >
-                  <a href={partner.pdf} target="_blank" rel="noopener noreferrer">
-                  <Image
-                    src={partner.logo}
-                    alt={partner.name}
-                    width={80}
-                    height={50}
-                    className="object-contain h-12"
-                  />
+                  <a
+                    href={partner.pdf}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      src={partner.logo}
+                      alt={partner.name}
+                      width={80}
+                      height={50}
+                      className="object-contain h-12"
+                    />
                   </a>
                 </div>
               ))}
