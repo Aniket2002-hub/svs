@@ -132,7 +132,7 @@ export default function BelmondPage() {
               {/* Collaborations */}
             </h3>
             <h2 className="text-2xl md:text-3xl font-bold text-black mb-4">
-              Delivered Excellence with Every Build
+              Delivered Excellence with Every Build - Hyderabad Residential
             </h2>
             <div className="w-20 border-b-2 border-black mb-6" />
     
@@ -170,9 +170,9 @@ export default function BelmondPage() {
           {/* Launched Projects Section */}
           <section className="py-16 px-4 md:px-12 max-w-7xl mx-auto ">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
-             Hyderabad Residential
+             
             </h2>
-            <div className="w-20 border-b-2 border-black mb-10" />
+            <div className="" />
     
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3  gap-12 ">
               {LaunchedProjects.map((item, index) => (
@@ -219,7 +219,7 @@ export default function BelmondPage() {
               {/* Collaborations */}
             </h3>
             <h2 className="text-2xl md:text-3xl font-bold text-black mb-4">
-              Delivered Excellence with Every Build
+              Delivered Excellence with Every Build - Vizag Layouts
             </h2>
             <div className="w-20 border-b-2 border-black mb-6" />
     
@@ -257,9 +257,9 @@ export default function BelmondPage() {
           {/* vizag Projects Section */}
           <section className="py-16 px-4 md:px-12 max-w-7xl mx-auto ">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
-             Vizag Layouts
+            
             </h2>
-            <div className="w-20 border-b-2 border-black mb-10" />
+            <div className="" />
     
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3  gap-12 ">
               {VisakhapatnamProjects.map((item, index) => (
