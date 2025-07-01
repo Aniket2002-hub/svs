@@ -1,11 +1,13 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import { FaPhoneAlt } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import { FaPhoneAlt } from "react-icons/fa";
+import "swiper/css/pagination";
+
 import { motion } from "framer-motion";
 
 export default function BelmondPage() {
@@ -66,7 +68,11 @@ export default function BelmondPage() {
               from the upcoming Vizab metro station. which is the major reason
               for its steady value appreciation. Belmond is not just a plotted
               development; it’s a gateway to living an eco-friendly lifestyle,
-              which has potential, beauty, and limitless opportunities.
+              which has potential, beauty, and limitless opportunities. It has
+              wide green spaces, a pollution-free environment, and well-planned
+              amenities. It offers a perfect setting for families looking to
+              build their dream homes in an eco-friendly environment and urban
+              convenience.
             </p>
             {/* <button className="bg-yellow-500 text-black px-4 py-2 rounded hover:bg-yellow-600 transition">
               Download Brochure
@@ -243,6 +249,14 @@ export default function BelmondPage() {
       <h2 className="text-3xl font-semibold mt-5 mb-4 text-gray-800 text-center">
         Amenities
       </h2>
+      <p className="max-w-5xl mx-auto px-4  text-center">
+        Belmond isn’t just offering amenities; it’s a feature of a luxury living
+        experience. Every amenity is designed to enhance the quality of living
+        and for comfort. The project offers well-laid internal roads, vastu
+        complaints, water supply, an elders’ park, kids' play areas, and more.
+        Whether you seek for serene, eco-friendly environment or a luxury living
+        experience, we offer one step ahead of that.
+      </p>
 
       <div className="max-w-6xl mx-auto mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-8 px-4">
         {[
@@ -290,64 +304,60 @@ export default function BelmondPage() {
       </div>
 
       {/* === Location Section with Modal Image Preview === */}
-      <section className="bg-[#dff2ea] py-12 px-4 mt-20">
-        <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-8">
-            Location
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-center">
-            <div
-              onClick={() => openModal("/Assets/layout4.jpg")}
-              className="cursor-pointer overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-95"
+      <div className="max-w-7xl mx-auto  mt-10 px-4">
+        <div className="flex flex-col lg:flex-row w-full px-6 md:px-20 py-10 bg-white gap-18">
+          {/* Left: Slider */}
+          <div className="w-full lg:w-1/2">
+            <Swiper
+              modules={[Navigation, Pagination, Autoplay]}
+              navigation
+              pagination={{ clickable: true }}
+              autoplay={{ delay: 3000 }}
+              loop={true}
+              spaceBetween={20}
+              slidesPerView={1}
             >
-              <Image
-                src="/Assets/layout4.jpg"
-                alt="Location Map"
-                width={400}
-                height={300}
-                className="w-full h-auto object-cover"
-              />
-            </div>
-            <div
-              onClick={() => openModal("/Assets/layout img.jpg")}
-              className="cursor-pointer overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-95"
-            >
-              <Image
-                src="/Assets/location-3.jpg"
-                alt="Location Satellite"
-                width={400}
-                height={300}
-                className="w-full h-auto object-cover"
-              />
-            </div>
+              <SwiperSlide>
+                <img
+                  src="/Assets/layout4.jpg"
+                  alt="Slide 1"
+                  className="w-full rounded shadow"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src="/Assets/location-3.jpg"
+                  alt="Slide 2"
+                  className="w-full rounded shadow"
+                />
+              </SwiperSlide>
+            </Swiper>
           </div>
 
-          {/* Modal for Image Zoom */}
-          {modalImage && (
-            <div
-              className="fixed inset-0 z-50 bg-black bg-opacity-70 flex items-center justify-center"
-              onClick={closeModal}
-            >
-              <div className="relative max-w-4xl w-full px-4">
-                <Image
-                  src={modalImage}
-                  alt="Enlarged Image"
-                  width={1200}
-                  height={800}
-                  className="w-full h-auto rounded-lg shadow-2xl"
-                />
-                <button
-                  onClick={closeModal}
-                  className="absolute top-4 right-4 text-white text-3xl font-bold"
-                >
-                  &times;
-                </button>
-              </div>
-            </div>
-          )}
+          {/* Right: Text */}
+          <div className="w-full lg:w-1/2 flex flex-col items-start  space-y-4">
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              Perks of Location
+            </h1>
+            <ul className="list-disc pl-6 text-gray-700 space-y-2">
+              <li>10 minutes from the upcoming new Vizag Metro Station</li>
+
+              <li>15 minutes away from a Multi-speciality Hospital</li>
+              <li>5 minutes away from Praveenya Engineering College</li>
+              <li>20 minutes away from Vizianagaram </li>
+              <li>30 minutes away from Vishakapatnam</li>
+
+              <li>40 minutes away from Srikakulam </li>
+              <li>10 minutes from the upcoming new Vizag Metro Station</li>
+              <li>
+                15 minutes away from the Grand New International Airport,
+                Bhogapuram
+              </li>
+            </ul>
+          </div>
         </div>
-      </section>
+      </div>
+
       <section className="bg-white py-12 px-4 mt-0">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-8">

@@ -58,7 +58,7 @@ const jobOpenings = [
           <li>Strong negotiation and presentation skills</li>
           <li>Excellent written and verbal communication </li>
         </ul>
-        <button className="mt-4 inline-block bg-[#90afa2] text-white px-4 py-2 rounded hover:bg-white hover:border-[#90afa2] hover:border-2 hover:text-[#90afa2] rounded-full">
+        <button className="mt-4 inline-block bg-[#90afa2] text-white px-4 py-2 font-semibold rounded hover:bg-white hover:border-[#90afa2] hover:border-2 hover:text-black rounded-full">
           Apply Now
         </button>
       </>
