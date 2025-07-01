@@ -1,13 +1,14 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa";
 
 const jobOpenings = [
   {
     title: "Senior Sales Manager",
-    description: (
+    description: (scrollToForm) => (
       <>
+        {/* Job Description */}
         <p>
           Role: <strong>Senior Sales Manager</strong>
         </p>
@@ -62,7 +63,12 @@ const jobOpenings = [
           <li>Strong negotiation and presentation skills</li>
           <li>Excellent written and verbal communication </li>
         </ul>
-        <button className="mt-4 inline-block bg-[#90afa2] text-white px-4 py-2 font-semibold rounded hover:bg-white hover:border-[#90afa2] hover:border-2 hover:text-black rounded-full">
+
+        {/* ... */}
+        <button
+          onClick={scrollToForm}
+          className="mt-4 inline-block bg-[#61796d] text-white px-4 py-2 font-semibold rounded hover:bg-white hover:border-[#61796d] hover:border-2 hover:text-black rounded-full"
+        >
           Apply Now
         </button>
       </>
@@ -70,7 +76,7 @@ const jobOpenings = [
   },
   {
     title: "Relationship Manager",
-    description: (
+    description: (scrollToForm) => (
       <>
         <p>
           Role: <strong>Relationship Manager</strong>
@@ -127,7 +133,12 @@ const jobOpenings = [
           <li>High emotional intelligence and professional conduct</li>
           <li>Proactive, responsible, and results-oriented attitude</li>
         </ul>
-        <button className="mt-4 inline-block bg-[#90afa2] text-white px-4 py-2 font-semibold rounded hover:bg-white hover:border-[#90afa2] hover:border-2 hover:text-black rounded-full">
+
+        {/* ... */}
+        <button
+          onClick={scrollToForm}
+          className="mt-4 inline-block bg-[#61796d] text-white px-4 py-2 font-semibold rounded hover:bg-white hover:border-[#61796d] hover:border-2 hover:text-black rounded-full"
+        >
           Apply Now
         </button>
       </>
@@ -135,14 +146,14 @@ const jobOpenings = [
   },
   {
     title: "Business Development Executive",
-    description: (
+    description: (scrollToForm) => (
       <>
         <p>
           Role: <strong>Business Development</strong>
         </p>
         <p>Place of Posting: Vizag</p>
-        <p>Yrs of Exp: 5+ Years</p>
-        <p>Position Opened: 2</p>
+        <p>Yrs of Exp: Fresher</p>
+        <p>Position Opened: 5</p>
         <br />
         <p className="font-semibold">Job description:</p>
         <ul className="list-disc pl-5 space-y-1">
@@ -179,7 +190,12 @@ const jobOpenings = [
           <li>Creative and analytical approach to problem-solving</li>
           <li>Excellent verbal and written communication skills</li>
         </ul>
-        <button className="mt-4 inline-block bg-[#90afa2] text-white px-4 py-2 font-semibold rounded hover:bg-white hover:border-[#90afa2] hover:border-2 hover:text-black rounded-full">
+
+        {/* ... */}
+        <button
+          onClick={scrollToForm}
+          className="mt-4 inline-block bg-[#61796d] text-white px-4 py-2 font-semibold rounded hover:bg-white hover:border-[#61796d] hover:border-2 hover:text-black rounded-full"
+        >
           Apply Now
         </button>
       </>
@@ -187,13 +203,13 @@ const jobOpenings = [
   },
   {
     title: "Market Analyst",
-    description: (
+    description: (scrollToForm) => (
       <>
-        <p>
+               <p>
           Role: <strong>Market Analyst</strong>
         </p>
         <p>Place of Posting: Vizag</p>
-        <p>Yrs of Exp: 5+ Years</p>
+        <p>Yrs of Exp: 2+ Years</p>
         <p>Position Opened: 2</p>
         <br />
         <p className="font-semibold">Job description:</p>
@@ -239,22 +255,27 @@ const jobOpenings = [
           <li>Strong negotiation and presentation skills</li>
           <li>Excellent written and verbal communication </li>
         </ul>
-        <button className="mt-4 inline-block bg-[#90afa2] text-white px-4 py-2 font-semibold rounded hover:bg-white hover:border-[#90afa2] hover:border-2 hover:text-black rounded-full">
+        
+       
+        {/* ... */}
+        <button
+          onClick={scrollToForm}
+          className="mt-4 inline-block bg-[#61796d] text-white px-4 py-2 font-semibold rounded hover:bg-white hover:border-[#61796d] hover:border-2 hover:text-black rounded-full"
+        >
           Apply Now
         </button>
       </>
     ),
   },
-
   {
-    title: "Human Resources Executive ",
-    description: (
+    title: "Human Resources Executive",
+    description: (scrollToForm) => (
       <>
         <p>
           Role: <strong>Human Resources</strong>
         </p>
         <p>Place of Posting: Vizag</p>
-        <p>Yrs of Exp: 5+ Years</p>
+        <p>Yrs of Exp: Fresher</p>
         <p>Position Opened: 2</p>
         <br />
         <p className="font-semibold">Job description:</p>
@@ -288,7 +309,12 @@ const jobOpenings = [
           <li>Proficiency in MS Office tools</li>
           <li>Strategic thinking with a people-first approach</li>
         </ul>
-        <button className="mt-4 inline-block bg-[#90afa2] text-white px-4 py-2 font-semibold rounded hover:bg-white hover:border-[#90afa2] hover:border-2 hover:text-black rounded-full">
+
+        {/* ... */}
+        <button
+          onClick={scrollToForm}
+          className="mt-4 inline-block bg-[#61796d] text-white px-4 py-2 font-semibold rounded hover:bg-white hover:border-[#61796d] hover:border-2 hover:text-black rounded-full"
+        >
           Apply Now
         </button>
       </>
@@ -298,9 +324,14 @@ const jobOpenings = [
 
 export default function CareerPage() {
   const [openIndex, setOpenIndex] = useState(null);
+  const formRef = useRef(null);
 
   const toggleAccordion = (index) => {
     setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const scrollToForm = () => {
+    formRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -326,21 +357,6 @@ export default function CareerPage() {
           </h2>
           <div className="w-20 h-[3px] bg-black mb-6" />
 
-          <p className="text-gray-700 mb-4">
-            As India's Gold standard company in real estate analytics, the job
-            opportunities at P.E. Analytics are unlimited. Working at P.E.
-            Analytics is more than just a job; it's the chance to build and
-            advance a lifelong career.
-          </p>
-          <p className="text-gray-700 mb-4">
-            We believe in hiring the best talent and then enabling it to grow.
-            We provide the infrastructure that allows continuous learning and
-            progress, a friendly work environment and bright colleagues.
-          </p>
-          <p className="text-gray-700 mb-4">
-            Take a moment to explore the many different areas within our company
-            where you can apply your skills to realize your goals.
-          </p>
           <p className="text-gray-700 mb-8">
             If you are interested in joining our team, please send your resume
             to:{" "}
@@ -353,7 +369,7 @@ export default function CareerPage() {
           </p>
 
           {/* Accordion */}
-          <div className="border  divide-y">
+          <div className="border divide-y">
             {jobOpenings.map((job, index) => (
               <div
                 key={index}
@@ -372,16 +388,7 @@ export default function CareerPage() {
                 </button>
                 {openIndex === index && (
                   <div className="px-4 pb-4 text-sm text-gray-600">
-                    {job.description ? (
-                      job.description
-                    ) : (
-                      <p>
-                        Detailed description for the{" "}
-                        <strong>{job.title}</strong> position will go here. You
-                        can add responsibilities, qualifications, and a link to
-                        apply.
-                      </p>
-                    )}
+                    {job.description(scrollToForm)}
                   </div>
                 )}
               </div>
@@ -391,7 +398,7 @@ export default function CareerPage() {
       </section>
 
       {/* Hiring Form */}
-      <div className="bg-[#f1f0fd] py-16 px-4 sm:px-6 lg:px-8">
+      <div ref={formRef} className="bg-[#f1f0fd] py-16 px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-700">
             We Are Hiring
@@ -399,15 +406,17 @@ export default function CareerPage() {
         </div>
 
         <div className="text-center mb-8">
-          <p className="text-base font-medium text-gray-700  ">
-            Share your details and upload your CV; we’re always on the lookout <br />
+          <p className="text-base font-medium text-gray-700">
+            Share your details and upload your CV; we’re always on the lookout{" "}
+            <br />
             for passionate professionals. Once submitted, our team will connect
-            with you shortly.
+            with you at the earliest possible.
           </p>
           <div className="w-16 border-b-2 border-black mx-auto mt-2" />
         </div>
 
-        <form className="max-w-4xl mx-auto bg-[#f1f0fd] border-2 border-black  p-6 sm:p-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {/* Form */}
+        <form className="max-w-4xl mx-auto bg-[#f1f0fd] border border-black p-6 sm:p-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
           {["Name", "Email", "Phone", "Position Applied For"].map(
             (placeholder, i) => (
               <input
@@ -425,20 +434,25 @@ export default function CareerPage() {
             )
           )}
 
-          <input
-            type="file"
-            className="col-span-1 sm:col-span-2 rounded-md border border-[#61796f] px-2 py-2 bg-white 
-            file:mr-4 file:rounded-md file:border-0 file:bg-[#61796f] file:px-4 file:py-1 
-            file:text-[white] file:hover:bg-[#61796f] file:hover:text-white 
-            file:font-bold transition-colors duration-300 text-gray-500"
-          />
+          {/* Upload CV and Submit */}
+          <div className="col-span-1 sm:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label
+                htmlFor="cvUpload"
+                className="block w-full bg-[#61796f] border-2 border-[#61796f] text-white font-semibold px-6 py-2 rounded hover:bg-white hover:text-black transition-colors duration-300 cursor-pointer"
+              >
+                Upload Resume
+              </label>
+              <input id="cvUpload" type="file" className="hidden" />
+            </div>
 
-          <button
-            type="submit"
-            className="col-span-1 sm:col-span-2 mt-2 bg-[#61796f] border-2 border-[#61796f] text-white font-semibold px-6 py-2 rounded hover:bg-[white] hover:text-black transition-colors duration-300 cursor-pointer"
-          >
-            Submit
-          </button>
+            <button
+              type="submit"
+              className="w-full bg-[#61796f] border-2 border-[#61796f] text-white font-semibold px-6 py-2 rounded hover:bg-white hover:text-black transition-colors duration-300 cursor-pointer"
+            >
+              Submit
+            </button>
+          </div>
         </form>
       </div>
     </>

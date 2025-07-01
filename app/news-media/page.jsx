@@ -26,7 +26,7 @@ const page = () => {
     {
       id: 3,
       date: "2024-12-28",
-      animation: "fade-right",
+      animation: "fade-left",
       image: "/Assets/Screenshot 2025-06-24 113238.png",
       caption:
         "Flying High: Visakhapatnam International Airport registers an increase of over 11% in passenger traffic in 2024",
@@ -36,7 +36,7 @@ const page = () => {
     {
       id: 4,
       date: "2021-11-22",
-      animation: "fade-right",
+      animation: "fade-left",
       image: "/Assets/PM.png",
       caption: `Proud Day For India's Quest To Become Aatmanirbhar": PM On Commissioning Of INS Visakhapatnam`,
       imageLink:
@@ -45,7 +45,7 @@ const page = () => {
     {
       id: 5,
       date: "2025-06-21",
-      animation: "fade-right",
+      animation: "fade-left",
       image: "/Assets/yoga news (1).png",
       caption:
         "Yoga A Pause Button Humanity Needs To Become Whole Again: PM Modi On 11th International Yoga Day",
@@ -65,7 +65,7 @@ const page = () => {
     {
       id: 7,
       date: "2025-01-18",
-      animation: "fade-right",
+      animation: "fade-left",
       image: "/Assets/steel plant.jpg",
       caption: "Min: ₹11K-cr package to revive Vizag steel plant",
       imageLink:
@@ -84,7 +84,7 @@ const page = () => {
     {
       id: 9,
       date: "2025-06-18",
-      animation: "fade-right",
+      animation: "fade-left",
       image: "/Assets/naval dockyard.png",
       caption:
         "Indian Navy To Commission Its First Anti-Submarine 'Arnala' Warship Today",
@@ -112,24 +112,38 @@ const page = () => {
     <>
       {/* Hero Section */}
       <div
-        data-aos="fade-right"
+        data-aos="fade-left"
         className="relative w-full h-[270px] md:h-[300px] lg:h-[400px] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: "url('/Assets/SVS_Belmond_Rajapulova_Junction_Vizag_Banner_News.png')" }}
+        style={{
+          backgroundImage:
+            "url('/Assets/SVS_Belmond_Rajapulova_Junction_Vizag_Banner_News.png')",
+        }}
       >
         <div className="relative z-10 max-w-5xl mx-auto text-center">
           <h2
             data-aos="slide-right"
             data-aos-duration="1500"
             className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-black"
-          >
-           
-          </h2>
+          ></h2>
         </div>
+      </div>
+
+      {/* Description */}
+      <div className="px-6 md:px-20 py-10 bg-white">
+        <h2 className="text-3xl font-semibold text-gray-800">Press Coverage</h2>
+        <div className="w-20 h-1 bg-black mt-2 mb-4" />
+        <p className="text-gray-700 max-w-8xl">
+          Stay updated with the latest news, media mentions, and expert insights
+          covering real estate trends across Vizag, Hyderabad, and other key
+          cities. From market growth and infrastructure updates to project
+          highlights and industry developments, explore how SVS Constructions is
+          shaping the future of urban living.
+        </p>
       </div>
 
       {/* News Section */}
       <section className="py-10 px-4 bg-white">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 overflow-hidden">
           {sortedNews.map((item) => (
             <div
               key={item.id}
@@ -181,3 +195,4 @@ const page = () => {
 };
 
 export default page;
+

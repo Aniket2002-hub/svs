@@ -29,7 +29,7 @@ const TEAM = [
 `,
   },
   {
-    name: "Kamaldeep Singh",
+    name: "Kamaldeep Prajapati",
     title: "Director Finance",
     photo: "/Assets/SVS_Belmond_Rajapulova_Junction_Vizag_Our Teams_KP.png",
     linkedin:
@@ -92,17 +92,18 @@ export default function DirectorsMessage() {
     }),
   };
 
-  const LinkedInBadge = ({ url }) =>
-    url ? (
-      <a
-        href={url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="absolute bottom-2 left-2 z-10   p-[6px] backdrop-blur hover:bg-white shadow"
-      >
-        <FaLinkedin className="text-[#0A66C2] text-lg" />
-      </a>
-    ) : null;
+ const LinkedInBadge = ({ url }) =>
+  url ? (
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="absolute bottom-2 left-2 z-10 p-[6px] backdrop-blur group-hover:bg-white shadow transition-colors duration-300"
+    >
+      <FaLinkedin className="text-[#0A66C2] group-hover:text- transition-colors duration-300" />
+    </a>
+  ) : null;
+
 
   return (
     <div className="w-full">
@@ -159,7 +160,7 @@ export default function DirectorsMessage() {
                 onClick={() => setIdx(null)}
                 className="absolute top-4 right-4 text-2xl text-gray-700 hover:text-gray-900"
               >
-                <FiX />
+                <FiX  className="text-white"/>
               </button>
               <button
                 aria-label="Prev"

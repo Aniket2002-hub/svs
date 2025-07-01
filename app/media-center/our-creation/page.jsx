@@ -8,49 +8,49 @@ const Page = () => {
   const videoData = {
     Infographics: [
       {
-        title: "Interior Design Tips",
-        date: "12-Jun-2025",
+        title: "Built for Life in Motion",
+        date: "29-June-2025",
         thumbnail: "/Assets/Frame 110 (1).jpg",
       },
       {
-        title: "Interior Style Ideas",
-        date: "12-Jun-2025",
+        title: "Reclaim Balance in Every Step",
+        date: "12-June-2025",
         thumbnail: "/Assets/Frame 111.jpg",
       },
       {
-        title: "Luxury Layouts",
-        date: "12-Jun-2025",
+        title:" A Destination of Peace Purpose, and Premium Living",
+        date: "22-May-2025",
         thumbnail: "/Assets/Frame 95.jpg",
       },
     ],
     Instagram: [
       {
         title: "SVS Belmond Vizag – Plots Built for Life in Motion",
-        date: "029-Jun-2025",
+        date: "30-June-2025",
         thumbnail: "/Assets/Frame 110 (1).jpg",
         href: "https://www.instagram.com/p/DLhpLcizbf3/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       },
     ],
     Facebook: [
       {
-        title: "Event Highlights",
-        date: "19-Apr-2025",
+        title: "SVS Belmond Vizag – Plots Built for Life in Motion",
+        date: "30-June-2025",
         thumbnail: "/Assets/Frame 110 (1).jpg",
         href: "https://www.facebook.com/share/p/16NmeZRUCD/",
       },
     ],
     Linkedin: [
       {
-        title: "Vision 2025",
-        date: "27-Mar-2025",
+        title: "SVS Belmond Vizag – Plots Built for Life in Motion",
+        date: "30-June-2025",
         thumbnail: "/Assets/Frame 110 (1).jpg",
         href: "https://www.linkedin.com/feed/update/urn:li:activity:7345414172119076864",
       },
     ],
     Twitter: [
       {
-        title: "Smart Home Poll",
-        date: "10-Feb-2025",
+        title: "SVS Belmond Vizag – Plots Built for Life in Motion",
+        date: "30-June-2025",
         thumbnail: "/Assets/Frame 110 (1).jpg",
         href: "https://x.com/svsconstuctions/status/1939668942706155607",
       },
@@ -81,7 +81,7 @@ const Page = () => {
       <div className="px-6 md:px-20 py-10 bg-white">
         <h2 className="text-3xl font-semibold text-gray-800">Our Creatives</h2>
         <div className="w-20 h-1 bg-[#61796f] mt-2 mb-4" />
-        <p className="text-gray-700 max-w-3xl">
+        <p className="text-gray-700 max-w-8xl">
           Explore a visual journey of our work, showcasing project highlights,
           construction progress, milestones, events, and more. Each creative
           reflects our commitment to quality, innovation, and the vision behind
@@ -98,7 +98,7 @@ const Page = () => {
             className={`px-4 py-2 border rounded ${
               selectedPlatform === platform
                 ? "bg-[#61796f] text-white"
-                : "bg-white text-gray-700 hover:bg-gray-100"
+                : "bg-[#dff2ea] text-gray-700 hover:bg-gray-100"
             }`}
           >
             {platform}
@@ -107,7 +107,7 @@ const Page = () => {
       </div>
 
       {/* Cards Grid */}
-      <div className="px-6 md:px-20 py-8 bg-blue-50">
+      <div className="px-6 md:px-20 py-8 bg-[#dff2ea]">
         {videoData[selectedPlatform]?.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {videoData[selectedPlatform].map((video, i) => {

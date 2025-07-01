@@ -97,11 +97,15 @@ const stats = [
 ];
 
 const partners = [
-  { name: "Vipul", logo: "/Assets/Balaji-bliss-logo-1.png" },
-  { name: "Bestech", logo: "/Assets/Central-Park-logo.png" },
-  { name: "CHD", logo: "/Assets/Central-Park-logo-phase-2.png" },
-  { name: "Orchid", logo: "/Assets/Girish-Residencey-logo-1.png" },
-  { name: "Unitech", logo: "/Assets/kavya-greens-logo-1.png" },
+  { name: "Vipul", logo: "/Assets/Balaji-bliss-logo-1.png",pdf: "/Assets/Balaji-bliss.pdf", },
+  { name: "Unitech", logo: "/Assets/kavya-greens-logo-1.png",pdf: "/Assets/Kavya-Greens.pdf", },
+  { name: "Orchid", logo: "/Assets/Girish-Residencey-logo-1.png",pdf: "/Assets/Girish-Residencey.pdf", },
+];
+
+const part = [
+  { name: "Bestech", logo: "/Assets/Central-Park-logo.png",pdf: "/Assets/Central-Park.pdf", },
+  { name: "CHD", logo: "/Assets/Central-Park-logo-phase-2.png",pdf: "/Assets/SVS-Central-Park-Phase-II-Broucher.pdf", },
+   { name: "Bestech", logo: "/Assets/SVS-Marvel-Destiny-logo-pro.png",pdf: "/Assets/SVS-Marvel-Destiny.pdf",},
 ];
 
 // export const metadata = {
@@ -269,7 +273,7 @@ const Page = () => {
             <div className="flex items-center bg-[#90afa2]">
               <a
                 href="#"
-                className="flex items-center bg-[#61796f] border border-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition  font-semibold"
+                className="flex items-center bg-[#61796f] border-2 border-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition  font-semibold"
                 style={{ fontFamily: "raleway,sans-serif" }}
               >
                 <span>{block.buttonText}</span>
@@ -295,18 +299,18 @@ const Page = () => {
         text-[clamp(2.5rem,12vw,12rem)]     /* Bigger min & max */
       "
           >
-            EXPERIENCE
+            DISCOVER 
           </h1>
 
           {/* ---------- STATIC TAGLINE ---------- */}
           <p
             className="
-    mt-4 uppercase font-medium tracking-[0.47em] text-[#61796f] leading-none
+    mt-4 uppercase font-medium tracking-[0.49em] text-[#61796f] leading-none
     text-[clamp(1rem,5vw,2.25rem)]
     break-words text-center ml-4         /* ⬅ allows wrapping, centers lines */
   "
           >
-            INDIA’S FINEST GATED COMMUNITIES
+            Elevated Living with SVS
           </p>
         </div>
       </section>
@@ -469,7 +473,7 @@ const Page = () => {
         </div>
       </section>
 
-      <section className="bg-white py-12 px-6 md:px-20">
+   <section className="bg-white py-12 px-6 md:px-20">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
           {/* Left Image */}
           <div
@@ -487,12 +491,6 @@ const Page = () => {
 
           {/* Right Text */}
           <div style={{ fontFamily: "raleway,sans-serif" }}>
-            <h4
-              data-aos="fade-left"
-              className="text-xl font-semibold text-gray-700 mb-1"
-            >
-              Eloquence
-            </h4>
             <h2
               data-aos="fade-left"
               className="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
@@ -503,17 +501,15 @@ const Page = () => {
               data-aos="fade-left"
               className="w-14 h-1 bg-gray-800 mb-4"
             ></div>
-            <p data-aos="fade-left" className="text-gray-700 italic mb-6">
+            <p data-aos="fade-left" className="text-gray-700  mb-2">
               SVS Constructions has always believed in the power of
               collaboration. Over the years, we have partnered with some of the
               biggest names in the real estate industry to deliver landmark
-              projects on our land. These collaborations have not only
-              strengthened our reputation but also allowed us to bring our
-              vision to life through world-class developments. Some of our
-              notable collaborations include:
+              projects.
             </p>
 
             {/* Partner Logos */}
+            <h2 className="font-bold">Hyderabad</h2>
             <div
               data-aos="fade-left"
               className="grid grid-cols-3 sm:grid-cols-5 gap-4"
@@ -521,8 +517,9 @@ const Page = () => {
               {partners.map((partner, i) => (
                 <div
                   key={i}
-                  className="p-3 bg-white border border-gray-200 rounded-lg shadow-sm flex items-center justify-center hover:shadow-md transition"
+                  className="p-3 bg-white border border-gray-200 rounded-lg shadow-sm flex items-center justify-center hover:shadow-md  cursor-pointer transition-transform duration-300 hover:-translate-x-2"
                 >
+                  <a href={partner.pdf} target="_blank" rel="noopener noreferrer">
                   <Image
                     src={partner.logo}
                     alt={partner.name}
@@ -530,6 +527,30 @@ const Page = () => {
                     height={50}
                     className="object-contain h-12"
                   />
+                  </a>
+                </div>
+              ))}
+            </div>
+
+            <h2 className="font-bold">Vizag</h2>
+            <div
+              data-aos="fade-left"
+              className="grid grid-cols-3 sm:grid-cols-5 gap-4"
+            >
+              {part.map((partner, i) => (
+                <div
+                  key={i}
+                  className="p-3 bg-white border border-gray-200 rounded-lg shadow-sm flex items-center justify-center hover:shadow-md transition cursor-pointer transition-transform duration-300 hover:-translate-x-2"
+                >
+                  <a href={partner.pdf} target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src={partner.logo}
+                    alt={partner.name}
+                    width={80}
+                    height={50}
+                    className="object-contain h-12"
+                  />
+                  </a>
                 </div>
               ))}
             </div>
