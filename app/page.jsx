@@ -210,70 +210,57 @@ const Page = () => {
         </div>
       </section>
 
-      <section className="grid w-full bg-white py-2 ml-0 md:grid-cols-2 gap-2">
-        {/* ─── Left: Image ───────────────────────────────────────── */}
-        <div
-          data-aos="fade-right"
-          className="relative h-[450px] w-full md:h-auto"
-        >
-          <Image
-            src="/Assets/Bhogapuram_Airport_Vizag.jpg"
-            alt="Belmond"
-            fill
-            className="object-cover ml-0"
-          />
-        </div>
+      <section className="w-full grid grid-cols-1 md:grid-cols-2 gap-0 bg-white mb-4">
+      {/* Left: Image */}
+      <div
+        data-aos="fade-right"
+        className="relative h-[250px] sm:h-[350px] md:h-full w-full"
+      >
+        <Image
+          src="/Assets/Bhogapuram_Airport_Vizag.jpg"
+          alt="Belmond"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
 
-        {/* ─── Right: Content ────────────────────────────────────── */}
-        <div
-          data-aos="fade-left"
-          className="flex flex-col justify-center  bg-[#90afa2]  text-white shadow-md md:p-12"
-        >
-          <div className="max-w-xl ml-0">
-            <p className="mb-1 text-sm font-semibold text-black"></p>
-            <h4 className="text-lg font-semibold text-red-700"></h4>
-            <h2
-              className="my-1 text-3xl font-bold text-black  "
-              style={{ fontFamily: "raleway,sans-serif" }}
-            >
-              SVS Belmond, Rajapulova,Vizag
-            </h2>
+      {/* Right: Content */}
+      <div
+        data-aos="fade-left"
+        className="flex flex-col justify-center bg-[#90afa2] text-white p-6 sm:p-10 md:p-12"
+      >
+        <div className="max-w-xl">
+          <h2
+            className="text-2xl sm:text-3xl font-bold text-black mb-4"
+            style={{ fontFamily: "raleway,sans-serif" }}
+          >
+            SVS Belmond, Rajapulova, Vizag
+          </h2>
 
-            <p
-              className="mb-6 text-md text-black "
-              style={{ fontFamily: "raleway,sans-serif" }}
-            >
-              {" "}
-              Successful real estate developments are distinguished by their
-              premium locations. At SVS Constructions, we are committed to craft
-              projects with strategic benefits near major
-              infrastructure developments. Our buyers most definitely will enjoy
-              enhanced connectivity, convenience, and long-term value. Every
-              purchase at SVS Constructions will create an unparalleled value.
-              {/* Exclusive Residential Plots, at
-              Rajapulova Junction, Vizag
-              <br />
-              Size from 129.09 to 655.65 Sq. Yards (1161.81 sq. ft to 5900.85
-              sq. ft.) */}
-            </p>
+          <p
+            className="text-sm sm:text-base text-black mb-6 leading-relaxed"
+            style={{ fontFamily: "raleway,sans-serif" }}
+          >
+            Successful real estate developments are distinguished by their premium locations.
+            At SVS Constructions, we are committed to crafting projects with strategic benefits
+            near major infrastructure developments. Our buyers will enjoy enhanced connectivity,
+            convenience, and long-term value. Every purchase at SVS Constructions delivers
+            unparalleled value.
+          </p>
 
-            {/* ─── Book Now button (white → green flip) ─────────── */}
-            <Link
-              href="#"
-              className="
-              inline-flex w-fit items-center justify-center rounded-full
+          <Link
+            href="#"
+            className="inline-flex items-center justify-center rounded-full
               border-2 border-white bg-[#61796f] px-6 py-3 font-semibold
-              text-white transition-colors duration-300
-              hover:bg-white hover:text-black
-            "
-              style={{ fontFamily: "raleway,sans-serif" }}
-            >
-              Book&nbsp;Now&nbsp;→
-            </Link>
-          </div>
+              text-white transition-colors duration-300 hover:bg-white hover:text-black w-fit"
+            style={{ fontFamily: "raleway,sans-serif" }}
+          >
+            Book&nbsp;Now&nbsp;→
+          </Link>
         </div>
-      </section>
-
+      </div>
+    </section>
       {/* ================= Colored Blocks Section ================= */}
       <section className="w-full grid grid-cols-1 md:grid-cols-3 gap-2 bg-white">
         {blocks.map((block, index) => (
