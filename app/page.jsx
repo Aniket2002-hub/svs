@@ -520,7 +520,7 @@ const Page = () => {
             </p>
 
             {/* Partner Logos */}
-            <h2 className="font-semibold">Hyderabad</h2>
+            <h2 className="font-semibold mt-2">Hyderabad</h2>
             <div
               data-aos="fade-left"
               className="grid grid-cols-3 sm:grid-cols-5 gap-4"
@@ -528,7 +528,7 @@ const Page = () => {
               {partners.map((partner, i) => (
                 <div
                   key={i}
-                  className="p-3 bg-white border border-gray-200 rounded-lg shadow-sm flex items-center justify-center hover:shadow-md  cursor-pointer transition-transform duration-300 hover:-translate-x-2"
+                  className="p-3 bg-white border border-gray-200 rounded-lg shadow-sm flex items-center justify-center hover:shadow-md  cursor-pointer transition-transform duration-300 hover:-translate-x-2 mt-2"
                 >
                   <a
                     href={partner.pdf}
@@ -547,7 +547,7 @@ const Page = () => {
               ))}
             </div>
 
-            <h2 className="font-semibold">Vizag</h2>
+            <h2 className="font-semibold mt-2">Vizag</h2>
             <div
               data-aos="fade-left"
               className="grid grid-cols-3 sm:grid-cols-5 gap-4"
@@ -555,7 +555,7 @@ const Page = () => {
               {part.map((partner, i) => (
                 <div
                   key={i}
-                  className="p-3 bg-white border border-gray-200 rounded-lg shadow-sm flex items-center justify-center hover:shadow-md transition cursor-pointer transition-transform duration-300 hover:-translate-x-2"
+                  className="p-3 bg-white border border-gray-200 rounded-lg shadow-sm flex items-center justify-center hover:shadow-md transition cursor-pointer transition-transform duration-300 hover:-translate-x-2 mt-2"
                 >
                   <a
                     href={partner.pdf}
