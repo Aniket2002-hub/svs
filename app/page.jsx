@@ -77,19 +77,19 @@ const stats = [
     animation: "fade-right",
   },
   {
-    value: 45000,
+    value: 60000,
     suffix: "+",
     label: "Premium Residences",
     animation: "fade-up",
   },
   {
-    value: 45000,
+    value: 50000,
     suffix: "+",
-    label: "Ultraluxury Homes",
+    label: "Ultra Luxury Homes",
     animation: "fade-left",
   },
   {
-    value: 945000,
+    value: 970000,
     suffix: "+",
     label: "Layout Projects",
     animation: "fade-left",
