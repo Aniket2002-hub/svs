@@ -210,7 +210,7 @@ const Page = () => {
         </div>
       </section>
 
-      <section className="w-full grid grid-cols-1 md:grid-cols-2 bg-white mt-2 mb-2">
+      <section className="w-full grid grid-cols-1 md:grid-cols-2 bg-white mt-2 mb-2 gap-2 ">
         {/* Left: Image */}
         <div
           data-aos="fade-right"
@@ -228,7 +228,7 @@ const Page = () => {
         {/* Right: Content */}
         <div
           data-aos="fade-left"
-          className="flex flex-col justify-center bg-[#90afa2] text-white p-4 sm:p-6 md:p-4"
+          className="flex flex-col justify-center bg-[#90afa2] text-white p-4 sm:p-6 md:p-4 "
         >
           <div className="max-w-xl">
             <h2
