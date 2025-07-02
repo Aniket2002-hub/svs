@@ -155,7 +155,7 @@ export default function OurVideos() {
       </div>
 
       {/* Video Cards with Hover Effect */}
-      <div className="px-6 md:px-20 py-8 bg-blue-50">
+      <div className="px-6 md:px-20 py-8 bg-blue-50 ">
         {videoData[selectedYear]?.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {videoData[selectedYear].map((video, i) => {
@@ -172,7 +172,7 @@ export default function OurVideos() {
                   target="_blank"
                   rel="noopener noreferrer"
                   key={i}
-                  className="group bg-white shadow rounded overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+                  className="group bg-white shadow rounded-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl"
                 >
                   <Image
                     src={thumbnailSrc}
