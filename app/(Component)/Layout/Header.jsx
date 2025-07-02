@@ -37,31 +37,31 @@ export default function Navbar() {
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-[#61796f] shadow text-white" : "bg-transparent text-white"}`}>
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        <Link href="/" target="_blank" rel="noopener noreferrer">
+        <Link href="/">
           <Image src="/Assets/logooooo.png" alt="Logo" width={50} height={50} />
         </Link>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6 text-base font-medium">
-          <li><Link href="/" target="_blank" rel="noopener noreferrer" className="text-[20px]">Home</Link></li>
+          <li><Link href="/" className="text-[20px]">Home</Link></li>
 
           <li className="relative group">
             <span className="cursor-pointer text-[20px]">About&nbsp;Us</span>
             <ul className="absolute top-full left-0 mt-6 w-52 bg-[#9cc6b5] text-white rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-50">
-              <li><Link href="/about-us/vision" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-[#61796f]">Vision &amp; Mission</Link></li>
-              <li><Link href="/about-us/Our-Leadership" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-[#61796f]">Our Leadership</Link></li>
-              <li><Link href="/about-us/our-team" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-[#61796f]">Strategic Partner</Link></li>
+              <li><Link href="/about-us/vision" className="block px-4 py-2 hover:bg-[#61796f]">Vision &amp; Mission</Link></li>
+              <li><Link href="/about-us/Our-Leadership" className="block px-4 py-2 hover:bg-[#61796f]">Our Leadership</Link></li>
+              <li><Link href="/about-us/our-team" className="block px-4 py-2 hover:bg-[#61796f]">Strategic Partner</Link></li>
             </ul>
           </li>
 
           <li className="relative group">
             <span className="cursor-pointer text-[20px]">Projects</span>
             <ul className="absolute top-full left-0 mt-6 bg-[#9cc6b5] text-white rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-50 min-w-[200px]">
-              <li><Link href="/project/completed" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-[#61796f]">Completed</Link></li>
+              <li><Link href="/project/completed" className="block px-4 py-2 hover:bg-[#61796f]">Completed</Link></li>
               <li className="relative group/project">
                 <span className="block px-4 py-2 hover:bg-[#61796f] cursor-pointer">Ongoing</span>
                 <ul className="absolute top-0 left-full mt-0 ml-1 w-48 bg-[#9cc6b5] text-white rounded shadow-lg opacity-0 invisible group-hover/project:opacity-100 group-hover/project:visible transition duration-200 z-50">
-                  <li><Link href="/project/ongoing/Belmond" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-[#61796f]">Belmond</Link></li>
+                  <li><Link href="/project/ongoing/Belmond" className="block px-4 py-2 hover:bg-[#61796f]">Belmond</Link></li>
                 </ul>
               </li>
             </ul>
@@ -70,15 +70,15 @@ export default function Navbar() {
           <li className="relative group">
             <span className="cursor-pointer text-[20px]">Media&nbsp;Center</span>
             <ul className="absolute top-full left-0 mt-6 w-52 bg-[#9cc6b5] text-white rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-50">
-              <li><Link href="/news-media" target="_blank" rel="noopener noreferrer"  className="block px-4 py-2 hover:bg-[#61796f]">Press Coverage</Link></li>
-              <li><Link href="/media-center/our-videos" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-[#61796f]">Our Videos</Link></li>
-              <li><Link href="/media-center/our-creation" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-[#61796f]">Our Creatives</Link></li>
+              <li><Link href="/news-media" className="block px-4 py-2 hover:bg-[#61796f]">Press Coverage</Link></li>
+              <li><Link href="/media-center/our-videos" className="block px-4 py-2 hover:bg-[#61796f]">Our Videos</Link></li>
+              <li><Link href="/media-center/our-creation" className="block px-4 py-2 hover:bg-[#61796f]">Our Creatives</Link></li>
             </ul>
           </li>
 
-          <li><Link href="/career" target="_blank" rel="noopener noreferrer" className="text-[20px]">Career</Link></li>
-          <li><Link href="/channel-partner-registration" target="_blank" rel="noopener noreferrer" className="text-[20px]">Partner Registration</Link></li>
-          <li><Link href="/contact" target="_blank" rel="noopener noreferrer" className="text-[20px]">Contact Us</Link></li>
+          <li><Link href="/career" className="text-[20px]">Career</Link></li>
+          <li><Link href="/channel-partner-registration" className="text-[20px]">Partner Registration</Link></li>
+          <li><Link href="/contact" className="text-[20px]">Contact Us</Link></li>
         </ul>
 
         {/* Hamburger Icon */}
@@ -94,7 +94,7 @@ export default function Navbar() {
           <button onClick={closeMenu} className="text-xl"><FaTimes /></button>
         </div>
 
-        <Link href="/" target="_blank" rel="noopener noreferrer" onClick={closeMenu} className="block py-2 border-b border-white">Home</Link>
+        <Link href="/" onClick={closeMenu} className="block py-2 border-b border-white">Home</Link>
 
         {/* About Us */}
         <div>
@@ -104,9 +104,9 @@ export default function Navbar() {
           </div>
           {aboutDropdownOpen && (
             <ul className="pl-4 mt-2 space-y-2">
-              <li><Link href="/about-us/vision" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Vision & Mission</Link></li>
-              <li><Link href="/about-us/Our-Leadership" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Our Leadership</Link></li>
-              <li><Link href="/about-us/our-team" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Strategic Partner</Link></li>
+              <li><Link href="/about-us/vision" onClick={closeMenu}>Vision & Mission</Link></li>
+              <li><Link href="/about-us/Our-Leadership" onClick={closeMenu}>Our Leadership</Link></li>
+              <li><Link href="/about-us/our-team" onClick={closeMenu}>Strategic Partner</Link></li>
             </ul>
           )}
         </div>
@@ -119,7 +119,7 @@ export default function Navbar() {
           </div>
           {projectsDropdownOpen && (
             <ul className="pl-4 mt-2 space-y-2">
-              <li><Link href="/project/completed" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Completed</Link></li>
+              <li><Link href="/project/completed" onClick={closeMenu}>Completed</Link></li>
               <li>
                 <div className="flex items-center justify-between">
                   <span className="py-2">Ongoing</span>
@@ -127,7 +127,7 @@ export default function Navbar() {
                 </div>
                 {ongoingSubmenuOpen && (
                   <ul className="pl-4 mt-2 space-y-2">
-                    <li><Link href="/project/ongoing/Belmond" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Belmond</Link></li>
+                    <li><Link href="/project/ongoing/Belmond" onClick={closeMenu}>Belmond</Link></li>
                   </ul>
                 )}
               </li>
@@ -143,16 +143,16 @@ export default function Navbar() {
           </div>
           {mediaDropdownOpen && (
             <ul className="pl-4 mt-2 space-y-2">
-              <li><Link href="/news-media" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Press Coverage</Link></li>
-              <li><Link href="/media-center/our-videos" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Our Videos</Link></li>
-              <li><Link href="/media-center/our-creation" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Our Creatives</Link></li>
+              <li><Link href="/news-media" onClick={closeMenu}>Press Coverage</Link></li>
+              <li><Link href="/media-center/our-videos" onClick={closeMenu}>Our Videos</Link></li>
+              <li><Link href="/media-center/our-creation" onClick={closeMenu}>Our Creatives</Link></li>
             </ul>
           )}
         </div>
 
-        <Link href="/career" target="_blank" rel="noopener noreferrer" onClick={closeMenu} className="block py-2 border-b border-white">Career</Link>
-        <Link href="/channel-partner-registration" target="_blank" rel="noopener noreferrer" onClick={closeMenu} className="block py-2 border-b border-white">Partner Registration</Link>
-        <Link href="/contact" target="_blank" rel="noopener noreferrer" onClick={closeMenu} className="block py-2 border-b border-white">Contact Us</Link>
+        <Link href="/career" onClick={closeMenu} className="block py-2 border-b border-white">Career</Link>
+        <Link href="/channel-partner-registration" onClick={closeMenu} className="block py-2 border-b border-white">Partner Registration</Link>
+        <Link href="/contact" onClick={closeMenu} className="block py-2 border-b border-white">Contact Us</Link>
       </div>
     </nav>
   );
