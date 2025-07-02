@@ -294,11 +294,11 @@ const Page = () => {
         ))}
       </section>
 
-      <section
+     <section
   className="
-    relative flex items-center justify-center w-full bg-white mt-10
+    relative flex items-center justify-center w-full bg-white
     px-4 sm:px-6 overflow-x-hidden
-    min-h-[50vh] md:min-h-[60vh] lg:min-h-[70vh]
+    min-h-[35vh] md:min-h-[45vh] lg:min-h-[50vh]   /* Decreased section height */
   "
 >
   <div className="relative z-10 w-full max-w-7xl text-center">
@@ -306,8 +306,8 @@ const Page = () => {
     <h1
       className="
         font-extrabold text-[#61796f] tracking-wide leading-none uppercase
-        text-[clamp(2.5rem,10vw,10rem)]     /* Mobile to Desktop: max 10rem */
-        sm:text-[clamp(4rem,12vw,12rem)]    /* Larger upper bound for big screens */
+        text-[clamp(2.5rem,10vw,10rem)]
+        sm:text-[clamp(4rem,12vw,12rem)]
       "
     >
       DISCOVER
@@ -317,7 +317,7 @@ const Page = () => {
     <p
       className="
         mt-4 uppercase font-medium tracking-[0.5em] text-[#61796f]
-        text-[clamp(2rem,3vw,2.3rem)]        /* Subtitle scales larger too */
+        text-[clamp(1.2rem,3vw,2.2rem)]
         px-2 sm:px-0 text-center
       "
     >
@@ -325,7 +325,6 @@ const Page = () => {
     </p>
   </div>
 </section>
-
 
       <section data-aos="fade-left" className="bg-white py-12 px-4 sm:px-8">
         <h2 className="text-3xl md:text-4xl font-semibold text-center mb-8 text-gray-800"></h2>
