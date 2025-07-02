@@ -156,7 +156,7 @@ export default function BelmondPage() {
         <h2 className="text-2xl md:text-3xl font-bold text-black mb-4">
           Hyderabad Residential - Delivered Excellence with Every Build
         </h2>
-        <div className="w-20 border-b-2 border-black mb-6" />
+       <div className="w-20 h-1 bg-black mt-2 mb-4 border-3 border font-bold mt-4" />
 
         <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-10">
           We had successfully delivered our Hyderabad residential projects, and
@@ -246,7 +246,7 @@ export default function BelmondPage() {
         <h2 className="text-2xl md:text-3xl font-bold text-black mb-4">
           Vizag Layouts - Sustainable Living Amidst Nature's Bounty
         </h2>
-        <div className="w-20 border-b-2 border-black mb-6" />
+        <div className="w-20 border-b-4 border-black mb-6 border font-bold" />
 
         <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-10">
           We came with a strong initiative of plotted development in the rapidly

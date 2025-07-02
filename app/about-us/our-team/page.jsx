@@ -115,7 +115,7 @@ export default function DirectorsMessage() {
           <h2 className="text-3xl font-semibold text-gray-800">
             Strategic Partner
           </h2>
-          <div className="w-16 border-b-2 border-gray-700 h-1 mt-2 mb-2" />
+         <div className="w-20 h-1 bg-black mt-2 mb-4 border-3 border font-bold mt-4" />
           <p className="text-gray-700 text-base sm:text-lg">
             IREED Academy plays a crucial role as a strategic partner for
             development organizations across India. They bring significant value

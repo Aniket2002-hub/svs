@@ -29,17 +29,17 @@ export default function PersonalStory() {
           <h2 className="text-3xl font-semibold text-gray-800">
             Our Leadership
           </h2>
-          <div className="w-16 border-b-2 border-gray-700 h-1 mt-2 mb-0" />
+          <div className="w-20 h-1 bg-black mt-2 mb-4 border-3 border font-bold mt-4" />
           <p className="text-gray-700 text-base sm:text-lg">
             Our strong leadership at SVS Constructions is the bedrock for
             crafting legacy and building milestone projects for our valued
-            customers. They provide direction, motivation, and foster a positive
+            customers. <br /> They provide direction, motivation, and foster a positive
             work environment.
             <br />
             <br />
             Our leaders set the vision for organizational growth, guide teams,
             and build trust, leading to increased productivity, better
-            decision-making, & improved employee morale.
+            decision-making, <br /> & improved employee morale.
           </p>
         </div>
       </div>

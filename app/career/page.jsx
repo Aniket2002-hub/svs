@@ -411,13 +411,13 @@ export default function CareerPage() {
         </div>
 
         <div className="text-center mb-8">
-          <p className="text-base font-medium text-gray-700">
+          <p className="text-base font-medium text-gray-700 mt-10">
             Share your details and upload your CV; we’re always on the lookout{" "}
             <br />
             for passionate professionals. Once submitted, our team will connect
             with you at the earliest possible.
           </p>
-          <div className="w-16 border-b-2 border-black mx-auto mt-2" />
+          <div className="w-16 border-b-3 border-black mx-auto mt-4 border font-bold" />
         </div>
 
         {/* Form */}

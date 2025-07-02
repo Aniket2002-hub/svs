@@ -79,8 +79,8 @@ const Page = () => {
 
       {/* Description */}
       <div className="px-6 md:px-20 py-10 bg-white">
-        <h2 className="text-3xl font-semibold text-gray-800">Our Creatives</h2>
-        <div className="w-20 h-1 bg-[#61796f] mt-2 mb-4" />
+        <h2 className="text-3xl font-semibold text-gray-800  ">Our Creatives</h2>
+        <div className="w-20 h-1 bg-black mt-2 mb-4 border-3 border font-bold mt-4" />
         <p className="text-gray-700 max-w-8xl">
           Explore a visual journey of our work, showcasing project highlights,
           construction progress, milestones, events, and more. Each creative

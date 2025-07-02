@@ -49,7 +49,7 @@ const Page = () => {
             </h1>
             <div
               data-aos="fade-right"
-              className="w-16 border-b-2 border-gray-700 mx-auto mt-2 mb-4"
+              className="w-16 border-b-3 border-black border font-bold mx-auto mt-2 mb-4"
             />
             <p
               data-aos="fade-left"
@@ -87,7 +87,7 @@ const Page = () => {
             </h1>
             <div
               data-aos="fade-right"
-              className="w-16 border-b-2 border-black mx-auto mt-4 mb-8"
+              className="w-16 border-b-3 border font-bold border-black mx-auto mt-4 mb-8"
             />
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
