@@ -71,27 +71,27 @@ const slides = [
 
 const stats = [
   {
-    value: 4500000,
+    value: 450000,
     suffix: "+",
     label: "Residential Spaces",
     animation: "fade-right",
   },
   {
-    value: 500000,
+    value: 45000,
     suffix: "+",
-    label: "Warehousing Solutions",
-    animation: "fade-right",
+    label: "Premium Residences",
+    animation: "fade-up",
   },
   {
-    value: 100000,
+    value: 45000,
     suffix: "+",
-    label: "Educational Infrastructure",
+    label: "Ultraluxury Homes",
     animation: "fade-left",
   },
   {
-    value: 40000,
+    value: 945000,
     suffix: "+",
-    label: "Independent Floors",
+    label: "Layout Projects",
     animation: "fade-left",
   },
 ];
@@ -185,7 +185,10 @@ const Page = () => {
           >
             <FaFacebookF />
           </a>
-          <a href="#" className="hover:scale-110 transition text-white">
+          <a
+            href="https://www.linkedin.com/company/svs-constructions/"
+            className="hover:scale-110 transition text-white"
+          >
             <FaLinkedinIn />
           </a>
           <a

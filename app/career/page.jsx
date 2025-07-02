@@ -67,7 +67,7 @@ const jobOpenings = [
         {/* ... */}
         <button
           onClick={scrollToForm}
-          className="mt-4 inline-block bg-[#61796d] text-white px-4 py-2 font-semibold rounded hover:bg-white hover:border-[#61796d] hover:border-2 hover:text-black rounded-full"
+          className="mt-4 inline-block bg-[#61796d] text-white px-4 py-2 font-bold rounded hover:bg-white hover:border-[#61796d] hover:border-2 hover:text-black rounded-full"
         >
           Apply Now
         </button>
@@ -137,7 +137,7 @@ const jobOpenings = [
         {/* ... */}
         <button
           onClick={scrollToForm}
-          className="mt-4 inline-block bg-[#61796d] text-white px-4 py-2 font-semibold rounded hover:bg-white hover:border-[#61796d] hover:border-2 hover:text-black rounded-full"
+          className="mt-4 inline-block bg-[#61796d] text-white px-4 py-2 font-bold rounded hover:bg-white hover:border-[#61796d] hover:border-2 hover:text-black rounded-full"
         >
           Apply Now
         </button>
@@ -194,7 +194,7 @@ const jobOpenings = [
         {/* ... */}
         <button
           onClick={scrollToForm}
-          className="mt-4 inline-block bg-[#61796d] text-white px-4 py-2 font-semibold rounded hover:bg-white hover:border-[#61796d] hover:border-2 hover:text-black rounded-full"
+          className="mt-4 inline-block bg-[#61796d] text-white px-4 py-2 font-bold rounded hover:bg-white hover:border-[#61796d] hover:border-2 hover:text-black rounded-full"
         >
           Apply Now
         </button>
@@ -205,7 +205,7 @@ const jobOpenings = [
     title: "Market Analyst",
     description: (scrollToForm) => (
       <>
-               <p>
+        <p>
           Role: <strong>Market Analyst</strong>
         </p>
         <p>Place of Posting: Vizag</p>
@@ -255,12 +255,11 @@ const jobOpenings = [
           <li>Strong negotiation and presentation skills</li>
           <li>Excellent written and verbal communication </li>
         </ul>
-        
-       
+
         {/* ... */}
         <button
           onClick={scrollToForm}
-          className="mt-4 inline-block bg-[#61796d] text-white px-4 py-2 font-semibold rounded hover:bg-white hover:border-[#61796d] hover:border-2 hover:text-black rounded-full"
+          className="mt-4 inline-block bg-[#61796d] text-white px-4 py-2 font-bold rounded hover:bg-white hover:border-[#61796d] hover:border-2 hover:text-black rounded-full"
         >
           Apply Now
         </button>
@@ -313,7 +312,7 @@ const jobOpenings = [
         {/* ... */}
         <button
           onClick={scrollToForm}
-          className="mt-4 inline-block bg-[#61796d] text-white px-4 py-2 font-semibold rounded hover:bg-white hover:border-[#61796d] hover:border-2 hover:text-black rounded-full"
+          className="mt-4 inline-block bg-[#61796d] text-white px-4 py-2 font-bold rounded hover:bg-white hover:border-[#61796d] hover:border-2 hover:text-black rounded-full"
         >
           Apply Now
         </button>
@@ -358,8 +357,14 @@ export default function CareerPage() {
           <div className="w-20 h-[3px] bg-black mb-6" />
 
           <p className="text-gray-700 mb-8">
-            If you are interested in joining our team, please send your resume
-            to:{" "}
+            As India's Gold standard company in real estate development, SVS
+            Constructions offers not only job opportunities but a rewarding
+            career. Working at SVS Constructions is more than just a job, it's
+            the chance to build and advance a lifelong career. We encourage
+            continuous learning through an enterprising work environment. If you
+            are interested in joining our team please send your resume to the
+            following e-mail: hr@svsconstructions.com. We thank you for your
+            interest in our company. to:{" "}
             <a
               href="mailto:svsconstructions.group@gmail.com"
               className="text-blue-600 underline"

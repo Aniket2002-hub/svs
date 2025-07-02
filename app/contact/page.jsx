@@ -150,11 +150,11 @@ const page = () => {
               <button
                 type="submit"
                 className="inline-flex w-fit items-center justify-center rounded
-    border-2 border-[#61796f] bg-[#61796f] px-6 py-2 font-semibold text-white
+    border-2 border-[#61796f] bg-[#61796f] px-6 py-2 font-bold text-white
     transition-colors duration-300
     hover:bg-white hover:text-black w-full cursor-pointer"
               >
-                Submit query →
+                Submit query 
               </button>
             </form>
           </div>

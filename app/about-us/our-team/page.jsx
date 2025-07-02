@@ -110,7 +110,7 @@ export default function DirectorsMessage() {
         }}
       />
       {/* Description */}
-      <div className="px-4 sm:px-6 md:px-20 py-10 max-w-8xl mx-auto">
+      <div className="px-4 sm:px-6 md:px-20 py-14  max-w-8xl mx-auto">
         <div className="pl-2 sm:pl-4 md:pl-8">
           <h2 className="text-3xl font-semibold text-gray-800">
             Strategic Partner
