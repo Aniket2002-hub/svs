@@ -12,23 +12,23 @@ function getYouTubeVideoId(url) {
 const videoData = {
   2025: [
     {
-      title: "Vizag Tourist Places",
+      title: "BHOGAPURAM GREEN FIELD INTERNATIONAL AIRPORT JUNE MONTH WORK PROGRESS GMR",
       date: "03-Jun-2025",
-      thumbnail: "/Assets/youtube logo.avif",
-      href: "https://youtu.be/gwb8Edxzs0k?si=PAE6rgY6FbiTeSj-",
+      thumbnail: "/Assets/youtube logo.jpg",
+      href: "https://youtu.be/Ww5KCvQgBoc?si=16wwo9XXbqFnzMSv",
     },
     {
       title:
         "Bhogapuram International Airport marks a milestone in transforming the Indian aviation industry",
       date: "17-Jun-2025",
-      thumbnail: "/Assets/youtube logo.avif",
+      thumbnail: "/Assets/youtube logo.jpg",
       href: "https://youtu.be/-b6goU9bqII?si=ZkHmp3O3AOAzEZLY",
     },
     {
       title:
         "PM Modi's speech during International Day of Yoga celebrations in Visakhapatnam, Andhra Pradesh",
       date: "10-Jun-2025",
-      thumbnail: "/Assets/youtube logo.avif",
+      thumbnail: "/Assets/youtube logo.jpg",
       href: "https://youtu.be/llXysFlhThc?si=Ltwe4d6Mw8KmY2T2",
     },
   ],
@@ -36,20 +36,20 @@ const videoData = {
     {
       title: "Hyderabad Housing Boom of 2024",
       date: "15-Apr-2024",
-      thumbnail: "/Assets/youtube logo.avif",
+      thumbnail: "/Assets/youtube logo.jpg",
       href: "",
     },
     {
       title: "Best Flats Under ₹1 Cr - Pune 2024",
       date: "02-Mar-2024",
-      thumbnail: "/Assets/youtube logo.avif",
+      thumbnail: "/Assets/youtube logo.jpg",
       href: "https://youtu.be/-b6goU9bqII?si=38zNtnMM3DVOKcIq",
     },
   ],
   2023: [
     {
       title: "The Ship Factory of World - Visakhapatnam",
-      thumbnail: "/Assets/youtube logo.avif",
+      thumbnail: "/Assets/youtube logo.jpg",
       href: "https://youtu.be/CSyihxr5DFs?si=H1aMk86ytCU8W7YK",
     },
   ],
@@ -57,7 +57,7 @@ const videoData = {
     {
       title: "Is Real Estate Still a Good Investment in 2022?",
       date: "18-Dec-2022",
-      thumbnail: "/Assets/youtube logo.avif",
+      thumbnail: "/Assets/youtube logo.jpg",
       href: "https://youtu.be/-b6goU9bqII?si=38zNtnMM3DVOKcIq",
     },
   ],
