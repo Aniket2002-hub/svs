@@ -257,7 +257,7 @@ const Page = () => {
         text-white transition duration-300 hover:bg-white hover:text-black w-fit"
               style={{ fontFamily: "Raleway, sans-serif" }}
             >
-              Book&nbsp;Now&nbsp;→
+              Book&nbsp;Now
             </Link>
           </div>
         </div>
@@ -520,7 +520,7 @@ const Page = () => {
             </p>
 
             {/* Partner Logos */}
-            <h2 className="font-bold">Hyderabad</h2>
+            <h2 className="font-semibold">Hyderabad</h2>
             <div
               data-aos="fade-left"
               className="grid grid-cols-3 sm:grid-cols-5 gap-4"
@@ -547,7 +547,7 @@ const Page = () => {
               ))}
             </div>
 
-            <h2 className="font-bold">Vizag</h2>
+            <h2 className="font-semibold">Vizag</h2>
             <div
               data-aos="fade-left"
               className="grid grid-cols-3 sm:grid-cols-5 gap-4"
