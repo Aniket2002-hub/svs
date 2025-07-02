@@ -46,8 +46,11 @@ export default function BelmondPage() {
       <div className="bg-white py-12 px-6 md:px-16">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-10">
           {/* Text Content */}
-          <div className="md:w-1/2 space-y-6">
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
+          <div className="md:w-1/2 space-y-6 ">
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
+              Belmond
+            </h1>
+            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 ">
               Crafting Futures, Building Lifestyles
             </h2>
             <p className="text-gray-700">
@@ -63,26 +66,21 @@ export default function BelmondPage() {
               commitment to quality, sustainability, and long-term value.
             </p>
             <p className="text-gray-700">
-              Additionally, there is a new upcoming grand international airport
-              which is just 10-15 minutes away from Belmond and minutes away
-              from the upcoming Vizab metro station. which is the major reason
-              for its steady value appreciation. Belmond is not just a plotted
-              development; it’s a gateway to living an eco-friendly lifestyle,
-              which has potential, beauty, and limitless opportunities. It has
-              wide green spaces, a pollution-free environment, and well-planned
-              amenities. It offers a perfect setting for families looking to
-              build their dream homes in an eco-friendly environment and urban
-              convenience.
+              Bhogapuram international airport is coming up just 10 minutes away
+              from Belmond and minutes away from the upcoming Vizag metro
+              station. These infrastructure projects are a major reason for its
+              steady value appreciation. Belmond is a beautifully crafted
+              plotted development; it’s a gateway to living in an eco-friendly
+              lifestyle, with limitless opportunities. The project offers sprawling green spaces
+              and well-planned amenities with erfect setting for families
+              looking to build their dream homes.
             </p>
-            {/* <button className="bg-yellow-500 text-black px-4 py-2 rounded hover:bg-yellow-600 transition">
-              Download Brochure
-            </button> */}
           </div>
 
           {/* Image */}
           <div className="md:w-1/2">
             <Image
-              src="/Assets/belmond img.jpg" // Replace this with your image path in public folder
+              src="/Assets/Belmond-Ongoing Project img.png" // Replace this with your image path in public folder
               alt="Project View"
               width={800}
               height={500}
@@ -350,8 +348,7 @@ export default function BelmondPage() {
               <li>40 minutes away from Srikakulam </li>
               <li>10 minutes from the upcoming new Vizag Metro Station</li>
               <li>
-                15 minutes away from the Grand New International Airport,
-                Bhogapuram
+                15 minutes away from the International Airport, Bhogapuram
               </li>
             </ul>
           </div>

@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay, EffectFade } from "swiper/modules"; // ✅ SINGLE correct import
+import { Navigation, Autoplay, EffectFade } from "swiper/modules";
 import {
   FaWhatsapp,
   FaInstagram,
@@ -278,7 +278,7 @@ const Page = () => {
               {block.title}
             </h2>
             <p
-              className="text-base leading-relaxed mb-6 max-w-[90%] text-black "
+              className="text-base leading-relaxed mb-6 max-w-[90%] text-black md:text-lg"
               style={{ fontFamily: "raleway,sans-serif" }}
             >
               {block.description}
@@ -300,7 +300,7 @@ const Page = () => {
         className="
     relative flex items-center justify-center w-full bg-white
     px-4 sm:px-6 overflow-x-hidden
-    min-h-[35vh] md:min-h-[45vh] lg:min-h-[50vh] mt-10   /* Decreased section height */
+    min-h-[25vh] md:min-h-[35vh] lg:min-h-[40vh] mt-4
   "
       >
         <div className="relative z-10 w-full max-w-7xl text-center">
@@ -318,7 +318,7 @@ const Page = () => {
           {/* SUBHEADING */}
           <p
             className="
-        mt-4 uppercase font-medium tracking-[0.5em] text-[#61796f]
+        mt-2 uppercase font-medium tracking-[0.5em] text-[#61796f]
         text-[clamp(1.2rem,3vw,2.2rem)]
         px-2 sm:px-0 text-center
       "
@@ -528,7 +528,7 @@ const Page = () => {
               {partners.map((partner, i) => (
                 <div
                   key={i}
-                  className="p-3 bg-white border border-gray-200 rounded-lg shadow-sm flex items-center justify-center hover:shadow-md  cursor-pointer transition-transform duration-300 hover:-translate-x-2 mt-2"
+                  className="p-3 bg-white  rounded-lg shadow-sm flex items-center justify-center hover:shadow-md  cursor-pointer transition- duration-300 hover:-translate-x-2 mt-2 shadow-sm hover:shadow-[#61796f] border-1 border-[#61796f] hover:-translate-y-2"
                 >
                   <a
                     href={partner.pdf}
@@ -555,7 +555,7 @@ const Page = () => {
               {part.map((partner, i) => (
                 <div
                   key={i}
-                  className="p-3 bg-white border border-gray-200 rounded-lg shadow-sm flex items-center justify-center hover:shadow-md transition cursor-pointer transition-transform duration-300 hover:-translate-x-2 mt-2"
+                  className="p-3 bg-white  rounded-lg shadow-sm flex items-center justify-center hover:shadow-md  cursor-pointer transition- duration-300 hover:-translate-x-2 mt-2 shadow-sm hover:shadow-[#61796f] border-1 border-[#61796f] hover:-translate-y-2"
                 >
                   <a
                     href={partner.pdf}

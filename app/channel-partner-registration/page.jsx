@@ -1,6 +1,21 @@
 "use client";
 import React from "react";
 import { ChevronRight } from "lucide-react";
+import { motion } from "framer-motion";
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 40 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+};
+
+const staggerContainer = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
 
 const Page = () => {
   return (
@@ -27,7 +42,8 @@ const Page = () => {
           <div className="max-w-5xl mx-auto text-center">
             <h1
               data-aos="fade-left"
-              className="text-xl md:text-3xl font-semibold text-gray-700"
+              className="text-xl md:text-2xl font-bold text-black"
+              style={{ fontFamily: "Raleway,sans-serif" }}
             >
               About the Associate Program
             </h1>
@@ -38,6 +54,7 @@ const Page = () => {
             <p
               data-aos="fade-left"
               className="text-sm sm:text-base md:text-lg text-gray-700"
+              style={{ fontFamily: "Raleway,sans-serif" }}
             >
               At SVS Construction, we value our relationships and are committed
               to fostering our partnership for the long term. We believe in
@@ -51,46 +68,94 @@ const Page = () => {
           </div>
         </section>
 
-        {/* How it works */}
-        <section className="text-center mt-12 px-4">
-          <h1
-            data-aos="fade-left"
-            className="text-md md:text-xl font-bold text-black"
-          >
-            How It Works
-          </h1>
-          <div
-            data-aos="fade-right"
-            className="w-16 border-b-2 border-black mx-auto mt-4 mb-8"
-          />
-          <div className="flex flex-wrap justify-center gap-6">
-            {[
-              "Fill Application Form",
-              "Document Verification Process",
-              "ERP Registration",
-              "Release Authorization Letter",
-            ].map((item, index) => (
-              <div
-                key={item}
-                data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
-                data-aos-duration={1000 + index * 500}
-                className="w-[90%] sm:w-[270px] h-[120px] bg-[#61796f] text-white rounded-xl p-6 shadow-md border transition hover:bg-white hover:text-black hover:border-black"
-              >
-                {item}
-              </div>
-            ))}
+        {/* Values Section */}
+
+        <motion.section
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          variants={staggerContainer}
+          className="bg-white py-6 px-6"
+        >
+          <div className="mx-auto max-w-6xl text-center">
+            <h1
+              data-aos="fade-left"
+              className="text-2xl font-bold md:text-2xl text-black"
+              style={{ fontFamily: "Raleway,sans-serif" }}
+            >
+              How It Works
+            </h1>
+            <div
+              data-aos="fade-right"
+              className="w-16 border-b-2 border-black mx-auto mt-4 mb-8"
+            />
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+              {[
+                {
+                  title: "Fill Application Form",
+                  desc: "Contact us Today",
+                },
+                {
+                  title: "Document Verification Process",
+                  desc: "Goverment issued IDS",
+                },
+                {
+                  title: "ERP Registration",
+                  desc: "Join our Bussiness for growth",
+                },
+                {
+                  title: "Release Authorization Letter",
+                  desc: "Earn the perks of Bussiness",
+                },
+              ].map((v, i) => (
+                <motion.div
+                  key={i}
+                  variants={fadeInUp}
+                  whileHover={{ scale: 1.05 }}
+                  className="
+            rounded-xl border-1 border-white bg-[#61796f] p-5 shadow-md
+            text-white transition-colors duration-300
+            hover:bg-white hover:text-black hover:border-black
+          "
+                >
+                  <p
+                    className="mb-2 font-bold"
+                    style={{ fontFamily: "Raleway,sans-serif" }}
+                  >
+                    {v.title}
+                  </p>
+                  <p
+                    className="text-m mt-2 mb-2"
+                    style={{ fontFamily: "Raleway,sans-serif" }}
+                  >
+                    {v.desc}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
           </div>
-        </section>
+        </motion.section>
 
         {/* Terms & Conditions */}
-        <section className="bg-[#dff2ea] mt-12 p-6 rounded-none">
-          <div className="max-w-6xl mx-auto border-2 border-black p-4 sm:p-6">
-            <h1 className="text-center text-2xl font-bold">
+        <section className="bg-[#dff2ea] mt-12 p-6 rounded-none ">
+          <div className="max-w-6xl mx-auto border-1 rounded-md border-[#61796f] p-4 sm:p-6">
+            <h1
+              data-aos="fade-left"
+              className="text-center text-2xl font-bold"
+              style={{ fontFamily: "Raleway,sans-serif" }}
+            >
               Terms & Conditions
             </h1>
-            <div className="w-16 border-b-2 border-gray-700 mx-auto mt-2 mb-4" />
+            <div
+              data-aos="fade-right"
+              className="w-16 border-b-2 border-gray-700 mx-auto mt-2 mb-4"
+            />
 
-            <div className="space-y-4 text-gray-700 text-sm sm:text-base">
+            <div
+              data-aos="fade-right"
+              className="space-y-4 text-gray-700 text-sm sm:text-base"
+            >
               {[
                 "Channel Partner should be registered as ‘Agent’ under provisions of the Real Estate (Regulation and Development) Act, 2016 and the Rules framed thereunder with the Real Estate Regulatory Authority (RERA).",
                 "Channel Partner Form must be submitted for registration with SVS Constructions before any marketing and promotional activity undertaken by a Channel Partner.",
@@ -98,7 +163,12 @@ const Page = () => {
                 "Channel Partner Sales will be considered subject to the following terms:",
               ].map((text, i) => (
                 <div key={i} className="flex items-start">
-                  <span className="font-bold mr-2 w-6">{i + 1}.</span>
+                  <span
+                    className="font-bold mr-2 w-6"
+                    style={{ fontFamily: "Raleway,sans-serif" }}
+                  >
+                    {i + 1}.
+                  </span>
                   <p>{text}</p>
                 </div>
               ))}
@@ -109,7 +179,11 @@ const Page = () => {
                 "Client registered towards a Channel Partner will remain mapped with the said Channel Partner for a period of 90 days.",
                 "Brokerage will be equally divided between the two Channel Partners for an overlapping client, if sale is closed within 90 days of registration.",
               ].map((text, i) => (
-                <div key={i} className="flex items-start">
+                <div
+                  key={i}
+                  className="flex items-start "
+                  style={{ fontFamily: "Raleway,sans-serif" }}
+                >
                   <ChevronRight className="mt-1" />
                   <p className="ml-2">{text}</p>
                 </div>
@@ -123,9 +197,11 @@ const Page = () => {
           <div className="max-w-6xl mx-auto text-center">
             <h2
               data-aos="fade-left"
-              className="text-lg md:text-xl font-semibold text-gray-800"
+              className="text-lg md:text-2xl font-bold text-black"
+              style={{ fontFamily: "Raleway,sans-serif" }}
             >
-              Fill your details and share with us. We will connect with you soon.
+              Fill your details and share with us. We will connect with you
+              soon.
             </h2>
             <div
               data-aos="fade-right"
@@ -135,41 +211,62 @@ const Page = () => {
 
           <div
             data-aos="flip-right"
-            className="max-w-6xl bg-white shadow-md rounded-md border mt-8 mx-auto p-4 sm:p-6 md:p-8"
+            className="max-w-6xl bg-white shadow-md rounded-md border-1 border-[#61796f] mt-8 mx-auto p-4 sm:p-6 md:p-8"
           >
             <form className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {[
                 "First Name",
                 "Last Name",
                 "Company Name",
-                "Pan Number",
                 "Phone",
                 "Email",
-                "Address",
                 "Aadhaar Number",
-                "Year of Experience",
+                "Pan Number",
+                "Address 1",
+                "Designation",
+                "Address 2",
+                "Your Comments",
                 "City",
                 "State",
-                "Relationship Manager (if any)",
-                "Master Business Development Associate",
-              ].map((placeholder, i) => (
-                <input
-                  key={i}
-                  type="text"
-                  placeholder={placeholder}
-                  className={`border border-gray-300 py-2 px-3 rounded-md text-sm text-gray-600 ${
-                    placeholder.includes("Address") ||
-                    placeholder.includes("Relationship") ||
-                    placeholder.includes("Master")
-                      ? "col-span-full"
-                      : ""
-                  }`}
-                />
-              ))}
+              ].map((placeholder, i) => {
+                // Render a textarea for 'Your Comments'
+                if (placeholder === "Your Comments") {
+                  return (
+                    <textarea
+                      key={i}
+                      placeholder={placeholder}
+                      className="border border-gray-300 py-2 px-3 rounded-md text-sm text-gray-600 col-span-2 row-span-2 resize-none"
+                      rows={4}
+                    />
+                  );
+                }
+
+                // Input styling logic
+                const colSpan2Fields = [
+                  "Company Name",
+                  "Address 1",
+                  "Address 2",
+                  "Designation",
+                ];
+
+                return (
+                  <input
+                    key={i}
+                    type="text"
+                    placeholder={placeholder}
+                    className={`border border-gray-300 py-2 px-3 rounded-md text-sm text-gray-600 ${
+                      colSpan2Fields.includes(placeholder) ? "col-span-2" : ""
+                    }`}
+                  />
+                );
+              })}
             </form>
 
             <div className="mt-6 flex justify-center">
-              <button className="inline-flex items-center justify-center rounded-full border-2 border-[#61796f] bg-[#61796f] text-white px-6 py-2 text-sm sm:text-base font-bold transition hover:bg-white hover:text-black">
+              <button
+                className="inline-flex items-center justify-center rounded-full border-2 border-white  bg-[#61796f] text-white px-6 py-2 text-sm sm:text-base font-bold transition hover:bg-white hover:text-black hover:border-[#61796f]"
+                style={{ fontFamily: "Raleway,sans-serif" }}
+              >
                 Submit
               </button>
             </div>
@@ -181,3 +278,4 @@ const Page = () => {
 };
 
 export default Page;
+
