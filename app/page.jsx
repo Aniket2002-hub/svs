@@ -210,57 +210,59 @@ const Page = () => {
         </div>
       </section>
 
-      <section className="w-full grid grid-cols-1 md:grid-cols-2 gap-0 bg-white mb-4">
-      {/* Left: Image */}
-      <div
-        data-aos="fade-right"
-        className="relative h-[250px] sm:h-[350px] md:h-full w-full"
-      >
-        <Image
-          src="/Assets/Bhogapuram_Airport_Vizag.jpg"
-          alt="Belmond"
-          fill
-          className="object-cover"
-          priority
-        />
-      </div>
-
-      {/* Right: Content */}
-      <div
-        data-aos="fade-left"
-        className="flex flex-col justify-center bg-[#90afa2] text-white p-6 sm:p-10 md:p-12"
-      >
-        <div className="max-w-xl ">
-          <h2
-            className="text-2xl sm:text-3xl font-bold text-black mb-4"
-            style={{ fontFamily: "raleway,sans-serif" }}
-          >
-            SVS Belmond, Rajapulova, Vizag
-          </h2>
-
-          <p
-            className="text-sm sm:text-base text-black mb-6 leading-relaxed"
-            style={{ fontFamily: "raleway,sans-serif" }}
-          >
-            Successful real estate developments are distinguished by their premium locations.
-            At SVS Constructions, we are committed to crafting projects with strategic benefits
-            near major infrastructure developments. Our buyers will enjoy enhanced connectivity,
-            convenience, and long-term value. Every purchase at SVS Constructions delivers
-            unparalleled value.
-          </p>
-
-          <Link
-            href="#"
-            className="inline-flex items-center justify-center rounded-full
-              border-2 border-white bg-[#61796f] px-6 py-3 font-semibold
-              text-white transition-colors duration-300 hover:bg-white hover:text-black w-fit"
-            style={{ fontFamily: "raleway,sans-serif" }}
-          >
-            Book&nbsp;Now&nbsp;→
-          </Link>
+      <section className="w-full grid grid-cols-1 md:grid-cols-2 bg-white mt-2 mb-2">
+        {/* Left: Image */}
+        <div
+          data-aos="fade-right"
+          className="relative h-[160px] sm:h-[220px] md:h-[280px] lg:h-[320px] w-full"
+        >
+          <Image
+            src="/Assets/Bhogapuram_Airport_Vizag.jpg"
+            alt="Belmond"
+            fill
+            className="object-cover"
+            priority
+          />
         </div>
-      </div>
-    </section>
+
+        {/* Right: Content */}
+        <div
+          data-aos="fade-left"
+          className="flex flex-col justify-center bg-[#90afa2] text-white p-4 sm:p-6 md:p-4"
+        >
+          <div className="max-w-xl">
+            <h2
+              className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-3"
+              style={{ fontFamily: "Raleway, sans-serif" }}
+            >
+              SVS Belmond, Rajapulova, Vizag
+            </h2>
+
+            <p
+              className="text-sm sm:text-base md:text-lg text-black mb-4 leading-relaxed"
+              style={{ fontFamily: "Raleway, sans-serif" }}
+            >
+              Successful real estate developments are distinguished by their
+              premium locations. At SVS Constructions, we are committed to
+              crafting projects with strategic benefits near major
+              infrastructure developments. Our buyers will enjoy enhanced
+              connectivity, convenience, and long-term value. Every purchase at
+              SVS Constructions delivers unparalleled value.
+            </p>
+
+            <Link
+              href="#"
+              className="inline-flex items-center justify-center rounded-full
+        border-2 border-white bg-[#61796f] px-5 py-2 font-semibold
+        text-white transition duration-300 hover:bg-white hover:text-black w-fit"
+              style={{ fontFamily: "Raleway, sans-serif" }}
+            >
+              Book&nbsp;Now&nbsp;→
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ================= Colored Blocks Section ================= */}
       <section className="w-full grid grid-cols-1 md:grid-cols-3 gap-2 bg-white">
         {blocks.map((block, index) => (
@@ -294,37 +296,37 @@ const Page = () => {
         ))}
       </section>
 
-     <section
-  className="
+      <section
+        className="
     relative flex items-center justify-center w-full bg-white
     px-4 sm:px-6 overflow-x-hidden
     min-h-[35vh] md:min-h-[45vh] lg:min-h-[50vh]   /* Decreased section height */
   "
->
-  <div className="relative z-10 w-full max-w-7xl text-center">
-    {/* HEADLINE */}
-    <h1
-      className="
+      >
+        <div className="relative z-10 w-full max-w-7xl text-center">
+          {/* HEADLINE */}
+          <h1
+            className="
         font-extrabold text-[#61796f] tracking-wide leading-none uppercase
         text-[clamp(2.5rem,10vw,10rem)]
         sm:text-[clamp(4rem,12vw,12rem)]
       "
-    >
-      DISCOVER
-    </h1>
+          >
+            DISCOVER
+          </h1>
 
-    {/* SUBHEADING */}
-    <p
-      className="
+          {/* SUBHEADING */}
+          <p
+            className="
         mt-4 uppercase font-medium tracking-[0.5em] text-[#61796f]
         text-[clamp(1.2rem,3vw,2.2rem)]
         px-2 sm:px-0 text-center
       "
-    >
-      ELEVATED LIVING WITH SVS
-    </p>
-  </div>
-</section>
+          >
+            ELEVATED LIVING WITH SVS
+          </p>
+        </div>
+      </section>
 
       <section data-aos="fade-left" className="bg-white py-12 px-4 sm:px-8">
         <h2 className="text-3xl md:text-4xl font-semibold text-center mb-8 text-gray-800"></h2>
@@ -513,9 +515,8 @@ const Page = () => {
               className="w-14 h-1 bg-gray-800 mb-4"
             ></div>
             <p data-aos="fade-left" className="text-gray-700  mb-2">
-               Over the years, SVS has partnered with some of the
-              biggest names in the real estate industry to deliver landmark
-              projects.
+              Over the years, SVS has partnered with some of the biggest names
+              in the real estate industry to deliver landmark projects.
             </p>
 
             {/* Partner Logos */}
