@@ -18,7 +18,7 @@ const Page = () => {
         thumbnail: "/Assets/Frame 111.jpg",
       },
       {
-        title:" A Destination of Peace Purpose, and Premium Living",
+        title:" A Destination of Peace,Purpose, and Premium Living",
         date: "22-May-2025",
         thumbnail: "/Assets/Frame 95.jpg",
       },

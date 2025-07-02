@@ -300,7 +300,7 @@ const Page = () => {
         className="
     relative flex items-center justify-center w-full bg-white
     px-4 sm:px-6 overflow-x-hidden
-    min-h-[35vh] md:min-h-[45vh] lg:min-h-[50vh]   /* Decreased section height */
+    min-h-[35vh] md:min-h-[45vh] lg:min-h-[50vh] mt-10   /* Decreased section height */
   "
       >
         <div className="relative z-10 w-full max-w-7xl text-center">
@@ -328,7 +328,7 @@ const Page = () => {
         </div>
       </section>
 
-      <section data-aos="fade-left" className="bg-white py-12 px-4 sm:px-8">
+      <section data-aos="fade-left" className="bg-white  py-12 px-4 sm:px-8">
         <h2 className="text-3xl md:text-4xl font-semibold text-center mb-8 text-gray-800"></h2>
 
         <Swiper
@@ -340,7 +340,7 @@ const Page = () => {
           }}
           loop={true}
           speed={800}
-          spaceBetween={20}
+          spaceBetween={8}
           breakpoints={{
             640: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
@@ -367,7 +367,7 @@ const Page = () => {
       </section>
 
       <section
-        className="bg-[#dff2ea] py-10 px-4 sm:px-6 md:px-12 lg:px-16"
+        className="bg-[#dff2ea] p-0 px-4 sm:px-6 md:px-12 lg:px-16"
         style={{ fontFamily: "raleway,sans-serif" }}
       >
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">

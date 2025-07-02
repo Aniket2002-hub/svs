@@ -114,22 +114,27 @@ export default function DirectorsMessage() {
         }}
       />
       {/* Description */}
-      <div className="px-6 md:px-20 py-10 bg-[] max-w-8xl mx-auto">
-        <h2 className="text-3xl font-semibold text-gray-800">
-          Strategic Partner
-        </h2>
-        <div className="w-16 border-b-2 border-gray-700 h-1  mt-2 mb-2" />
-        <p className="text-gray-700">
-          IREED Academy plays a crucial role as a strategic partner for
-          development organizations across India. They bring significant value
-          to a project by offering specialized expertise, necessary resources,
-          and market intelligence for the much-desired success. <br />
-           <br />
-          This partnership is forged with a collective objective to attain
-          project success, reach out to a wider audience, technology integration
-          and innovation for an overall improved efficiency.
-        </p>
+      <div className="px-4 sm:px-6 md:px-20 py-10 max-w-8xl mx-auto">
+        <div className="pl-2 sm:pl-4 md:pl-8">
+          {" "}
+          {/* Responsive left padding */}
+          <h2 className="text-3xl font-semibold text-gray-800">
+            Strategic Partner
+          </h2>
+          <div className="w-16 border-b-2 border-gray-700 h-1 mt-2 mb-2" />
+          <p className="text-gray-700 text-base sm:text-lg">
+            IREED Academy plays a crucial role as a strategic partner for
+            development organizations across India. They bring significant value
+            to a project by offering specialized expertise, necessary resources,
+            and market intelligence for the much-desired success. <br />
+            <br />
+            This partnership is forged with a collective objective to attain
+            project success, reach out to a wider audience, technology
+            integration and innovation for an overall improved efficiency.
+          </p>
+        </div>
       </div>
+
       {/* Team Grid + Bio Section */}
       <section className="py-16 px-4 md:px-12">
         <div className="max-w-7xl mx-auto">

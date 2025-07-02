@@ -22,19 +22,26 @@ export default function PersonalStory() {
       </div>
 
       {/* Description */}
-      <div className="px-6 md:px-20 py-10 bg-[#dff2ea] max-w-8xl mx-auto">
-        <h2 className="text-3xl font-semibold text-gray-800">Our Leadership</h2>
-        <div className="w-16 border-b-2 border-gray-700 h-1  mt-2 mb-0" />
-        <p className="text-gray-700">
-          Our strong leadership at SVS Constructions is the bedrock for crafting
-          legacy and building milestone projects for our valued customers. They
-          provide direction, motivation, and foster a positive work environment.
-          <br />
-          <br />
-          Our leaders set the vision for organizational growth, guide teams, and
-          build trust, leading to increased productivity, better
-          decision-making, and improved employee morale.
-        </p>
+      <div className="px-4 sm:px-6 md:px-20 py-10 bg-[#dff2ea] max-w-8xl mx-auto">
+        <div className="pl-6 sm:pl-6 md:pl-24">
+          {" "}
+          {/* Shift content right */}
+          <h2 className="text-3xl font-semibold text-gray-800">
+            Our Leadership
+          </h2>
+          <div className="w-16 border-b-2 border-gray-700 h-1 mt-2 mb-0" />
+          <p className="text-gray-700 text-base sm:text-lg">
+            Our strong leadership at SVS Constructions is the bedrock for
+            crafting legacy and building milestone projects for our valued
+            customers. They provide direction, motivation, and foster a positive
+            work environment.
+            <br />
+            <br />
+            Our leaders set the vision for organizational growth, guide teams,
+            and build trust, leading to increased productivity, better
+            decision-making, & improved employee morale.
+          </p>
+        </div>
       </div>
 
       {/* Story Section */}
