@@ -129,7 +129,7 @@ export default function OurVideos() {
       </div>
 
       {/* Year Buttons + Shorts Button */}
-      <div className="px-6 md:px-20 pb-4 flex flex-wrap items-center justify-between">
+      <div className="px-6 md:px-20 pb-4 flex flex-wrap items-center justify-between font-bold ">
         <div className="flex gap-2 flex-wrap">
           {Object.keys(videoData)
             .sort((a, b) => b.localeCompare(a))
@@ -152,7 +152,7 @@ export default function OurVideos() {
         </div>
         <button
           onClick={() => setShowShorts(true)}
-          className={`mt-4 md:mt-0 px-4 py-2 border rounded ${
+          className={`mt-4 md:mt-0 px-4 py-2 border rounded font-bold ${
             showShorts
               ? "bg-[#61796f] text-white"
               : "bg-white text-gray-700 hover:bg-gray-100 font-bold"
@@ -164,7 +164,7 @@ export default function OurVideos() {
 
       {/* Video Grid */}
       {!showShorts && (
-        <div className="px-6 md:px-20 py-8 bg-blue-50">
+        <div className="px-6 md:px-20 py-8 bg-blue-50 ">
           {videoData[selectedYear]?.length > 0 ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {videoData[selectedYear].map((video, i) => {
