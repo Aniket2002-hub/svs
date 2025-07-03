@@ -155,7 +155,7 @@ export default function OurVideos() {
           className={`mt-4 md:mt-0 px-4 py-2 border rounded font-bold ${
             showShorts
               ? "bg-[#61796f] text-white"
-              : "bg-white text-gray-700 hover:bg-gray-100 font-bold"
+              : "bg-white text-gray-700 hover:bg-gray-100 font-bold "
           }`}
         >
           Shorts
