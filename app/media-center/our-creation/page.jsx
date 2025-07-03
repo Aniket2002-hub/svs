@@ -38,7 +38,18 @@ const Page = () => {
         thumbnail: "/Assets/Frame 110 (1).jpg",
         href: "https://www.instagram.com/p/DLhpLcizbf3/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       },
-      
+      {
+        title: "Work Smart, Live Serene at Belmond by SVS",
+        date: "01-July-2025",
+        thumbnail: "/Assets/Frame 89.jpg",
+        href: "https://www.instagram.com/p/DLmrICszgH8/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
+      {
+        title: "Where Every Morning Feels Like a Golden Hour",
+        date: "02-July-2025",
+        thumbnail: "/Assets/Frame 88.jpg",
+        href: "https://www.instagram.com/p/DLhpLcizbf3/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
     ],
     Facebook: [
       {
@@ -47,14 +58,28 @@ const Page = () => {
         thumbnail: "/Assets/Frame 110 (1).jpg",
         href: "https://www.facebook.com/share/p/16NmeZRUCD/",
       },
+      {
+        title: "Work Smart, Live Serene at Belmond by SVS",
+        date: "01-June-2025",
+        thumbnail: "/Assets/Frame 89.jpg",
+        href: "https://www.facebook.com/share/p/1ZrZysKoff/",
+      },
+      {
+        title: "Where Every Morning Feels Like a Golden Hour",
+        date: "02-July-2025",
+        thumbnail: "/Assets/Frame 88.jpg",
+        href: "https://www.facebook.com/share/p/1AD9E9oGVa/",
+      },
     ],
     Linkedin: [
+     
       {
-        title: "SVS Belmond Vizag – Plots Built for Life in Motion",
-        date: "30-June-2025",
-        thumbnail: "/Assets/Frame 110 (1).jpg",
-        href: "https://www.linkedin.com/feed/update/urn:li:activity:7345414172119076864",
+        title: "Work Smart, Live Serene at Belmond by SVS",
+        date: "02-June-2025",
+        thumbnail: "/Assets/Frame 89.jpg",
+        href: "https://www.linkedin.com/feed/update/urn:li:activity:7346142544415625217",
       },
+     
     ],
     Twitter: [
       {
@@ -62,6 +87,18 @@ const Page = () => {
         date: "30-June-2025",
         thumbnail: "/Assets/Frame 110 (1).jpg",
         href: "https://x.com/svsconstuctions/status/1939668942706155607",
+      },
+      {
+        title: "Work Smart, Live Serene at Belmond by SVS",
+        date: "01-June-2025",
+        thumbnail: "/Assets/Frame 89.jpg",
+        href: "https://x.com/svsconstuctions/status/1940376858731975124",
+      },
+      {
+        title: "Where Every Morning Feels Like a Golden Hour",
+        date: "02-July-2025",
+        thumbnail: "/Assets/Frame 88.jpg",
+        href: "https://x.com/svsconstuctions/status/1940028960353718504",
       },
     ],
   };
