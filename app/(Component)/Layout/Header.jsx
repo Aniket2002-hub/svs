@@ -48,7 +48,7 @@ export default function Navbar() {
           <li className="relative group">
             <span className="cursor-pointer text-[20px]">About&nbsp;Us</span>
             <ul className="absolute top-full left-0 mt-6 w-52 bg-[#9cc6b5] text-white rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-50">
-              <li><Link href="/about-us/vision" className="block px-4 py-2 hover:bg-[#61796f]">Vision &amp; Mission</Link></li>
+              <li><Link href="/about-us/vision" className="block px-4 py-2 hover:bg-[#61796f]">Vision & Mission</Link></li>
               <li><Link href="/about-us/Our-Leadership" className="block px-4 py-2 hover:bg-[#61796f]">Our Leadership</Link></li>
               <li><Link href="/about-us/our-team" className="block px-4 py-2 hover:bg-[#61796f]">Strategic Partner</Link></li>
             </ul>
@@ -80,6 +80,15 @@ export default function Navbar() {
           <li><Link href="/channel-partner-registration" className="text-[20px]">Partner Registration</Link></li>
           <li><Link href="/contact" className="text-[20px]">Contact Us</Link></li>
         </ul>
+
+        {/* ✅ Desktop Login Button (hidden on mobile) */}
+        <div className="hidden md:block">
+          <Link href="/" target="_blank" rel="noopener noreferrer">
+            <button className="text-m font-bold px-8 py-2 rounded-full bg-[#90afa2] text-white border-2 border-white hover:bg-[#e4f0ea] hover:shadow-lg hover:text-black hover:border-[#90afa2] hover:bg-white transition duration-300">
+              Log In
+            </button>
+          </Link>
+        </div>
 
         {/* Hamburger Icon */}
         <button onClick={toggleMenu} className="md:hidden text-2xl text-white">
@@ -153,7 +162,17 @@ export default function Navbar() {
         <Link href="/career" onClick={closeMenu} className="block py-2 border-b border-white">Career</Link>
         <Link href="/channel-partner-registration" onClick={closeMenu} className="block py-2 border-b border-white">Partner Registration</Link>
         <Link href="/contact" onClick={closeMenu} className="block py-2 border-b border-white">Contact Us</Link>
+
+        {/* ✅ Mobile Login Button */}
+        <div className="mt-4">
+          <Link href="/" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
+            <button className="w-full py-2 px-4 text-center rounded-full font-semibold bg-white text-[#61796f] hover:bg-[#e4f0ea] hover:shadow-lg border-2 border-white transition duration-300">
+              Log In
+            </button>
+          </Link>
+        </div>
       </div>
     </nav>
   );
 }
+

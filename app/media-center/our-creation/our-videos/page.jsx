@@ -91,7 +91,7 @@ export default function OurVideos() {
   <div className="flex items-center justify-between flex-wrap gap-4">
     <div>
       <h2 className="text-3xl font-semibold text-gray-800">Our Videos</h2>
-      {/* <div className="w-20 h-1 bg-black mt-2 mb-4"></div>  */}
+      <div className="w-20 h-1 bg-black mt-2 mb-4"></div> 
       <p className="text-gray-700 max-w-3xl">
         Here’s a glimpse of the changes happening at SVS Belmond. Each
         milestone shows our dedication to quality and speed. Check out the

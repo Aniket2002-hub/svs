@@ -131,7 +131,7 @@ export default function DirectorsMessage() {
 
       {/* Team Grid + Bio Section */}
       <section className="py-16 px-4 md:px-12">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-8xl mx-auto">
           {/* Grid */}
           <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
             {TEAM.map((p, i) => (
