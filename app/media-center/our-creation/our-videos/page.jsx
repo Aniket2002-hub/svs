@@ -155,7 +155,7 @@ export default function OurVideos() {
           className={`mt-4 md:mt-0 px-4 py-2 border rounded ${
             showShorts
               ? "bg-[#61796f] text-white"
-              : "bg-white text-gray-700 hover:bg-gray-100"
+              : "bg-white text-gray-700 hover:bg-gray-100 font-bold"
           }`}
         >
           Shorts
@@ -209,7 +209,7 @@ export default function OurVideos() {
       {/* Shorts View */}
       {showShorts && (
         <div className="px-6 md:px-20 py-8 bg-blue-50">
-          <h3 className="text-xl font-semibold text-gray-800 mb-4">
+          <h3 className="text-xl font-bold text-gray-800 mb-4">
             YouTube Shorts
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
