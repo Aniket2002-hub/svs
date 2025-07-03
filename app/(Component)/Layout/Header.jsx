@@ -71,7 +71,7 @@ export default function Navbar() {
             <span className="cursor-pointer text-[20px]">Media&nbsp;Center</span>
             <ul className="absolute top-full left-0 mt-6 w-52 bg-[#9cc6b5] text-white rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-50">
               <li><Link href="/news-media" className="block px-4 py-2 hover:bg-[#61796f]">Press Coverage</Link></li>
-              <li><Link href="/media-center/our-videos" className="block px-4 py-2 hover:bg-[#61796f]">Our Videos</Link></li>
+              <li><Link href="/media-center/our-creation/our-videos" className="block px-4 py-2 hover:bg-[#61796f]">Our Videos</Link></li>
               <li><Link href="/media-center/our-creation" className="block px-4 py-2 hover:bg-[#61796f]">Our Creatives</Link></li>
             </ul>
           </li>
@@ -153,7 +153,7 @@ export default function Navbar() {
           {mediaDropdownOpen && (
             <ul className="pl-4 mt-2 space-y-2">
               <li><Link href="/news-media" onClick={closeMenu}>Press Coverage</Link></li>
-              <li><Link href="/media-center/our-videos" onClick={closeMenu}>Our Videos</Link></li>
+              <li><Link href="/media-center/our-creation/our-videos" onClick={closeMenu}>Our Videos</Link></li>
               <li><Link href="/media-center/our-creation" onClick={closeMenu}>Our Creatives</Link></li>
             </ul>
           )}

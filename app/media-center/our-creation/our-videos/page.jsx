@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function getYouTubeVideoId(url) {
   const match = url.match(
-    /(?:youtube\.com\/(?:.*v=|embed\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/
+    /(?:youtube\.com\/(?:.*v=|embed\/|shorts\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/
   );
   return match ? match[1] : null;
 }
@@ -63,46 +63,51 @@ const videoData = {
   ],
 };
 
+const short = [
+  {
+    href: "https://youtube.com/shorts/bt5ur-9x4Rs?feature=share",
+    label: "SVS Belmond: VMRDA Plots Just Minutes Away from Bhogapuram Airport!",
+  },
+  {
+    href: "https://youtube.com/shorts/XCQ4rudI_64?si=AE6B7LKcMHk2sqSf",
+    label: "Bhogapuram International Airport ✈️ 60% works completed",
+  },
+  {
+    href: "https://youtube.com/shorts/wkfmbZzF2YY?si=7EX2T2yk3AEMmpqZ",
+    label: "PM Modi has laid the foundation stone for projects worth over ₹2 lakh crore in Visakhapatnam",
+  },
+];
+
 export default function OurVideos() {
   const [selectedYear, setSelectedYear] = useState("2025");
+  const [showShorts, setShowShorts] = useState(false);
 
   return (
     <div>
       {/* Hero Section */}
       <div
-        data-aos="fade-right"
         className="relative w-full h-[270px] md:h-[300px] lg:h-[400px] bg-cover bg-center flex items-center justify-center"
         style={{
           backgroundImage:
             "url('/Assets/SVS_Belmond_Rajapulova_Junction_Vizag_Banner_Our_Videos.png')",
         }}
       >
-        <div className="relative z-10 max-w-5xl mx-auto text-center">
-          <h2
-            data-aos="slide-right"
-            data-aos-duration="1500"
-            className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-black"
-          ></h2>
-        </div>
+        <div className="relative z-10 max-w-5xl mx-auto text-center" />
       </div>
 
       {/* Description and CTA */}
-    <div className="px-6 md:px-20 py-10 bg-white">
-  <div className="flex items-center justify-between flex-wrap gap-4">
-    <div>
-      <h2 className="text-3xl font-semibold text-gray-800">Our Videos</h2>
-      <div className="w-20 h-1 bg-black mt-2 mb-4"></div> 
-      <p className="text-gray-700 max-w-3xl">
-        Here’s a glimpse of the changes happening at SVS Belmond. Each
-        milestone shows our dedication to quality and speed. Check out the
-        latest site development update and watch your investment come
-        together, book your slot on time, and track.
-      </p>
-    </div>
- 
-
- 
-
+      <div className="px-6 md:px-20 py-10 bg-white">
+        <div className="flex items-center justify-between flex-wrap gap-4">
+          <div>
+            <h2 className="text-3xl font-semibold text-gray-800">Our Videos</h2>
+            <div className="w-20 h-1 bg-black mt-2 mb-4" />
+            <p className="text-gray-700 max-w-3xl">
+              Here’s a glimpse of the changes happening at SVS Belmond. Each
+              milestone shows our dedication to quality and speed. Check out the
+              latest site development update and watch your investment come
+              together, book your slot on time, and track.
+            </p>
+          </div>
 
           <a
             href="https://www.youtube.com/@svsconstructionsgroup"
@@ -123,31 +128,20 @@ export default function OurVideos() {
         </div>
       </div>
 
-      {/* Featured Embedded Video */}
-      <div className="px-6 md:px-20">
-        <div className="w-full h-[500px] mb-6">
-          <iframe
-            className="w-full h-full rounded shadow-lg"
-            src="https://www.youtube.com/embed/-b6goU9bqII"
-            title="YouTube video"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
-      </div>
-
-      {/* Year Filter Buttons */}
-      <div className="px-6 md:px-20 pb-4">
+      {/* Year Buttons + Shorts Button */}
+      <div className="px-6 md:px-20 pb-4 flex flex-wrap items-center justify-between">
         <div className="flex gap-2 flex-wrap">
           {Object.keys(videoData)
             .sort((a, b) => b.localeCompare(a))
             .map((year) => (
               <button
                 key={year}
-                onClick={() => setSelectedYear(year)}
+                onClick={() => {
+                  setSelectedYear(year);
+                  setShowShorts(false);
+                }}
                 className={`px-4 py-2 border rounded ${
-                  selectedYear === year
+                  selectedYear === year && !showShorts
                     ? "bg-[#61796f] text-white"
                     : "bg-white text-gray-700 hover:bg-gray-100"
                 }`}
@@ -156,51 +150,98 @@ export default function OurVideos() {
               </button>
             ))}
         </div>
+        <button
+          onClick={() => setShowShorts(true)}
+          className={`mt-4 md:mt-0 px-4 py-2 border rounded ${
+            showShorts
+              ? "bg-[#61796f] text-white"
+              : "bg-white text-gray-700 hover:bg-gray-100"
+          }`}
+        >
+          Shorts
+        </button>
       </div>
 
-      {/* Video Cards with Hover Effect */}
-      <div className="px-6 md:px-20 py-8 bg-blue-50">
-        {videoData[selectedYear]?.length > 0 ? (
+      {/* Video Grid */}
+      {!showShorts && (
+        <div className="px-6 md:px-20 py-8 bg-blue-50">
+          {videoData[selectedYear]?.length > 0 ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {videoData[selectedYear].map((video, i) => {
+                const id = getYouTubeVideoId(video.href); // ✅ fixed here
+                const thumb = id
+                  ? `/Assets/youtube logo.jpg`
+                  : "/Assets/youtube logo.jpg";
+
+                return (
+                  <a
+                    href={video.href}
+                    key={i}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group bg-white shadow rounded overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+                  >
+                    <Image
+                      src={thumb}
+                      alt={video.title}
+                      width={500}
+                      height={300}
+                      className="w-full h-72 object-cover"
+                    />
+                    <div className="p-4">
+                      <h3 className="font-semibold text-lg text-gray-800">
+                        {video.title}
+                      </h3>
+                      <p className="text-sm text-gray-500 mt-1">{video.date}</p>
+                    </div>
+                  </a>
+                );
+              })}
+            </div>
+          ) : (
+            <p className="text-center text-gray-600">
+              No videos found for {selectedYear}.
+            </p>
+          )}
+        </div>
+      )}
+
+      {/* Shorts View */}
+      {showShorts && (
+        <div className="px-6 md:px-20 py-8 bg-blue-50">
+          <h3 className="text-xl font-semibold text-gray-800 mb-4">
+            YouTube Shorts
+          </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {videoData[selectedYear].map((video, i) => {
-              const videoId = getYouTubeVideoId(video.href || "");
-              const dynamicThumbnail = videoId
-                ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`
-                : "/Assets/default-thumb.jpg";
-
-              const thumbnailSrc = video.thumbnail || dynamicThumbnail;
-
+            {short.map((short, index) => {
+              const id = getYouTubeVideoId(short.href);
+              const thumb = id
+                ? `/Assets/youtube logo.jpg`
+                : "/Assets/youtube logo.jpg";
               return (
                 <a
-                  href={video.href}
+                  href={short.href}
+                  key={index}
                   target="_blank"
                   rel="noopener noreferrer"
-                  key={i}
-                  className="group bg-white shadow rounded overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+                  className="bg-white rounded shadow hover:shadow-lg overflow-hidden"
                 >
                   <Image
-                    src={thumbnailSrc}
-                    alt={video.title}
-                    width={500}
-                    height={300}
-                    className="w-full h-78 object-cover transition duration-300 group-hover:brightness-105"
+                    src={thumb}
+                    alt={short.label}
+                    width={300}
+                    height={180}
+                    className="w-full h-48 object-cover"
                   />
-                  <div className="p-4">
-                    <h3 className="font-semibold text-lg text-gray-800 group-hover:text-[] transition">
-                      {video.title}
-                    </h3>
-                    <p className="text-sm text-gray-500 mt-1">{video.date}</p>
+                  <div className="p-2 text-sm text-gray-800 font-medium">
+                    ▶️ {short.label}
                   </div>
                 </a>
               );
             })}
           </div>
-        ) : (
-          <p className="text-center text-gray-600">
-            No videos found for {selectedYear}.
-          </p>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 }

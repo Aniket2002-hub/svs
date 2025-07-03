@@ -7,21 +7,29 @@ const Page = () => {
 
   const videoData = {
     Infographics: [
+       {
+        title: "Golden Hours Timeless Moments",
+        date: "12-June-2025",
+        thumbnail: "/Assets/Frame 88.jpg",
+      },
+       {
+        title: "Work with a view, Live with Balance",
+        date: "12-June-2025",
+        thumbnail: "/Assets/Frame 89.jpg",
+      },
       {
         title: "Built for Life in Motion",
         date: "29-June-2025",
         thumbnail: "/Assets/Frame 110 (1).jpg",
       },
-      {
-        title: "Reclaim Balance in Every Step",
-        date: "12-June-2025",
-        thumbnail: "/Assets/Frame 111.jpg",
-      },
+     
       {
         title:" A Destination of Peace,Purpose, and Premium Living",
         date: "22-May-2025",
         thumbnail: "/Assets/Frame 95.jpg",
       },
+
+      
     ],
     Instagram: [
       {
@@ -30,6 +38,7 @@ const Page = () => {
         thumbnail: "/Assets/Frame 110 (1).jpg",
         href: "https://www.instagram.com/p/DLhpLcizbf3/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       },
+      
     ],
     Facebook: [
       {
