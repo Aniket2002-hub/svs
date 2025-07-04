@@ -30,7 +30,7 @@ const TEAM = [
     photo: "/Assets/SVS_Belmond_Rajapulova_Junction_Vizag_Our Teams_KP.png",
     linkedin:
       "https://www.linkedin.com/in/kamaldeep01?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-    bio: ` Kamaldeep Prajapati is a results-driven professional with solid 5+ years of experience in Luxury sales, corporate events, Business development, sales management, and operations management. He has done tie-ups with 50+ institutions, trained 2000+ students in multiple seminars, and consistently adds value through innovative strategies and operational effectiveness.`,
+    bio: `Kamaldeep Prajapati is a results-driven professional with solid 5+ years of experience in Luxury sales, corporate events, Business development, sales management, and operations management. He has done tie-ups with 50+ institutions, trained 2000+ students in multiple seminars, and consistently adds value through innovative strategies and operational effectiveness.`,
   },
 ];
 

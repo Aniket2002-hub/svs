@@ -157,7 +157,7 @@ export default function OurVideos() {
           onClick={() => setShowShorts(true)}
           className="mt-4 md:mt-0 px-6 py-2 bg-red-600 hover:bg-red-700 text-white font-semibold rounded"
         >
-          Our Youtube Shorts&nbsp;
+          Our YouTube Shorts&nbsp;
           <svg
             className="inline-block w-4 h-4"
             fill="currentColor"
