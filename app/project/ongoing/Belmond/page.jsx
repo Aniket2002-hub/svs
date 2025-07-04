@@ -71,9 +71,9 @@ export default function BelmondPage() {
               station. These infrastructure projects are a major reason for its
               steady value appreciation. Belmond is a beautifully crafted
               plotted development; it’s a gateway to living in an eco-friendly
-              lifestyle, with limitless opportunities. The project offers sprawling green spaces
-              and well-planned amenities with erfect setting for families
-              looking to build their dream homes.
+              lifestyle, with limitless opportunities. The project offers
+              sprawling green spaces and well-planned amenities with erfect
+              setting for families looking to build their dream homes.
             </p>
           </div>
 
@@ -338,18 +338,20 @@ export default function BelmondPage() {
               Perks of Location
             </h1>
             <ul className="list-disc pl-6 text-gray-700 space-y-2">
-              <li>10 minutes from the upcoming new Vizag Metro Station</li>
-
-              <li>15 minutes away from a Multi-speciality Hospital</li>
               <li>5 minutes away from Praveenya Engineering College</li>
-              <li>20 minutes away from Vizianagaram </li>
-              <li>30 minutes away from Vishakapatnam</li>
 
-              <li>40 minutes away from Srikakulam </li>
               <li>10 minutes from the upcoming new Vizag Metro Station</li>
               <li>
                 15 minutes away from the International Airport, Bhogapuram
               </li>
+              <li>15 minutes away from a Multi-speciality Hospital </li>
+              <li>20 minutes away from Vizianagaram</li>
+
+              <li>30 minutes away from Vishakapatnam </li>
+              <li>40 minutes away from Srikakulam</li>
+              {/* <li>
+                15 /minutes away from the International Airport, Bhogapuram
+              </li> */}
             </ul>
           </div>
         </div>
