@@ -38,7 +38,7 @@ const Footer = () => {
     { href: "/about-us/vision", label: "Vision & Mission" },
     { href: "/about-us/Our-Leadership", label: "Our Leadership" },
     { href: "/about-us/our-team", label: "Strategic Partner" },
-    { href: "/project/completed", label: "projects" },
+    { href: "/project/completed", label: "Projects" },
     { href: "/project/ongoing/Belmond", label: "Belmond" },
     { href: "/news-media", label: "Press Coverage" },
     { href: "/media-center/our-videos", label: "Our Videos" },
