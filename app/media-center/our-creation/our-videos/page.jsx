@@ -12,7 +12,8 @@ function getYouTubeVideoId(url) {
 const videoData = {
   2025: [
     {
-      title: "Bhogapuram Green Field International Airport June Month Work Progress GMR",
+      title:
+        "Bhogapuram Green Field International Airport June Month Work Progress GMR",
       date: "03-Jun-2025",
       thumbnail: "/Assets/youtube logo.avif",
       href: "https://youtu.be/Ww5KCvQgBoc?si=KoyZIvn5UPKnQUBo",
@@ -66,7 +67,8 @@ const videoData = {
 const short = [
   {
     href: "https://youtube.com/shorts/bt5ur-9x4Rs?feature=share",
-    label: "SVS Belmond: VMRDA Plots Just Minutes Away from Bhogapuram Airport!",
+    label:
+      "SVS Belmond: VMRDA Plots Just Minutes Away from Bhogapuram Airport!",
   },
   {
     href: "https://youtube.com/shorts/XCQ4rudI_64?si=AE6B7LKcMHk2sqSf",
@@ -74,7 +76,8 @@ const short = [
   },
   {
     href: "https://youtube.com/shorts/wkfmbZzF2YY?si=7EX2T2yk3AEMmpqZ",
-    label: "PM Modi has laid the foundation stone for projects worth over ₹2 lakh crore in Visakhapatnam",
+    label:
+      "PM Modi has laid the foundation stone for projects worth over ₹2 lakh crore in Visakhapatnam",
   },
 ];
 
@@ -152,13 +155,16 @@ export default function OurVideos() {
         </div>
         <button
           onClick={() => setShowShorts(true)}
-          className={`mt-4 md:mt-0 px-4 py-2 border rounded font-bold ${
-            showShorts
-              ? "bg-[#61796f] text-white"
-              : "bg-white text-gray-700 hover:bg-gray-100 font-bold "
-          }`}
+          className="mt-4 md:mt-0 px-6 py-2 bg-red-600 hover:bg-red-700 text-white font-semibold rounded"
         >
-          Shorts
+          Our Youtube Shorts&nbsp;
+          <svg
+            className="inline-block w-4 h-4"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path d="M10 15l5.19-3L10 9v6zm11-3c0-5.52-4.48-10-10-10S1 6.48 1 12s4.48 10 10 10 10-4.48 10-10z" />
+          </svg>
         </button>
       </div>
 
@@ -231,7 +237,7 @@ export default function OurVideos() {
                     alt={short.label}
                     width={300}
                     height={180}
-                    className="w-full h-48 object-cover"
+                    className="w-full h-72 object-cover"
                   />
                   <div className="p-2 text-sm text-gray-800 font-medium">
                     ▶️ {short.label}
