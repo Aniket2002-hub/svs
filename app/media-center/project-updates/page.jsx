@@ -77,7 +77,7 @@ const Page = () => {
       <div className="px-6 md:px-20 py-16 bg-white">
         <h2 className="text-3xl font-bold text-gray-800 mb-3">Project Updates</h2>
         <div className="w-20 h-1 bg-black mb-4" />
-        <p className="text-gray-700 text-base leading-relaxed max-w-4xl ">
+        <p className="text-gray-700 max-w-8xl ">
           The regular project update of SVS Belmond is a sincere attempt to keep
           our customers informed on the project progress. We truly wish to build
           a long-term relationship with our valued customers based on trust. Our
