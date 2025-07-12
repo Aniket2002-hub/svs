@@ -213,7 +213,7 @@ const Page = () => {
 
         <div className="fixed left-4 bottom-4 z-30">
           <a
-            href="https://wa.me/7995555559"
+            href="https://wa.me/+917995555559"
             target="_blank"
             rel="noopener noreferrer"
             className="w-12 h-12 flex items-center justify-center bg-green-500 rounded-full shadow-lg hover:scale-105 transition"
