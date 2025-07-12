@@ -172,7 +172,7 @@ export default function OurVideos() {
   className={`ml-auto w-full sm:w-56 text-center px-4 py-2 border rounded font-semibold ${
     showShorts
       ? "bg-red-600 text-white"
-      : "bg-red-600 text-white hover:bg-red-700"
+      : "bg-red-600 text-white hover:bg-red-700" 
   }`}
 >
   Shorts

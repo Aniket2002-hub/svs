@@ -74,6 +74,7 @@ export default function Navbar() {
               <li><Link href="/news-media" className="block px-4 py-2 hover:bg-[#61796f]">Press Coverage</Link></li>
               <li><Link href="/media-center/our-creation/our-videos" className="block px-4 py-2 hover:bg-[#61796f]">Our Videos</Link></li>
               <li><Link href="/media-center/our-creation" className="block px-4 py-2 hover:bg-[#61796f]">Our Creatives</Link></li>
+              <li><Link href="/media-center/project-updates" className="block px-4 py-2 hover:bg-[#61796f]">Project Updates</Link></li>
             </ul>
           </li>
 
@@ -156,6 +157,7 @@ export default function Navbar() {
               <li><Link href="/news-media" onClick={closeMenu}>Press Coverage</Link></li>
               <li><Link href="/media-center/our-creation/our-videos" onClick={closeMenu}>Our Videos</Link></li>
               <li><Link href="/media-center/our-creation" onClick={closeMenu}>Our Creatives</Link></li>
+              <li><Link href="/media-center/project-updates" onClick={closeMenu}>Project Updates</Link></li>
             </ul>
           )}
         </div>
