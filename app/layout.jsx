@@ -106,6 +106,7 @@ export default function RootLayout({ children }) {
   };
 
   const { title, description, image } = getOGDetails(pathName);
+  
   return (
     <html lang="en">
       <meta property="og:type" content="website" />
