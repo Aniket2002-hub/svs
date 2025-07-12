@@ -13,7 +13,6 @@ const Page = () => {
     { id: 6, date: "2025-01-09", image: "/Assets/projectimg5.jpg" },
     { id: 7, date: "2025-01-09", image: "/Assets/projectimg10.jpg" },
     { id: 8, date: "2025-01-09", image: "/Assets/projectimg7.jpg" },
-    // { id: 9, date: "2025-01-09", image: "/Assets/projectimg8.jpg" },
     { id: 10, date: "2025-01-09", image: "/Assets/projectimg9.jpg" },
   ];
 
@@ -25,18 +24,8 @@ const Page = () => {
     (a, b) => b - a
   );
   const monthOptions = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
   ];
 
   const filteredNews = newsCards.filter((item) => {
@@ -76,22 +65,19 @@ const Page = () => {
         description="SVS Project image gallery filterable by year and month"
       />
 
-      {/* Hero */}
+      {/* Hero Section */}
       <div
         className="w-full h-[300px] lg:h-[400px] bg-cover bg-center"
         style={{
-          backgroundImage:
-            "url('/Assets/projectupdates bg img.png')",
+          backgroundImage: "url('/Assets/projectupdates bg img.png')",
         }}
       />
 
-      {/* Filters */}
-      <div className="px-6 md:px-20 py-10 bg-white">
-        <h2 className="text-3xl font-bold text-gray-800 mb-3">
-          Project Updates
-        </h2>
+      {/* Content Section */}
+      <div className="px-6 md:px-20 py-16 bg-white">
+        <h2 className="text-3xl font-bold text-gray-800 mb-3">Project Updates</h2>
         <div className="w-20 h-1 bg-black mb-4" />
-        <p className="text-gray-700 text-base leading-relaxed max-w-4xl font-semibold">
+        <p className="text-gray-700 text-base leading-relaxed max-w-4xl ">
           The regular project update of SVS Belmond is a sincere attempt to keep
           our customers informed on the project progress. We truly wish to build
           a long-term relationship with our valued customers based on trust. Our
@@ -100,25 +86,24 @@ const Page = () => {
           efficiency, reduce uncertainty and anxiety about the investment.
         </p>
 
-        <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mb-6">
-          <div className="flex flex-wrap gap-2">
-            {years.map((year) => (
-              <button
-                key={year}
-                onClick={() => {
-                  setSelectedYear(year);
-                  setSelectedMonth("");
-                }}
-                className={`px-4 py-2 rounded-md text-sm font-medium transition shadow-sm ${
-                  selectedYear === year
-                    ? "bg-[#61796f] text-white"
-                    : "bg-[#dff2ea] text-gray-700 hover:bg-gray-100"
-                }`}
-              >
-                {year}
-              </button>
-            ))}
-          </div>
+        {/* Filters */}
+        <div className="flex flex-wrap items-center gap-6 mt-10 mb-10">
+          {years.map((year) => (
+            <button
+              key={year}
+              onClick={() => {
+                setSelectedYear(year);
+                setSelectedMonth("");
+              }}
+              className={`px-4 py-2 rounded-md text-sm font-medium transition shadow-sm ${
+                selectedYear === year
+                  ? "bg-[#61796f] text-white"
+                  : "bg-[#dff2ea] text-gray-700 hover:bg-gray-100"
+              }`}
+            >
+              {year}
+            </button>
+          ))}
 
           <select
             value={selectedMonth}
@@ -135,7 +120,7 @@ const Page = () => {
         </div>
 
         {/* Gallery */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {filteredNews.map((item, index) => (
             <div
               key={item.id}
@@ -152,7 +137,7 @@ const Page = () => {
         </div>
       </div>
 
-      {/* Modal */}
+      {/* Modal View */}
       {currentIndex !== null && (
         <div className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center">
           <button
