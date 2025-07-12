@@ -182,7 +182,7 @@ const page = () => {
             loading="lazy"
             allowFullScreen
             referrerPolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.181779101285!2d77.04958537522444!3d28.65142757564882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d23974e4f2743%3A0x218b50c9b159ae20!2sNinex%20City%20Mart!5e0!3m2!1sen!2sin!4v1719149959310!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3795.3115300591785!2d83.4083594!3d17.964237500000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3be30025222929%3A0xf49d8562dab52cbf!2sSVS%20CONSTRUCTIONS%20SVS%20BELMOND!5e0!3m2!1sen!2sin!4v1752311473778!5m2!1sen!2sin"
           ></iframe>
         </div>
       </div>

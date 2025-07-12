@@ -226,7 +226,7 @@ const Footer = () => {
             <div className="w-28 h-[1px] bg-white mb-6"></div>
             <div className="bg-white rounded-md shadow-md overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3799.525029478276!2d83.3179692376804!3d17.76700534856633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a395cbd74aae73b%3A0x8403b61358980d68!2s50%2C%20102%2C%204th%20St%2C%20Ravindra%20Nagar%2C%20Visakhapatnam%2C%20Andhra%20Pradesh%20530040!5e0!3m2!1sen!2sin!4v1750764615096!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3795.3115300591785!2d83.4083594!3d17.964237500000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3be30025222929%3A0xf49d8562dab52cbf!2sSVS%20CONSTRUCTIONS%20SVS%20BELMOND!5e0!3m2!1sen!2sin!4v1752311473778!5m2!1sen!2sin"
                 className="w-full h-[250px] border-0"
                 allowFullScreen
                 loading="lazy"

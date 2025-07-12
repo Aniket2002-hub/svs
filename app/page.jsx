@@ -135,7 +135,6 @@ const part = [
 // export const metadata = {
 //   title: "Experience | Demo",
 
-
 //   description: "Hero section with headline and sub-tagline",
 // };
 import SEO from "../app/(Component)/Seo";
@@ -143,12 +142,24 @@ import SEO from "../app/(Component)/Seo";
 const Page = () => {
   return (
     <div className="overflow-hidden">
-      <title>SVS Construction: Quality Building & Infrastructure Solution</title>
-     <meta name="description" content={"SVS Construction provides dependable, high-quality residential and layout projects. We focus on innovation, quality construction, and customer trust, all tailored to your vision."} key="desc" />
+      <title>
+        SVS Construction: Quality Building & Infrastructure Solution
+      </title>
+      <meta
+        name="description"
+        content={
+          "SVS Construction provides dependable, high-quality residential and layout projects. We focus on innovation, quality construction, and customer trust, all tailored to your vision."
+        }
+        key="desc"
+      />
 
-      <SEO pageTitle={"SVS Constructions | Trusted Building Contractors & Developers in visakhapatnam"}
-      description={"Looking for top builders in Hyderabad? SVS Constructions specializes in residential and commercial projects, delivering quality, trust, and on-time completion."}
- 
+      <SEO
+        pageTitle={
+          "SVS Constructions | Trusted Building Contractors & Developers in visakhapatnam"
+        }
+        description={
+          "Looking for top builders in Hyderabad? SVS Constructions specializes in residential and commercial projects, delivering quality, trust, and on-time completion."
+        }
       />
       {/* ================= Video Section ================= */}
       <section className="relative w-full h-screen ">
@@ -178,31 +189,41 @@ const Page = () => {
         {/* Social Media Icons */}
         <div className="fixed right-0 bottom-8 flex flex-col items-center space-y-4 z-30 text-white text-xl bg-[#67916f]/50 p-4 rounded-md">
           <a
-            href=" https://www.instagram.com/svsconstructionsgroup/"
+            href="https://www.instagram.com/svsconstructionsgroup/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hover:scale-110 transition text-white"
           >
             <FaInstagram />
           </a>
           <a
             href="https://x.com/svsconstuctions"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hover:scale-110 transition text-white"
           >
             <SlSocialTwitter />
           </a>
           <a
-            href=" https://www.facebook.com/svsconstructionsgroup "
+            href="https://www.facebook.com/svsconstructionsgroup"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hover:scale-110 transition text-white"
           >
             <FaFacebookF />
           </a>
           <a
             href="https://www.linkedin.com/company/svs-constructions/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hover:scale-110 transition text-white"
           >
             <FaLinkedinIn />
           </a>
           <a
-            href="https://www.youtube.com/@svsconstructionsgroup "
+            href="https://www.youtube.com/@svsconstructionsgroup"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hover:scale-110 transition text-white"
           >
             <FaYoutube />
