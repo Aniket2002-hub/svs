@@ -9,9 +9,9 @@ export async function GET(request, { params }) {
   console.log('ACME Challenge requested for token:', tokenString);
 
   // Replace with your actual ACME key-authorization string
-  const keyAuthorization = "your-token.key-thumbprint";
+  // const keyAuthorization = "your-token.key-thumbprint";
 
-  return new NextResponse(keyAuthorization, {
+  return new NextResponse( {
     status: 200,
     headers: {
       'Content-Type': 'text/plain',
