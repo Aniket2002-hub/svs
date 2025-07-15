@@ -53,11 +53,11 @@ const videoData = {
     },
   ],
   2024: [
-    {
-      title: "Hyderabad Housing Boom of 2024",
-      date: "15-Apr-2024",
-      href: "https://youtu.be/DummyVideoId1",
-    },
+    // {
+    //   title: "Hyderabad Housing Boom of 2024",
+    //   date: "15-Apr-2024",
+    //   href: "https://youtu.be/DummyVideoId1",
+    // },
     {
       title: "Best Flats Under ₹1 Cr - Pune 2024",
       date: "02-Mar-2024",
