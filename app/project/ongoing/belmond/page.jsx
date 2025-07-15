@@ -88,7 +88,7 @@ export default function BelmondPage() {
               steady value appreciation. Belmond is a beautifully crafted
               plotted development; it’s a gateway to living in an eco-friendly
               lifestyle, with limitless opportunities. The project offers
-              sprawling green spaces and well-planned amenities with erfect
+              sprawling green spaces and well-planned amenities with perfect
               setting for families looking to build their dream homes.
             </p>
           </div>
