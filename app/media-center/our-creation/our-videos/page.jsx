@@ -12,6 +12,16 @@ function getYouTubeVideoId(url) {
 const videoData = {
   2025: [
     {
+      title: "SVS Belmond Unfold Vizag's Most Promising Lifestyle ",
+      date: "12-July-2025",
+      href: "https://youtu.be/fgwkcW3fFog?si=EzHkEKi74UeDW4eh",
+    },
+    {
+      title: "Is SVS Belmond the SMART INVESTMENT Move for 2025 and Beyond? ",
+      date: "09-July-2025",
+      href: "https://youtu.be/zSDVb5vGtcI?si=Rbo_WzhFeyd7YL9Q",
+    },
+    {
       title: "Why NRIs Are Calling This the Most Thoughtful Project in Vizag ",
       date: "08-July-2025",
       href: "https://youtu.be/zSDVb5vGtcI?si=Rbo_WzhFeyd7YL9Q",
@@ -72,6 +82,23 @@ const videoData = {
 
 const short = [
   {
+     
+    href: "https://youtube.com/shorts/HBWiKblo6mE?si=YC3eMif5H7lTsu-6",
+    label: "Imagine Waking Up to Fresh Air and Greenery Every Day",
+  },
+  {
+    href: "https://youtube.com/shorts/ucbyrkercpY?si=lhGvLtbOq8YBRkUO",
+    label: "Genius Location Secrets REVEALED at Belmond!",
+  },
+   {
+    href: "https://youtube.com/shorts/OU1CtSc3HDY?si=S1ZPvYrt8Qf-JqY5",
+    label: "Discover SVS Belmond, The RESORT LIKE Living Experience In Vizag!",
+  },
+   {
+    href: "https://youtube.com/shorts/vAWGT6bK860?si=P26fgBkJXSVehQrL",
+    label: "Vizag Emerges as India's FUTURE TECH HUB!",
+  },
+  {
     href: "https://youtube.com/shorts/4L0qDt1JqhE?si=3IwOxnG4QrjVdpER",
     label: "Vizag's HIDDEN GEM Revealed! SVS Belmond",
   },
@@ -87,10 +114,10 @@ const short = [
     href: "https://youtube.com/shorts/rTKUmzBHUBw?si=ynjFEC7hrc2FPwiD",
     label: "VIZAG IS BOOMING! Discover SVS Belmond Right on the Growth Corridor",
   },
-  {
-    href: "https://youtube.com/shorts/XCQ4rudI_64?si=AE6B7LKcMHk2sqSf",
-    label: "Bhogapuram International Airport ✈️ 60% works completed",
-  },
+  // {
+  //   href: "https://youtube.com/shorts/XCQ4rudI_64?si=AE6B7LKcMHk2sqSf",
+  //   label: "Bhogapuram International Airport ✈️ 60% works completed",
+  // },
   {
     href: "https://youtube.com/shorts/bt5ur-9x4Rs?si=-VPwj-bkrD3Y8OxQ",
     label: "SVS Belmond: VMRDA Plots Just Minutes Away from Bhogapuram Airport!",
@@ -103,40 +130,38 @@ export default function OurVideos() {
 
   return (
     <div className="bg-white">
-      <title>SVS Constructions | Trusted Building Contractors & Developers in Visakhapatnam</title>
-      <meta
-        name="description"
-        content="Looking for top builders in Hyderabad? SVS Constructions specializes in residential and commercial projects, delivering quality, trust, and on-time completion."
-        key="desc"
-      />
       <SEO
         pageTitle="SVS Constructions | Trusted Building Contractors & Developers in Visakhapatnam"
         description="Looking for top builders in Hyderabad? SVS Constructions specializes in residential and commercial projects, delivering quality, trust, and on-time completion."
       />
 
-      {/* Hero */}
+      {/* Hero Banner */}
       <div
         className="relative w-full h-[270px] md:h-[300px] lg:h-[400px] bg-cover bg-center"
         style={{
-          backgroundImage: "url('/Assets/SVS_Belmond_Rajapulova_Junction_Vizag_Banner_Our_Videos.png')",
+          backgroundImage:
+            "url('/Assets/SVS_Belmond_Rajapulova_Junction_Vizag_Banner_Our_Videos.png')",
         }}
       />
 
-      {/* Info & CTA */}
+      {/* Intro Section */}
       <div className="px-4 sm:px-6 lg:px-20 py-10">
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
           <div>
             <h2 className="text-3xl font-semibold text-gray-800">Our Videos</h2>
             <div className="w-20 h-1 bg-black mt-2 mb-4" />
             <p className="text-gray-700 max-w-3xl">
-              Here’s a glimpse of the changes happening at SVS Belmond. Each milestone shows our dedication to quality and speed. Check out the latest site development update and watch your investment come together, book your slot on time, and track.
+              Here’s a glimpse of the changes happening at SVS Belmond. Each
+              milestone shows our dedication to quality and speed. Check out the
+              latest site development update and watch your investment come
+              together, book your slot on time, and track.
             </p>
           </div>
           <a
             href="https://www.youtube.com/@svsconstructionsgroup"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-red-600 hover:bg-red-700 text-white font-semibold px-4 py-2 rounded flex items-center"
+            className="bg-red-600 hover:bg-red-700 text-white font-bold px-4 py-2 rounded flex items-center"
           >
             Our YouTube Channel
             <svg className="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 24 24">
@@ -147,7 +172,7 @@ export default function OurVideos() {
         </div>
       </div>
 
-      {/* Filters */}
+      {/* Filter Buttons */}
       <div className="flex flex-wrap gap-2 px-4 sm:px-6 lg:px-20 mb-6">
         {Object.keys(videoData)
           .sort((a, b) => b.localeCompare(a))
@@ -168,45 +193,89 @@ export default function OurVideos() {
             </button>
           ))}
         <button
-  onClick={() => setShowShorts(true)}
-  className={`ml-auto w-full sm:w-56 text-center px-4 py-2 border rounded font-semibold ${
-    showShorts
-      ? "bg-red-600 text-white"
-      : "bg-red-600 text-white hover:bg-red-700" 
-  }`}
->
-  Shorts
-</button>
+          onClick={() => setShowShorts(true)}
+          className={`ml-auto w-full sm:w-56 text-center px-4 py-2 border rounded font-bold ${
+            showShorts
+              ? "bg-red-600 text-white"
+              : "bg-red-600 text-white hover:bg-red-700"
+          }`}
+        >
+          Youtube Shorts
+          
+        </button>
       </div>
 
-      {/* Videos */}
+      {/* Video / Shorts Display */}
       <div className="px-4 sm:px-6 lg:px-20 pb-20">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
-          {(showShorts ? short : videoData[selectedYear] || []).map((video, index) => {
-            const id = getYouTubeVideoId(video.href);
-            const embedUrl = id ? `https://www.youtube.com/embed/${id}` : "";
-            const title = video.title || video.label;
-            const date = video.date;
+        <div
+          className={`grid gap-6 ${
+            showShorts
+              ? "grid-cols-2 sm:grid-cols-3 md:grid-cols-4"
+              : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+          } justify-items-center`}
+        >
+          {(showShorts ? short : videoData[selectedYear] || []).map(
+            (video, index) => {
+              const id = getYouTubeVideoId(video.href);
+              const title = video.title || video.label;
+              const date = video.date;
 
-            return (
-              <div key={index} className="w-full max-w-md">
-                <div className="w-full aspect-video">
-                  <iframe
-                    className="w-full h-full rounded"
-                    src={embedUrl}
-                    title={title}
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
+              return showShorts ? (
+                <div key={index} className="w-full max-w-[260px]">
+                  <a
+                    href={video.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block overflow-hidden rounded-lg shadow hover:shadow-lg transition"
+                  >
+                    <div className="aspect-[9/16] bg-black">
+                      <img
+                        src={`https://img.youtube.com/vi/${id}/hqdefault.jpg`}
+                        alt={title}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <p className="p-2 text-sm font-semibold text-gray-800">{title}</p>
+                  </a>
                 </div>
-                <p className="mt-3 font-semibold text-center text-gray-800">{title}</p>
-                {date && (
-                  <p className="text-sm text-gray-500 text-center">{date}</p>
-                )}
+              ) : (
+                <div key={index} className="w-full max-w-md">
+                  <div className="w-full aspect-video">
+                    <iframe
+                      className="w-full h-full rounded"
+                      src={`https://www.youtube.com/embed/${id}`}
+                      title={title}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                  <p className="mt-3 font-semibold text-center text-gray-800">{title}</p>
+                  {date && (
+                    <p className="text-sm text-gray-500 text-center">{date}</p>
+                  )}
+                </div>
+              );
+            }
+          )}
+
+          {/* Custom image card in Shorts */}
+          {/* {showShorts && (
+            <div className="w-full max-w-[260px]">
+              <div className="overflow-hidden rounded-lg shadow hover:shadow-lg transition">
+                <div className="aspect-[9/16] bg-gray-200">
+                  <img
+                    src="/Assets/your-custom-image.png"
+                    alt="Custom Short"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <p className="p-2 text-sm font-semibold text-gray-800 text-center">
+                  Your Custom Short
+                </p>
               </div>
-            );
-          })}
+            </div>
+          )} */}
         </div>
       </div>
     </div>

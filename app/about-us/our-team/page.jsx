@@ -19,12 +19,12 @@ const TEAM = [
     bio: ` Bhaswar Paul is a skilled real estate professional with 25+ years of experience in business development, real estate sales, and market planning, and is also the founder & CEO of IREED Academy. He has worked with some of India’s top developers, including M3M, Central Park, and IREO. He is known for his strong sales leadership, global client network, and ability to manage high-net-worth individual portfolios. Mr. Paul offers valuable industry insights and a team-oriented approach. His outstanding interpersonal skills and international experience make him a trusted advisor in real estate.`,
   },
   {
-    name: "Harsha Jasoratia",
-    title: "COO & Industry Practitioner, IREED Academy",
+    name: "Harsha Jasrotia",
+    title: "COO & Industry Trainer, IREED Academy",
     photo: "/Assets/SVS_Belmond_Rajapulova_Junction_Vizag_Our Teams_HJ.png",
     linkedin:
       "https://www.linkedin.com/in/harshjasrotia?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-    bio: ` Harsh Jasrotia brings over 18 years of extensive experience in business development and strategic leadership, having held prominent roles at renowned organizations such as Lodha Developers, M3M India, InfoEdge, Phoenix Mills, and Career Launcher. He holds a strong academic foundation with education from IIT Patna and Panjab University.`,
+    bio: ` Harsha Jasrotia has over 18 years of extensive experience in business development and strategic leadership. He has held prominent roles at well-known organizations such as Lodha Developers, M3M India, InfoEdge, Phoenix Mills, and Career Launcher. Recognized for driving growth and building successful teams, he combines industry expertise with a strong academic background from IIT Patna and Panjab University. His career spans Real Estate and EdTech, where he has consistently achieved impactful results through innovation, strategic planning, and has a deep understanding of evolving market dynamics.`,
   },
   {
     name: "Kamaldeep Prajapati",
@@ -32,7 +32,7 @@ const TEAM = [
     photo: "/Assets/SVS_Belmond_Rajapulova_Junction_Vizag_Our Teams_KP.png",
     linkedin:
       "https://www.linkedin.com/in/kamaldeep01?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-    bio: `Kamaldeep Prajapati is a results-driven professional with solid 5+ years of experience in Luxury sales, corporate events, Business development, sales management, and operations management. He has done tie-ups with 50+ institutions, trained 2000+ students in multiple seminars, and consistently adds value through innovative strategies and operational effectiveness.`,
+    bio: `Kamaldeep Prajapati is a results-driven professional with over 5 years of experience in luxury sales, corporate events, business development, sales management, and operations management. He has formed partnerships with more than 50 institutions, organized multiple corporate seminars, and trained  2,000+ students, demonstrating his ability to engage and influence diverse audiences. Through strategic thinking and effective execution, he consistently adds value with an innovative approach. His dynamic skill set makes him a valuable asset in fostering growth, improving customer experience, and achieving business excellence across various sectors.`,
   },
 ];
 

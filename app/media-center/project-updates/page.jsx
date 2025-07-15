@@ -6,14 +6,14 @@ import { FiX, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 const Page = () => {
   const newsCards = [
     { id: 1, date: "2025-01-09", image: "/Assets/projectimg11.jpg" },
-    { id: 2, date: "2025-01-09", image: "/Assets/projectimg1.jpg" },
-    { id: 3, date: "2025-01-09", image: "/Assets/projectimg2.jpg" },
-    { id: 4, date: "2025-01-09", image: "/Assets/projectimg3.jpg" },
-    { id: 5, date: "2025-01-09", image: "/Assets/projectimg4.jpg" },
-    { id: 6, date: "2025-01-09", image: "/Assets/projectimg5.jpg" },
-    { id: 7, date: "2025-01-09", image: "/Assets/projectimg10.jpg" },
-    { id: 8, date: "2025-01-09", image: "/Assets/projectimg7.jpg" },
-    { id: 10, date: "2025-01-09", image: "/Assets/projectimg9.jpg" },
+    { id: 2, date: "2025-01-09", image: "/Assets/projectimg9.jpg" },
+    { id: 3, date: "2025-01-09", image: "/Assets/projectimg7.jpg" },
+    { id: 4, date: "2025-01-09", image: "/Assets/projectimg8.jpg" },
+    { id: 5, date: "2025-01-09", image: "/Assets/projectimg5.jpg" },
+    { id: 6, date: "2025-01-09", image: "/Assets/projectimg4.jpg" },
+    { id: 7, date: "2025-01-09", image: "/Assets/projectimg1.jpg" },
+    { id: 8, date: "2025-01-09", image: "/Assets/projectimg2.jpg" },
+    // { id: 10, date: "2025-01-09", image: "/Assets/projectimg9.jpg" },
   ];
 
   const [selectedYear, setSelectedYear] = useState("2025");
