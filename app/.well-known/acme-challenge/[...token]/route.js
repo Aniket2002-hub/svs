@@ -3,15 +3,16 @@ import { NextResponse } from 'next/server';
 
 export async function GET(request, { params }) {
   const { token } = params;
-  console.log("token",token)
+  console.log("token", params);
+  
   const tokenString = Array.isArray(token) ? token.join('/') : token;
-
   console.log('ACME Challenge requested for token:', tokenString);
 
-  // Replace with your actual ACME key-authorization string
-  // const keyAuthorization = "your-token.key-thumbprint";
+  // In real ACME, this should be the keyAuthorization:
+  // `${token}.${accountThumbprint}`
+  const keyAuthorization = `${tokenString}`;
 
-  return new NextResponse( {
+  return new NextResponse(keyAuthorization, {
     status: 200,
     headers: {
       'Content-Type': 'text/plain',
