@@ -210,20 +210,27 @@ const Page = () => {
         thumbnail: "/Assets/INSTA3.jpg",
         href: " https://www.facebook.com/share/p/1EiH14DCki/",
       },
-      // {
-      //   title: "Building Beyond Concrete – The SVS Belmond Promise",
-      //   thumbnail: "/Assets/land plot frame.jpeg",
-      //   href: "https://www.instagram.com/p/DL9ImLiT4uu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-      // },
-      {
-        title: "Belmond – Invest in Green Living, Grow Your Future",
-        thumbnail: "/Assets/INSTA2.jpg",
-        href: "https://www.facebook.com/share/p/16UrTTYKob/",
+       {
+        title: "Building Beyond Concrete – The SVS Belmond Promise",
+        thumbnail: "/Assets/INSTA12.png",
+        href: " https://www.facebook.com/share/p/19ZEhifEjz/",
       },
+      
+      
+      // {
+      //   title: "Belmond – Invest in Green Living, Grow Your Future",
+      //   thumbnail: "/Assets/INSTA12.png",
+      //   href: "https://www.facebook.com/share/p/16UrTTYKob/",
+      // },
       {
         title: "SVS Belmond Legacy – Building Dreams in Vizag",
         thumbnail: "/Assets/INSTA1.jpg",
         href: " https://www.facebook.com/share/p/1CTr8bkBpF/",
+      },
+      {
+        title: "Belmond – Invest in Green Living, Grow Your Future",
+        thumbnail: "/Assets/land plot frame.jpeg",
+        href: " https://www.facebook.com/share/p/16UrTTYKob/",
       },
       {
         title: "SVS Belmond Vizag – Plots Built for Life in Motion",
@@ -285,12 +292,20 @@ const Page = () => {
         thumbnail: "/Assets/INSTA3.jpg",
         href: "https://www.linkedin.com/feed/update/urn:li:activity:7349354294879375360",
       },
+       {
+        title: "Building Beyond Concrete – The SVS Belmond Promise",
+        thumbnail: "/Assets/INSTA12.png",
+        href: " https://www.linkedin.com/feed/update/urn:li:activity:7349303721937248256",
+      },
+      
       
       {
         title: "Belmond – Invest in Green Living, Grow Your Future",
         thumbnail: "/Assets/INSTA2.jpg",
         href: " https://www.linkedin.com/feed/update/urn:li:activity:7348323252118704128",
+
       },
+     
       {
         title: "SVS Belmond Legacy – Building Dreams in Vizag",
         thumbnail: "/Assets/INSTA1.jpg",
@@ -325,7 +340,7 @@ const Page = () => {
       // {
       //   title: "Belmond – Where Families Find Their Forever Moments",
 
-      //   thumbnail: "/Assets/A live frame.jpeg",
+      //   thumbnail: "/Assets/INSTA12.png",
       //   href: "https://www.linkedin.com/posts/svs-constructions_belmondbysvs-familyliving-joyfulhomes-activity-7347587626595512320-wiU5?utm_source=share&utm_medium=member_desktop&rcm=ACoAAECqMDABZpCDclieoAy9bPnYZn86JtcrKaU",
       // },
       {
@@ -401,15 +416,15 @@ const Page = () => {
         thumbnail: "/Assets/INSTA3.jpg",
         href: "https://x.com/svsconstuctions/status/1943588652744835292",
       },
-    //  {
-    //     title: "Building Beyond Concrete – The SVS Belmond Promise",
-    //    thumbnail: "/Assets/land plot frame.jpeg",
-    //      href: " https://x.com/svsconstuctions/status/1943537982113484805",
-    //    },
+       {
+        title: "Building Beyond Concrete – The SVS Belmond Promise",
+        thumbnail: "/Assets/INSTA12.png",
+        href: " https://www.linkedin.com/feed/update/urn:li:activity:7349303721937248256",
+      },
       {
         title: "Belmond – Invest in Green Living, Grow Your Future",
         thumbnail: "/Assets/INSTA2.jpg",
-        href: "https://x.com/svsconstuctions/status/1942557623553061042",
+        href: "https://x.com/svsconstuctions/status/1943537982113484805",
       },
       {
         title: "SVS Belmond Legacy – Building Dreams in Vizag",

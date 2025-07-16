@@ -157,7 +157,7 @@ export default function BelmondPage() {
 
             <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4 items-center justify-center lg:justify-start">
               <a
-                href="/Assets/SVS_Belmond_Brochure.pdf"
+                href="/Assets/Brochure - SVS - BELMOND.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
