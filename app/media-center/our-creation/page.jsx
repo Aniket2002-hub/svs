@@ -97,11 +97,11 @@ const Page = () => {
         thumbnail: "/Assets/INSTA3.jpg",
         href: "https://www.instagram.com/p/DL9fpLYujbG/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       },
-      // {
-      //   title: "Building Beyond Concrete – The SVS Belmond Promise",
-      //   thumbnail: "/Assets/land plot frame.jpeg",
-      //   href: "https://www.instagram.com/p/DL9ImLiT4uu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-      // },
+      {
+        title: "Building Beyond Concrete – The SVS Belmond Promise",
+        thumbnail: "/Assets/INSTA12.png",
+        href: "https://www.instagram.com/p/DL9ImLiT4uu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      },
       {
         title: "Belmond – Invest in Green Living, Grow Your Future",
         thumbnail: "/Assets/INSTA2.jpg",
@@ -246,6 +246,57 @@ const Page = () => {
     ],
     Linkedin: [
       {
+        title: "Elevate Your Lifestyle with SVS Belmond",
+        thumbnail: "/Assets/INSTA11.jpg",
+        href: " https://www.linkedin.com/feed/update/urn:li:activity:7350464216484433921",
+      },
+      {
+        title: "SVS Belmond Transforming The Landscape Of Vizag",
+        thumbnail: "/Assets/INSTA10.jpg",
+        href: " https://www.linkedin.com/feed/update/urn:li:activity:7350464216484433921",
+      },
+       {
+        title: "SVS Belmond – Unlock Exclusive Benefits Designed for You",
+        thumbnail: "/Assets/INSTA9.jpg",
+        href: " https://www.linkedin.com/feed/update/urn:li:activity:7350430449225129984",
+      },
+       {
+        title: "Where Legacy Meets Location",
+        thumbnail: "/Assets/INSTA7.jpg",
+        href: "https://www.linkedin.com/feed/update/urn:li:activity:7349746968316760064",
+      },
+       {
+        title: "Bhogapuram The Future Takes Off Here",
+        thumbnail: "/Assets/INSTA6.jpg",
+        href: " https://www.linkedin.com/feed/update/urn:li:activity:7349716562435588096",
+      },
+      {
+        title: "Visakhapatnam – Where Beauty Meets Growth",
+        thumbnail: "/Assets/INSTA5.jpg",
+        href: "https://www.linkedin.com/feed/update/urn:li:activity:7349660280118759425",
+      },
+      {
+        title: "Dreams Crafted with Precision – SVS Belmond",
+        thumbnail: "/Assets/INSTA4.jpg",
+        href: " https://www.linkedin.com/feed/update/urn:li:activity:7349399715634954240",
+      },
+      {
+        title: "Effortless Investing with SVS Belmond",
+        thumbnail: "/Assets/INSTA3.jpg",
+        href: "https://www.linkedin.com/feed/update/urn:li:activity:7349354294879375360",
+      },
+      
+      {
+        title: "Belmond – Invest in Green Living, Grow Your Future",
+        thumbnail: "/Assets/INSTA2.jpg",
+        href: " https://www.linkedin.com/feed/update/urn:li:activity:7348323252118704128",
+      },
+      {
+        title: "SVS Belmond Legacy – Building Dreams in Vizag",
+        thumbnail: "/Assets/INSTA1.jpg",
+        href: "https://www.linkedin.com/feed/update/urn:li:activity:7348259667891974144",
+      },
+      {
         title: "Unlock Your Dream Investment in Vizag with SVS Belmond",
 
         thumbnail: "/Assets/land plot frame.jpeg",
@@ -311,22 +362,123 @@ const Page = () => {
     ],
     Twitter: [
       {
-        title: "SVS Belmond Vizag – Plots Built for Life in Motion",
-        date: "30-June-2025",
-        thumbnail: "/Assets/Frame 110 (1).jpg",
-        href: "https://x.com/svsconstuctions/status/1939668942706155607",
+        title: "Elevate Your Lifestyle with SVS Belmond",
+        thumbnail: "/Assets/INSTA11.jpg",
+        href: "https://x.com/svsconstuctions/status/1944736133948354827",
+      },
+      {
+        title: "SVS Belmond Transforming The Landscape Of Vizag",
+        thumbnail: "/Assets/INSTA10.jpg",
+        href: " https://x.com/svsconstuctions/status/1944698434016960996",
+      },
+       {
+        title: "SVS Belmond – Unlock Exclusive Benefits Designed for You",
+        thumbnail: "/Assets/INSTA9.jpg",
+        href: "https://x.com/svsconstuctions/status/1944664817282998715 ",
+      },
+       {
+        title: "Where Legacy Meets Location",
+        thumbnail: "/Assets/INSTA7.jpg",
+        href: "https://x.com/svsconstuctions/status/1943981358013198643",
+      },
+       {
+        title: "Bhogapuram The Future Takes Off Here",
+        thumbnail: "/Assets/INSTA6.jpg",
+        href: " https://x.com/svsconstuctions/status/1943951011716219060",
+      },
+      {
+        title: "Visakhapatnam – Where Beauty Meets Growth",
+        thumbnail: "/Assets/INSTA5.jpg",
+        href: "https://x.com/svsconstuctions/status/1943894639179878676",
+      },
+      {
+        title: "Dreams Crafted with Precision – SVS Belmond",
+        thumbnail: "/Assets/INSTA4.jpg",
+        href: "https://x.com/svsconstuctions/status/1943633982215569750",
+      },
+      {
+        title: "Effortless Investing with SVS Belmond",
+        thumbnail: "/Assets/INSTA3.jpg",
+        href: "https://x.com/svsconstuctions/status/1943588652744835292",
+      },
+    //  {
+    //     title: "Building Beyond Concrete – The SVS Belmond Promise",
+    //    thumbnail: "/Assets/land plot frame.jpeg",
+    //      href: " https://x.com/svsconstuctions/status/1943537982113484805",
+    //    },
+      {
+        title: "Belmond – Invest in Green Living, Grow Your Future",
+        thumbnail: "/Assets/INSTA2.jpg",
+        href: "https://x.com/svsconstuctions/status/1942557623553061042",
+      },
+      {
+        title: "SVS Belmond Legacy – Building Dreams in Vizag",
+        thumbnail: "/Assets/INSTA1.jpg",
+        href: "https://x.com/svsconstuctions/status/1943588652744835292",
+      },
+      
+      {
+        title: "Unlock Your Dream Investment in Vizag with SVS Belmond",
+
+        thumbnail: "/Assets/land plot frame.jpeg",
+        href: "https://www.linkedin.com/posts/svs-constructions_landforsalevizag-svsbelmond-vizagrealestate-activity-7348228645863243777-6DGA?utm_source=share&utm_medium=member_desktop&rcm=ACoAAECqMDABZpCDclieoAy9bPnYZn86JtcrKaU",
+      },
+
+      {
+        title: "Vizag: India’s Next Big Growth Hub After Hyderabad!",
+
+        thumbnail: "/Assets/vizag map frame.jpeg",
+        href: "https://www.linkedin.com/posts/svs-constructions_svsbelmondvizag-investinvizag-vizagrealestate-activity-7347967424203276288-FPat?utm_source=share&utm_medium=member_desktop&rcm=ACoAAECqMDABZpCDclieoAy9bPnYZn86JtcrKaU",
+      },
+      {
+        title: "Nature's Calm, Right at Your Doorstep",
+
+        thumbnail: "/Assets/grounded frame.jpeg",
+        href: "https://www.linkedin.com/posts/svs-constructions_belmondbysvs-wellnessliving-mindfulmornings-activity-7347861737276133376-2ZvX?utm_source=share&utm_medium=member_desktop&rcm=ACoAAECqMDABZpCDclieoAy9bPnYZn86JtcrKaU",
+      },
+      {
+        title: "Belmond – Where Families Find Their Forever Moments",
+
+        thumbnail: "/Assets/where family frame.jpeg",
+        href: "https://www.linkedin.com/posts/svs-constructions_belmondbysvs-wellnessliving-mindfulmornings-activity-7347861737276133376-2ZvX?utm_source=share&utm_medium=member_desktop&rcm=ACoAAECqMDABZpCDclieoAy9bPnYZn86JtcrKaU",
+      },
+
+      // {
+      //   title: "Belmond – Where Families Find Their Forever Moments",
+
+      //   thumbnail: "/Assets/A live frame.jpeg",
+      //   href: "https://www.linkedin.com/posts/svs-constructions_belmondbysvs-familyliving-joyfulhomes-activity-7347587626595512320-wiU5?utm_source=share&utm_medium=member_desktop&rcm=ACoAAECqMDABZpCDclieoAy9bPnYZn86JtcrKaU",
+      // },
+      {
+        title: "Belmond – Where Every Step Feels Like Home",
+
+        thumbnail: "/Assets/A community frame.jpeg",
+        href: "https://www.linkedin.com/posts/svs-constructions_belmondbysvs-communityliving-wellnesshomes-activity-7347481945292906496-p07n?utm_source=share&utm_medium=member_desktop&rcm=ACoAAECqMDABZpCDclieoAy9bPnYZn86JtcrKaU",
+      },
+      {
+        title: "Belmond – Where Every Moment Becomes a Memory",
+
+        thumbnail: "/Assets/a place frame.jpeg",
+        href: "https://www.linkedin.com/posts/svs-constructions_belmondbysvs-familyfirsthomes-luxuryliving-activity-7347225241569398785-uEco?utm_source=share&utm_medium=member_desktop&rcm=ACoAAECqMDABZpCDclieoAy9bPnYZn86JtcrKaU",
+      },
+
+      {
+        title: "Live Fit, Live Smart at Belmond by SVS",
+
+        thumbnail: "/Assets/strong frame.jpeg",
+        href: "https://www.linkedin.com/posts/svs-constructions_belmondbysvs-fitnesslifestyle-smartliving-activity-7347153431175884800-W3eQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAECqMDABZpCDclieoAy9bPnYZn86JtcrKaU",
+      },
+      {
+        title: "Step Into Wellness at SVS Belmond",
+
+        thumbnail: "/Assets/Reclaim frame.jpeg",
+        href: "https://www.linkedin.com/posts/svs-constructions_svsbelmond-livewellvizag-wellnessliving-activity-7346489427709304832-ly5Q?utm_source=share&utm_medium=member_desktop&rcm=ACoAAECqMDABZpCDclieoAy9bPnYZn86JtcrKaU",
       },
       {
         title: "Work Smart, Live Serene at Belmond by SVS",
-        date: "01-June-2025",
+
         thumbnail: "/Assets/Frame 89.jpg",
-        href: "https://x.com/svsconstuctions/status/1940376858731975124",
-      },
-      {
-        title: "Where Every Morning Feels Like a Golden Hour",
-        date: "02-July-2025",
-        thumbnail: "/Assets/Frame 88.jpg",
-        href: "https://x.com/svsconstuctions/status/1940028960353718504",
+        href: "https://www.linkedin.com/feed/update/urn:li:activity:7346142544415625217",
       },
     ],
   };
