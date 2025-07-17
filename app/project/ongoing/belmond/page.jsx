@@ -157,7 +157,7 @@ export default function BelmondPage() {
 
             <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4 items-center justify-center lg:justify-start">
               <a
-                href="/Assets/Brochure - SVS - BELMOND.pdf"
+                href="/Assets/Brochure SVS .pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -166,19 +166,30 @@ export default function BelmondPage() {
                 </button>
               </a>
 
-              <div className="flex items-center space-x-2">
+              {/* <div className="flex items-center space-x-2">
                 <div className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-[#8B2D24]">
                   <FaPhoneAlt />
                 </div>
                 <div>
                   <p className="text-xs text-gray-500">CALL ANYTIME</p>
                   <a
-                    href="tel:+918978801173"
+                    href="tel:+91 799 555 5559"
                     className="text-sm font-semibold text-gray-800"
                   >
                     +91 8978801173
                   </a>
                 </div>
+              </div> */}
+              <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4 items-center justify-center lg:justify-start">
+              <a
+                href="/Assets/Belmond RERA.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="border bg-[#61796f] rounded-full border-white text-white px-6 py-3 rounded-md font-semibold hover:bg-white hover:text-black hover:border-black transition">
+                 DOWNLOAD AP RERA
+                </button>
+              </a>
               </div>
             </div>
           </div>

@@ -123,7 +123,7 @@ const Footer = () => {
 
           <div className="flex justify-center lg:justify-end ">
             <a
-              href="/Assets/Brochure - SVS - BELMOND.pdf"
+              href="/Assets/Brochure SVS .pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
