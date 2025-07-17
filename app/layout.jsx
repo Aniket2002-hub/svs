@@ -29,32 +29,28 @@ export default function RootLayout({ children }) {
         };
       case "/about-us/vision":
         return {
-          title:
-            "Building a Better Tomorrow",
+          title: "Building a Better Tomorrow",
           description:
             "SVS Constructions is not only building projects but is also committed to building quality construction and sustainability. Their vision starts from a strong customer base to give state-of-the-art infrastructure that aligns with customer requirements.",
           image: "/Assets/logooooo.png",
         };
       case "about-us/our-team":
         return {
-          title:
-            " Collaborating for Excellence",
+          title: " Collaborating for Excellence",
           description:
             "We value our relationships and are committed to fostering our partnership for the long term. Our partnership with IREED Academy brings expertise and innovation together that will help SVS deliver smart real estate solutions.",
           image: "/Assets/logooooo.png",
         };
       case "/project/completed":
         return {
-          title:
-            " Completed Real Estate Projects – Delivered with Trust",
+          title: " Completed Real Estate Projects – Delivered with Trust",
           description:
             "SVS Constructions has successfully delivered our Hyderabad residential projects, and in the heart of every project, we embedded our unwavering commitment to Excellence and delivered premium spaces that reflect better quality.",
           image: "/Assets/logooooo.png",
         };
       case "/project/ongoing/belmond":
         return {
-          title:
-            "Belmond - Premium Plotted Project in Vizag ",
+          title: "Belmond - Premium Plotted Project in Vizag ",
           description:
             "Belmond is one of the ongoing development projects by SVS Constructions. It is located at Rajapulova Junction in Vizag. Covering about 12.35 acres, this well-designed community includes 175 high-quality residential plots. Each plot aims to offer a mix of nature, comfort, and modern infrastructure.",
           image: "/Assets/logooooo.png",
@@ -94,10 +90,11 @@ export default function RootLayout({ children }) {
             "Reach out to SVS Constructions for inquiries, site visits, or partnership opportunities.",
           image: "/Assets/logooooo.png",
         };
-     
+
       default:
         return {
-          title: "SVS Construction: Quality Building & Infrastructure Solution.",
+          title:
+            "SVS Construction: Quality Building & Infrastructure Solution.",
           description:
             "SVS Construction provides dependable, high-quality residential and layout projects. We focus on innovation, quality construction, and customer trust, all tailored to your vision.",
           image: "/Assets/logooooo.png",
@@ -106,9 +103,20 @@ export default function RootLayout({ children }) {
   };
 
   const { title, description, image } = getOGDetails(pathName);
-  
+
   return (
     <html lang="en">
+      {/* Google Tag Manager */}
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-N65893CV');`,
+        }}
+      />
+
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
@@ -133,6 +141,17 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+      {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-N65893CV"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          ></iframe>
+        </noscript>
+        {/* End Google Tag Manager (noscript) */}
+
         <Header />
         <AOSInit /> {/* Initialize AOS here */}
         {children}
