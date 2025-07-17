@@ -7,6 +7,6 @@ export default function robots() {
         disallow: ['']
       },
     ],
-    sitemap: 'https://svsconstructions.com/',
+    sitemap: 'https://svsconstructions.com/sitemap.xml',
 };
 }

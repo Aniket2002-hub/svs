@@ -116,7 +116,25 @@ export default function RootLayout({ children }) {
             })(window,document,'script','dataLayer','GTM-N65893CV');`,
         }}
       />
-
+      {/* Google Analytics (gtag.js) */}
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-1YB46N0THN"
+      ></script>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-1YB46N0THN');
+            `,
+        }}
+      />
+      <meta
+        name="google-site-verification"
+        content="2WElGuALakFfNmWEiJPiGEl0qwwQr2j5CNum1mIcLKo"
+      />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
@@ -141,17 +159,16 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-      {/* Google Tag Manager (noscript) */}
+        {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-N65893CV"
             height="0"
             width="0"
-            style={{ display: 'none', visibility: 'hidden' }}
+            style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
         {/* End Google Tag Manager (noscript) */}
-
         <Header />
         <AOSInit /> {/* Initialize AOS here */}
         {children}
