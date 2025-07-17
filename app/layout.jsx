@@ -115,6 +115,7 @@ export default function RootLayout({ children }) {
               'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','GTM-N65893CV');`,
         }}
+        
       />
       {/* Google Analytics (gtag.js) */}
       <script
