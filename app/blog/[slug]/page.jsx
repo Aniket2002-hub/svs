@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 // Blog data
 const blogData = {
   "vizag-real-estate-boom": {
-    title: "",
+    title: "Vizag’s Real Estate Boom: Why Now is the Best Time to Invest!",
     date: "July 16, 2025",
     image:"/Assets/Blog1.jpg",
     author: "Research Associate: Priyanshu Ravat",

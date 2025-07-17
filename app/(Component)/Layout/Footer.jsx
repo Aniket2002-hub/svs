@@ -123,12 +123,12 @@ const Footer = () => {
 
           <div className="flex justify-center lg:justify-end ">
             <a
-              href="/Assets/SVS_Belmond_Brochure.pdf"
+              href="/Assets/Brochure - SVS - BELMOND.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img
-                src="/Assets/Frame 1.jpg"
+                src="/Assets/Belond Thumbanil.png"
                 alt="Belmond"
                 className="w-full max-w-md rounded-lg shadow-lg transition-transform hover:scale-[1.01] mt-5"
               />
