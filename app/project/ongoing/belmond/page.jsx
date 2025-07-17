@@ -187,7 +187,7 @@ export default function BelmondPage() {
                 rel="noopener noreferrer"
               >
                 <button className="border bg-[#61796f] rounded-full border-white text-white px-6 py-3 rounded-md font-semibold hover:bg-white hover:text-black hover:border-black transition">
-                  DOWNLOAD RERA
+                 DOWNLOAD AP RERA
                 </button>
               </a>
               </div>
